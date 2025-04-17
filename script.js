@@ -1,11 +1,11 @@
-const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
-const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
 
 hamburger.addEventListener('click', () => {
-	hamburger.classList.toggle('active');
-	mobile_menu.classList.toggle('active');
+    navMenu.classList.toggle('active'); // Toggles the 'active' class for the menu
+    hamburger.classList.toggle('open'); // Toggles the 'open' class for the hamburger
 });
 
 document.addEventListener('scroll', () => {
@@ -19,7 +19,7 @@ document.addEventListener('scroll', () => {
 
 menu_item.forEach((item) => {
 	item.addEventListener('click', () => {
-		hamburger.classList.toggle('active');
-		mobile_menu.classList.toggle('active');
+		hamburger.classList.toggle('open');
+		navMenu.classList.toggle('active');
 	});
 });
