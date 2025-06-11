@@ -80,6 +80,14 @@ a:hover {
     white-space: normal;
 }
 
+#popupDialog img{
+    width: 70vw;      /* 70% of the viewport width */
+    max-width: 100%;  /* Prevents overflow on small screens */
+    height: auto;     /* Maintains aspect ratio */
+    display: block;   /* Removes inline spacing */
+    margin: 0 auto;   /* Centers the image horizontally */
+}
+
 #popupDialog .btn {
     transition: none;
 }
