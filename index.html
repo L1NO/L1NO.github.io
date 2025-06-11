@@ -50,9 +50,15 @@
           >
             Resume
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./img/qr-code.png', '_blank'">
+          <button class="btn btn-color-1" onclick="openPop()">
             Share
           </button>
+          <div id="popupDialog">
+            <img src="./img/qr-code.png" alt="QR code" />
+            <button onclick="openPop()">
+                Close
+            </button>
+          </div>
         </div>
         <div id="socials-container">
           <img
