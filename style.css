@@ -69,8 +69,9 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    width: 400px;
-    max-width: 90vw;
+    width: 70vw;
+    max-width: 400px;
+    min-width: 250px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
