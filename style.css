@@ -64,10 +64,8 @@ a:hover {
 }
 
 #popupDialog {
-    position: relative;
+    position: absolute;
     display: block;
-    top: 50%;
-    left: 50%;
     width: fit-content;
     margin: auto;
     padding: 20px;
