@@ -64,12 +64,11 @@ a:hover {
 }
 
 #popupDialog {
-    position: absolute;
+    position: relative;
     display: block;
     top: 50%;
     left: 50%;
     width: fit-content;
-    max-height: 0;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
