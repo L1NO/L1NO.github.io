@@ -80,6 +80,10 @@ a:hover {
     white-space: normal;
 }
 
+#popupDialog .btn {
+    transition: none;
+}
+
 /* Hamburger-menu */
 #hamburger-nav {
     display: none;
