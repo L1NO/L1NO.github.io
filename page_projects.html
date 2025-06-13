@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=600, initial-scale=1.0" />
+        <title>UX Case Study | Ossian Lin</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+        <link rel="stylesheet" href="casestudy.css" />
+    </head>
+    <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#experience">EXPERIENCE</a></li>
+                <li><a href="index.html#projects">PROJECTS</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Ossian Lin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">ABOUT</a></li>
+                <li>
+                    <a href="index.html#experience" onclick="toggleMenu()"
+                    >EXPERIENCE</a>
+                </li>
+                <li>
+                    <a href="index.html#projects" onclick="toggleMenu()">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="index.html#contact" onclick="toggleMenu()">CONTACT</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <!-- UX Case Study Section -->
+    <section id="case-study-hero">
+      <div class="case-study-hero-content">
+                <img src="./img/case-hero.jpg" alt="Case Study Hero Image" class="case-study-hero-img" />
+        <h1 class="case-study-title">UX Case Study: Project Name</h1>
+        <p class="case-study-subtitle">A journey through the UX process from research to delivery</p>
+      </div>
+    </section>
+    <section id="case-study-intro">A</section>
+    <section id="case-study-number">
+        <div class="case-study-number-cards">
+            <div class="number-card">
+                <div class="number">1</div>
+                <div class="number-title">Research</div>
+            </div>
+            <div class="number-card">
+                <div class="number">2</div>
+                <div class="number-title">Define</div>
+            </div>
+            <div class="number-card">
+                <div class="number">3</div>
+                <div class="number-title">Ideate</div>
+            </div>
+            <div class="number-card">
+                <div class="number">4</div>
+                <div class="number-title">Prototype</div>
+            </div>
+            <div class="number-card">
+                <div class="number">5</div>
+                <div class="number-title">Test</div>
+            </div>
+            <div class="number-card">
+                <div class="number">6</div>
+                <div class="number-title">Deliver</div>
+            </div>
+        </div>
+    </section>
+    <section id="case-study-story">B</section>
+    <section id="case-study-showcase"></section>
+    <section id="case-study-takeaways">D</section>
+    <!-- Back to Home Button -->
+    <div class="back-home-btn">
+        <button class="btn btn-color-1" onclick="window.location.href='index.html'">
+            Back
+        </button>
+    </div>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Ossian Lin. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
