@@ -1,115 +1,125 @@
 /* General */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 p {
-    color: rgb(85,85,85);
+  color: rgb(85, 85, 85);
+}
+
+.profile,
+.about,
+.experience,
+.projects,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Transition */
 a,
 .btn {
-    transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 /* Navigation */
 nav,
 .nav-links {
-    display: flex;
+  display: flex;
 }
 
 nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
 }
 
 .nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
 }
 
 a {
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
 }
 
 a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181,181,181);
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-.logo:hover{
-    cursor: default;
+.logo:hover {
+  cursor: default;
 }
 
 #popupDialog {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    width: 70vw;
-    max-width: 400px;
-    min-width: 250px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    visibility: hidden;
-    white-space: normal;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 70vw;
+  max-width: 400px;
+  min-width: 250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  visibility: hidden;
+  white-space: normal;
 }
 
-#popupDialog img{
-    width: 70vw;      /* 70% of the viewport width */
-    max-width: 100%;  /* Prevents overflow on small screens */
-    height: auto;     /* Maintains aspect ratio */
-    display: block;   /* Removes inline spacing */
-    margin: 0 auto;   /* Centers the image horizontally */
+#popupDialog img {
+  width: 70vw; /* 70% of the viewport width */
+  max-width: 100%; /* Prevents overflow on small screens */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes inline spacing */
+  margin: 0 auto; /* Centers the image horizontally */
 }
 
 #popupDialog .btn {
-    transition: none;
+  transition: none;
 }
 
 /* Hamburger-menu */
 #hamburger-nav {
-    display: none;
+  display: none;
 }
 
 .hamburger-menu {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
 }
 
 .hamburger-icon span {
@@ -120,15 +130,15 @@ a:hover {
 }
 
 .menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .menu-links a {
@@ -182,9 +192,7 @@ section {
   min-height: fit-content;
 }
 
-.section-container {
-  display: flex;
-}
+
 
 /* PROFILE SECTION */
 #profile {
@@ -194,10 +202,18 @@ section {
   height: 80vh;
 }
 
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
 .section__pic-container {
   display: flex;
   height: 400px;
-  width: 400px;
+  width: auto;
+  justify-content: center;
   margin: auto 0;
 }
 
@@ -222,13 +238,6 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-}
-
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
 }
 
 /* ICONS */
@@ -290,7 +299,7 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -309,12 +318,6 @@ section {
   border-radius: 2rem;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -328,12 +331,6 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
 }
 
 /* EXPERIENCE SECTION */
@@ -359,19 +356,24 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 article {
+  flex-wrap: wrap;
   display: flex;
-  width: 10rem;
   justify-content: space-around;
   gap: 0.5rem;
 }
 
-article .icon {
-  cursor: default;
+article p {
+  color: black;
+  background-color: rgb(200, 200, 200);
+  border-radius: 0.5rem;
+  flex-grow: 20;
+  padding: 1rem;
 }
 
 /* PROJECTS SECTION */
@@ -385,9 +387,24 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.details-container.color-container .project-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .project-title {
@@ -447,4 +464,18 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Target the parent container of your project cards */
+#projects-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 800px) {
+  #projects-list {
+    grid-template-columns: 1fr;
+  }
 }

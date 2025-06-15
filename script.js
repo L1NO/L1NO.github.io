@@ -20,11 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
       <div class="article-container">
         ${exp.items.map(item => `
           <article>
-            <img src="${item.icon}" alt="${item.alt}" class="icon" />
-            <div>
-              <h3>${item.title}</h3>
-              <p>${item.level}</p>
-            </div>
+            <p>${item.title}</p>
           </article>
         `).join('')}
       </div>
@@ -41,8 +37,8 @@ window.addEventListener('DOMContentLoaded', () => {
         </div>
         <h2 class="experience-sub-title project-title">${proj.title}</h2>
         <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="location.href='${proj.github}'">Github</button>
-          <button class="btn btn-color-2 project-btn" onclick="location.href='${proj.demo}'">Live Demo</button>
+          ${proj.read ? `<button class="btn btn-color-2 project-btn" onclick="location.href='${proj.read}'">Learn More</button>` : ''}
+          ${proj.demo ? `<button class="btn btn-color-2 project-btn" onclick="location.href='${proj.demo}'">Live Demo</button>` : ''}
         </div>
       </div>
     `).join('');

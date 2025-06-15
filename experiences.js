@@ -4,28 +4,25 @@ const experiences = [
     category: "User Experience Design",
     items: [
       {
-        icon: "./img/checkmark.png",
-        alt: "Experience icon",
-        title: "Wireframing",
-        level: "Experienced",
-      },
-      {
-        icon: "./img/checkmark.png",
-        alt: "Experience icon",
-        title: "Prototyping",
-        level: "Experienced",
-      },
-      {
-        icon: "./img/checkmark.png",
-        alt: "Experience icon",
         title: "Figma",
-        level: "Intermediate",
       },
       {
-        icon: "./img/checkmark.png",
-        alt: "Experience icon",
-        title: "Usability Testing",
-        level: "Intermediate",
+        title: "Wireframing",
+      },
+      {
+        title: "Prototyping",
+      },
+      {
+        title: "User Flows",
+      },
+      {
+        title: "UX writing",
+      },
+      {
+        title: "HTML/CSS",
+      },
+      {
+        title: "JavaScript",
       }
     ],
   },
@@ -34,28 +31,25 @@ const experiences = [
     category: "User Experience Research",
     items: [
       {
-        icon: "./img/checkmark.png",
-        alt: "Experience icon",
         title: "User Interviews",
-        level: "Experienced",
       },
       {
-        icon: "./img/checkmark.png",
-        alt: "Experience icon",
         title: "Surveys",
-        level: "Experienced",
       },
       {
-        icon: "./img/checkmark.png",
-        alt: "Experience icon",
+        title: "Card Sorting",
+      },
+      {
+        title: "Personas",
+      },
+      {
+        title: "Contextual Inquiry",
+      },
+      {
+        title: "Usability Testing",
+      },
+      {
         title: "A/B Testing",
-        level: "Intermediate",
-      },
-      {
-        icon: "./img/checkmark.png",
-        alt: "Experience icon",
-        title: "Analytics Tools",
-        level: "Intermediate",
       },
     ],
   },
