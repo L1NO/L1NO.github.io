@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ossian Lin &nbsp;| &nbsp;A Product Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-pic">
+        <div class="inner-circle"></div>
+        <img src="img/Lino.png" alt="Ossian Lin" />
+      </div>
+      <div class="hero-info">
+        <h1>Ossian Lin</h1>
+        <h2>Product Designer</h2>
+        <div class="logo-container">
+          <img
+            src="img/Linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ossianlin19739513/'"
+            style="cursor: pointer"
+          />
+          <img
+            src="./img/Twitter.png"
+            alt="My twitter"
+            class="icon"
+            onclick="location.href='https://x.com/L1N0_TW'"
+          />
+          <img
+            src="./img/Medium.png"
+            alt="My Medium"
+            class="icon"
+            onclick="location.href='https://medium.com/sekkei-tori-seikatsu'"
+          />
+          <img
+            src="./img/Github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/L1NO'"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="experience">
+      <div class="experience-group">
+        <div class="experience-item">
+          <span class="experience-number">5</span>
+          <span class="experience-label">Years<br />Product Designer</span>
+        </div>
+        <div class="experience-item">
+          <span class="experience-number">6</span>
+          <span class="experience-label">Years<br />B.Sc. & M.Sc.</span>
+        </div>
+      </div>
+      <div class="introduction">
+        A diligent Product Designer with experience across industry and
+        government. Designed products and projects for Taiwanese citizens.
+      </div>
+    </section>
+    <section class="cta">
+      <a href="asset/2025_Resume_Ossian Lin.pdf" target="_blank">
+        <button class="btn download-btn">Resume</button>
+      </a>
+      <div>
+        <button class="btn btn-color-1" onclick="openPop()">Share</button>
+        <div id="popupDialog" style="display: none">
+          <img src="./img/qr-code.png" alt="QR code" />
+          <button class="btn btn-color-1" onclick="openPop()">Close</button>
+        </div>
+      </div>
+    </section>
+    <section class="experiences" id="experiences">
+      <div class="section-title-container">
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="experiences-group"></div>
+    </section>
+    <section class="Projects" id="Projects">
+      <div class="section-title-container">
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="Projects-group">
+        <div class="wrapper project-wrapper">
+          <a href="#"><img src="img/project-STEMUP.png" alt="Project 1" /></a>
+        </div>
+        <div class="wrapper project-wrapper">
+          <a href="#"><img src="project-2.png" alt="Project 2" /></a>
+        </div>
+        <div class="wrapper project-wrapper">
+          <a href="#"><img src="project-3.png" alt="Project 3" /></a>
+        </div>
+        <div class="wrapper project-wrapper">
+          <a href="#"><img src="project-4.png" alt="Project 4" /></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy Ossian Lin 2025</p>
+    </footer>
+    <script src="experiences.js"></script>
+  </body>
+</html>
