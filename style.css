@@ -18,6 +18,10 @@
   --btn-bg-light: #eeeeee;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
 }
