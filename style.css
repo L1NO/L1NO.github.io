@@ -137,7 +137,8 @@ logo-container,
   height: 3rem;
   width: 9rem;
   font-weight: 600;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    background-color 0.3s ease, color 0.3s ease;
 }
 
 .download-btn {
@@ -180,7 +181,6 @@ logo-container,
 .btn {
   width: 9rem;
 }
-
 
 .download-btn {
   transition: background-color 0.3s ease;
@@ -302,6 +302,84 @@ footer {
 .project-wrapper {
   display: flex;
   justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.project-wrapper a {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.project-wrapper img:hover ~ .project-overlay,
+.project-wrapper:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-wrapper:hover {
+  transform: translateY(-8px);
+}
+
+.project-wrapper img {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.project-wrapper img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.project-wrapper:hover .project-overlay {
+  pointer-events: auto;
+}
+
+.project-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: var(--primary-font);
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0;
 }
 
 /* Desktop styles - both groups display side by side */
@@ -367,8 +445,11 @@ footer {
 
 #popupDialog {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
   display: none;
   align-items: center;
   justify-content: center;
