@@ -45,9 +45,9 @@ footer,
 .experience,
 .cta,
 .Projects,
-.experiences,
+.skill,
 .Projects-group,
-.experiences-group {
+.skill-group {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -56,7 +56,7 @@ footer,
 
 .hero,
 .Projects,
-.experiences {
+.skill {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
@@ -283,7 +283,7 @@ footer {
 }
 
 /* Mobile styles - both groups stack vertically */
-.experiences-group {
+.skill-group {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -384,7 +384,7 @@ footer {
 
 /* Desktop styles - both groups display side by side */
 @media screen and (min-width: 900px) {
-  .experiences,
+  .skill,
   .Projects {
     width: 45rem;
     margin: 2rem auto 0;
@@ -395,7 +395,7 @@ footer {
     justify-content: center;
   }
 
-  .experiences-group {
+  .skill-group {
     display: flex;
     flex-direction: row;
     gap: 2rem;
