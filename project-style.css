@@ -1,6 +1,6 @@
 /* Hero Section 專案頁獨有背景與排版 */
 .project-hero {
-  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+  background: black;
   padding: 2em;
   text-align: center;
   position: relative;
@@ -249,7 +249,7 @@
 
 .insights {
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-  border-radius: 1rem;
+
   padding: 2rem;
   margin-top: 2rem;
 }

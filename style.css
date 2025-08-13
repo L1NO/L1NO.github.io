@@ -1,18 +1,17 @@
 /* General */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  /* Light Theme */
-  --primary-font: "Poppins", sans-serif;
-  --primary-bg-color: #f7e3cd;
+  --primary-font: "Noto Sans", sans-serif;
+  --primary-bg-color: #ffffff;
   --primary-text-color: #000000;
-  --secondary-color: #575757;
+  --secondary-text-color: #575757;
   --btn-bg-color: #000000;
   --cta-hover-color: #000000;
   --btn-bg-light: #eeeeee;
@@ -23,7 +22,10 @@ html {
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--primary-font);
+  line-height: 1.6;
+  color: var(--primary-text-color);
+  background: var(--primary-bg-color);
 }
 
 h1,
@@ -95,7 +97,7 @@ h2 {
 
 article p,
 .hero-info h2 {
-  color: var(--secondary-color);
+  color: var(--secondary-text-color);
 }
 
 .hero-info h2 {
@@ -104,7 +106,7 @@ article p,
 }
 
 footer,
-logo-container,
+.logo-container,
 .experience,
 .cta {
   justify-content: center;
@@ -206,7 +208,7 @@ article p {
   border-radius: 0.5rem;
   flex-grow: 20;
   padding: 1rem;
-  color: var(--secondary-color);
+  color: var(--secondary-text-color);
 }
 
 footer {
@@ -217,15 +219,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-}
-
-.section-title {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 2rem;
-  width: 100%;
-  font-size: 2rem;
-  font-weight: 600;
 }
 
 .experience-group {
@@ -255,7 +248,7 @@ footer {
   margin-top: 0.5rem;
   text-align: center;
   font-size: 1rem;
-  font-family: var(--primary-font, "Arial, sans-serif");
+  font-family: var(--primary-font);
   color: #000;
   font-weight: 500;
   letter-spacing: 1px;
