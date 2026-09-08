@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>文組都會的 Angular 教學(2) | Ossian Lin - Product Designer</title>
+  <meta name="description" content="讓我們來建立一份新網頁吧！" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/201911.html" />
+  <meta property="og:title" content="文組都會的 Angular 教學(2) | Ossian Lin" />
+  <meta property="og:description" content="讓我們來建立一份新網頁吧！" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*g11d_m0SyRLJD1H0hhBvXA.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/201911.html" />
+  <meta name="twitter:title" content="文組都會的 Angular 教學(2) | Ossian Lin" />
+  <meta name="twitter:description" content="讓我們來建立一份新網頁吧！" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*g11d_m0SyRLJD1H0hhBvXA.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        文組都會的 Angular 教學(2)
+      </h1>
+
+      <p class="article-main-subtitle">
+        讓我們來建立一份新網頁吧！
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Nov 2019
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*g11d_m0SyRLJD1H0hhBvXA.png"
+          data-width="1920" data-height="937" data-is-featured="true"
+          src="https://cdn-images-1.medium.com/max/800/1*g11d_m0SyRLJD1H0hhBvXA.png"></figure>
+      <h2>前言</h2>
+      <p>好的，<a
+          href="https://medium.com/sekkei-tori-seikatsu/%E6%96%87%E7%B5%84%E9%83%BD%E6%9C%83%E7%9A%84-angular-%E6%95%99%E5%AD%B8-1-ccf11fdb3c31"
+          data-href="https://medium.com/sekkei-tori-seikatsu/%E6%96%87%E7%B5%84%E9%83%BD%E6%9C%83%E7%9A%84-angular-%E6%95%99%E5%AD%B8-1-ccf11fdb3c31"
+          class="markup--anchor markup--p-anchor" target="_blank">上一篇</a>教了各位如何安裝
+        Angular，但最後有提到少了一步普遍教學文章會提的—建置一份新網頁作測試，所以這次的教學主要就是提這部分，也會稍微介紹一些介面上的檔案。</p>
+      <p>網路上一定有許多神人教學文章，但資質駑鈍的我有看也不一定懂。所以就嘗試把自己摸索的過程以圖文並茂的方式盡可能寫成文章。</p>
+      <p>喔，對了，這系列不太會寫什麼複雜的內容，我只打算按部就班以最簡單的方式寫成。另外有很多可能會比較主觀，若有建議歡迎賜正。</p>
+      <hr class="solid">
+      <h2>事前工作</h2>
+      <p>OK，在正式建置之前，我們先來挑要建立的路徑位置，就是你要把東西存在哪裡這樣，任君挑選、沒有限制。</p>
+      <p>接下來要用命令提示字元(cmd)來切換路徑。</p>
+      <p>怎麼打開 cmd 請回<a
+          href="https://medium.com/sekkei-tori-seikatsu/%E6%96%87%E7%B5%84%E9%83%BD%E6%9C%83%E7%9A%84-angular-%E6%95%99%E5%AD%B8-1-ccf11fdb3c31"
+          data-href="https://medium.com/sekkei-tori-seikatsu/%E6%96%87%E7%B5%84%E9%83%BD%E6%9C%83%E7%9A%84-angular-%E6%95%99%E5%AD%B8-1-ccf11fdb3c31"
+          class="markup--anchor markup--p-anchor" target="_blank">上一篇</a>有教學，這邊直接簡單說切換路徑這件事。</p>
+      <p>cmd 中切換路徑的指令為<code class="markup--code markup--p-code">cd</code>，接著把複製的資料夾路徑貼上、然後按下<code
+          class="markup--code markup--p-code">Enter</code>即可，實際大概會像這樣：</p>
+      <pre name="5e09" id="5e09" class="graf graf--pre graf-after--p">cd &lt;資料夾路徑&gt; (記得要跟cd空一格)</pre>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*xnTBZY5fD8j6v4H0zFG0eQ.png"
+          data-width="1014" data-height="174"
+          src="https://cdn-images-1.medium.com/max/800/1*xnTBZY5fD8j6v4H0zFG0eQ.png">
+        <figcaption class="imageCaption">將資料夾路徑 ctrl-c 然後再 ctrl-v 到 cmd 上。</figcaption>
+      </figure>
+      <p>這邊再教一個打開 cmd 的方法，同時也可以直接做完切換路徑。</p>
+      <p>首先到選定的資料夾內，點選上方路徑，然後滑鼠左鍵點下去輸入<code class="markup--code markup--p-code">cmd</code>再按下 <code
+          class="markup--code markup--p-code">Enter</code>就會自動打開並切換好路徑的命令提示字元(cmd)了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*h_Q-YsZw9923LdDplCDt8w.png"
+          data-width="1004" data-height="316"
+          src="https://cdn-images-1.medium.com/max/800/1*h_Q-YsZw9923LdDplCDt8w.png">
+        <figcaption class="imageCaption">從資料夾上方路徑點選華樹左鍵後輸入完成就會自動開啟 cmd</figcaption>
+      </figure>
+      <hr class="solid">
+      <h2>建置新網頁</h2>
+      <p>OK，這樣總算能開始建置了。</p>
+      <p>首先輸入專案名稱，指令如下：</p>
+      <pre name="0fbc" id="0fbc" class="graf graf--pre graf-after--p">ng new &lt;你想要的專案名稱&gt;</pre>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*VFR5OKW3EOG_6XzjAssx2w.png"
+          data-width="1150" data-height="120"
+          src="https://cdn-images-1.medium.com/max/800/1*VFR5OKW3EOG_6XzjAssx2w.png">
+        <figcaption class="imageCaption">輸入後如圖所示。</figcaption>
+      </figure>
+      <p>輸入完後按下<code class="markup--code markup--p-code">Enter</code>就會跳出下一步，這邊問的是：「是否要加入 Angular 路由？」本次 demo
+        建置我們先選擇不要，因此輸入<code class="markup--code markup--p-code">N(大小寫皆可)</code>並按下<code
+          class="markup--code markup--p-code">Enter</code>進入下一步。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*aajczSK1lG2VedJ8nXwaPw.png"
+          data-width="1148" data-height="138"
+          src="https://cdn-images-1.medium.com/max/800/1*aajczSK1lG2VedJ8nXwaPw.png">
+        <figcaption class="imageCaption">輸入 N 然後 Enter 下一步</figcaption>
+      </figure>
+      <p>OK，最後一步會問說想要的 stylesheet 格式。</p>
+      <p>這邊有五種選擇給你挑，基本上本質都是 CSS (就是管理你版面顏色、位置等)，在這邊我們挑選 CSS 最基本的開局就好。</p>
+      <p>使用鍵盤上的方向鍵來挑選，然後按下<code class="markup--code markup--p-code">Enter</code>就會自動開始建置了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*34MpyZlIPdqOfOT-6q1T0w.png"
+          data-width="1148" data-height="250"
+          src="https://cdn-images-1.medium.com/max/800/1*34MpyZlIPdqOfOT-6q1T0w.png">
+        <figcaption class="imageCaption">使用最基本的 CSS 來開局。</figcaption>
+      </figure>
+      <p>接下來系統會自動跑一堆東西就稍微眼睛放鬆一下，等全部跑完後會再次跳出可輸入的狀態，基本上這樣就建置完成了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*ikN_9ibAeR9bLCE48bK0Kg.png"
+          data-width="1530" data-height="798"
+          src="https://cdn-images-1.medium.com/max/800/1*ikN_9ibAeR9bLCE48bK0Kg.png">
+        <figcaption class="imageCaption">建置完成畫面示意圖。</figcaption>
+      </figure>
+      <p>如果你害怕的話，可以點開存放專案的資料夾確認，基本上會有一個稍早輸入專案名稱的資料夾出現，然後裡面有不少檔案。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*ymHu7UPA60hZdkd-exmkWQ.png"
+          data-width="973" data-height="145" src="https://cdn-images-1.medium.com/max/800/1*ymHu7UPA60hZdkd-exmkWQ.png">
+        <figcaption class="imageCaption">OK，這樣就代表有建置。</figcaption>
+      </figure>
+      <p>那至於如何開啟網頁呢？一樣先回到 cmd 來輸入指令，然後按下<code class="markup--code markup--p-code">Enter</code>：</p>
+      <pre name="7544" id="7544" class="graf graf--pre graf-after--p">ng serve</pre>
+      <p>「诶诶，怎麼出現紅紅的字，是不是壞了！？」</p>
+      <p>沒錯，因為沒切換到專案路徑內，因此無法開啟專案的網頁；所以必須先切換路徑後，再輸入開啟網頁的指令。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*30oBXbIM_OOWI7LadVPTfw.png"
+          data-width="1013" data-height="102"
+          src="https://cdn-images-1.medium.com/max/800/1*30oBXbIM_OOWI7LadVPTfw.png">
+        <figcaption class="imageCaption">記得一定要切換到專案資料夾內。</figcaption>
+      </figure>
+      <p>切換路徑的方法同本章前面教學，其實原本的 cmd 視窗是已經可以關閉的了，不過這邊為了一次教到底所以直接繼續下去。</p>
+      <p>確定切換路徑後，也輸入完指令並按下，系統就會自動跑一下，然後產生一個網址：<a href="http://localhost:4200/" data-href="http://localhost:4200/"
+          class="markup--anchor markup--p-anchor" rel="nofollow" target="_blank">http://localhost:4200/</a></p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*Kh_aRiNLECqqReB24s6iHw.png"
+          data-width="1014" data-height="238"
+          src="https://cdn-images-1.medium.com/max/800/1*Kh_aRiNLECqqReB24s6iHw.png">
+        <figcaption class="imageCaption">由系統產生的預設網址(紅框處)。</figcaption>
+      </figure>
+      <p>直接打開隨意一個瀏覽器(就是你的 Google Chrome 啦)，然後手動輸入，或是滑鼠反白後<code
+          class="markup--code markup--p-code">ctrl+c, ctrl+v</code>貼上後<code
+          class="markup--code markup--p-code">Enter</code> 就會跳到一個預設網頁。</p>
+      <p>在這網頁內的東西都是 Angular 預設建好的，我們只要確認 Title 的地方是否為專案名稱即可，其他按鈕連結都會導入至 Angular 相關網站。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*6iTSYmtC4gnlT7mvAsoqLA.png"
+          data-width="1916" data-height="967"
+          src="https://cdn-images-1.medium.com/max/800/1*6iTSYmtC4gnlT7mvAsoqLA.png">
+        <figcaption class="imageCaption">由於 Angular 有預設好網頁內容，因此打開後確認是專案名稱(紅框處)即代表建置成功。</figcaption>
+      </figure>
+      <p>恩，這樣就大功告成了。</p>
+      <hr class="solid">
+      <h2>從 VS code 開啟</h2>
+      <p>好的，可以先把瀏覽器關了。</p>
+      <p>接下來還有另外一件事—「如何從 VS code 開啟專案」</p>
+      <p>前一篇有提過 VS code 會用來之後的網頁編輯，這時候我們就要使用 VS code 來開啟專案，同時試著重新叫出剛剛的網頁。</p>
+      <p>這邊教兩種開啟 VS code 的方式：</p>
+      <ul class="postList">
+        <li name="a819" id="a819" class="graf graf--li graf-after--p">從 cmd 下指令開啟。</li>
+        <li name="2d15" id="2d15" class="graf graf--li graf-after--li graf--trailing">從 VS code 開啟。</li>
+      </ul>
+      <hr class="solid">
+      <h2>從 cmd 下指令開啟</h2>
+      <p>這個比較簡單，確認好 cmd 是否為專案路徑後，輸入<code class="markup--code markup--p-code">code .</code>然後按下 <code
+          class="markup--code markup--p-code">Enter</code>就會自動開啟 VS code，而且是直接到專案資料夾。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*OcD17hvCezPA-0J4oLldyQ.png"
+          data-width="1017" data-height="113"
+          src="https://cdn-images-1.medium.com/max/800/1*OcD17hvCezPA-0J4oLldyQ.png">
+        <figcaption class="imageCaption">沒錯，就是這麼簡單，給他按下去就對了。</figcaption>
+      </figure>
+      <h2>從 VS code 開啟</h2>
+      <p>既然是從 VS code 手動開啟，那當然要先開 VS code 咯~</p>
+      <p>開啟之後每個人畫面可能稍微有點不同，畢竟有可能已經有個人化設定過，不過別擔心，這都不是重點。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*1CyJyCLzaB7LCqA0e1cusw.png"
+          data-width="1924" data-height="1044"
+          src="https://cdn-images-1.medium.com/max/800/1*1CyJyCLzaB7LCqA0e1cusw.png">
+        <figcaption class="imageCaption">OK，我的剛好開啟的時候跳版本更新資訊。</figcaption>
+      </figure>
+      <p>我們要開啟的目標是「專案的『資料夾』」，因此只要找到選擇開啟資料夾的選項，並找到專案資料夾，給他開啟下去就對了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*kKSHw6GjM-iHajxA6X40Aw.png"
+          data-width="785" data-height="517" src="https://cdn-images-1.medium.com/max/800/1*kKSHw6GjM-iHajxA6X40Aw.png">
+        <figcaption class="imageCaption">你可以手動選擇，或是輸入那兩段指令開啟。</figcaption>
+      </figure>
+      <p>選擇資料夾要記得找到「專案資料夾內」再做選擇。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*AsPgv6crjbZx1MT3cLPJBA.png"
+          data-width="940" data-height="710" src="https://cdn-images-1.medium.com/max/800/1*AsPgv6crjbZx1MT3cLPJBA.png">
+        <figcaption class="imageCaption">一定要記得是在專案資料夾內才做選擇動作。</figcaption>
+      </figure>
+      <p>選擇確認後就會開啟資料夾，基本上如下圖所示就是完成了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*Byw908QqxSNKYtyMO_BzgA.png"
+          data-width="543" data-height="440" src="https://cdn-images-1.medium.com/max/800/1*Byw908QqxSNKYtyMO_BzgA.png">
+        <figcaption class="imageCaption">密密麻麻的資料夾先不要管他。</figcaption>
+      </figure>
+      <p>為了確認是真的開起專案資料夾，同時也操作一次用 VS code 開啟剛剛的預設網頁，接下來直接輸入<code class="markup--code markup--p-code">ctrl+`</code>來開啟終端機。
+      </p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*ZCsxoDmfAOadrzY11rHivA.png"
+          data-width="1098" data-height="495"
+          src="https://cdn-images-1.medium.com/max/800/1*ZCsxoDmfAOadrzY11rHivA.png">
+        <figcaption class="imageCaption">終端機介面會在主畫面下方。</figcaption>
+      </figure>
+      <p>一樣輸入稍早教的指令<code class="markup--code markup--p-code">ng serve</code>然後<code
+          class="markup--code markup--p-code">Enter</code>按下去跑一下，一樣會產出一段跟之前在 cmd 產出的網址，這邊方便一點是可以對網址<code
+          class="markup--code markup--p-code">ctrl+滑鼠</code>，就可以開啟網站了。</p>
+      <p>以上就是基本的 VS code 開啟資料夾教學。</p>
+      <hr class="solid">
+      <h2>後記</h2>
+      <p>原本考慮直接講解一些小東西，例如：檔案介紹、替換 html 內容、實際 ts 簡易操作，但發現一來講太多東西會造成閱讀壓力、二來我也懶了，乾脆丟到下一篇慢慢講，因此這次就先到這邊。</p>
+      <p>希望這圖文並茂的文章能讓你感到手把手般、有安心踏實的教學。</p>
+      <p>如果有任何疑問或是建議都歡迎賜正。</p>
+      <p>To be continued…</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

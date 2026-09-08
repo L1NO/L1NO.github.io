@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>建立屬於個人產品的忠臣們 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="關於淨推薦分數這方法。" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202011.html" />
+  <meta property="og:title" content="建立屬於個人產品的忠臣們 | Ossian Lin" />
+  <meta property="og:description" content="關於淨推薦分數這方法。" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*hcdcnDKzF5HegEcafBxePw.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202011.html" />
+  <meta name="twitter:title" content="建立屬於個人產品的忠臣們 | Ossian Lin" />
+  <meta name="twitter:description" content="關於淨推薦分數這方法。" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*hcdcnDKzF5HegEcafBxePw.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        建立屬於個人產品的忠臣們
+      </h1>
+
+      <p class="article-main-subtitle">
+        關於淨推薦分數這方法。
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Nov 2020
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*hcdcnDKzF5HegEcafBxePw.png"
+          data-width="1920" data-height="1080" data-is-featured="true"
+          src="https://cdn-images-1.medium.com/max/800/1*hcdcnDKzF5HegEcafBxePw.png"></figure>
+      <h2>前言</h2>
+      <p>目前工作多半是在輔導新創團隊，而其中有些廠商是在做 app 設計的，正好需要一些 UX 業師的諮詢，就請來了 Nor 老師來幫忙解答，也正好藉這機會多學一點。</p>
+      <p>本次輔導內容老師大概提了四個主題，其中一塊正是本篇的主題—淨推薦分數(Net Promoter Score,
+        NPS)，不過老師的內容礙於時間限制，核心重點大略提及，細節部份和操作就得靠學生各自努力，因此本篇會加入個人後續閱讀他人文章所成的心得。</p>
+      <p>一樣地，熟知 NPS 的高手輩出，若有不及之處，或是有誤都歡迎給予賜正。</p>
+      <hr class="solid">
+      <h2>前導</h2>
+      <blockquote>Fred Reichheld: “Good Profit, Bad Profit.”</blockquote>
+      <p>客戶付錢買東西這件事情想必是一般常識，但怎麼確定他們是真心想買，而非偶然、嘗試的心態呢？</p>
+      <p>通常上司只會 care 有錢進來，但對產品來說有沒有可能只是炒短線？又或是像免洗餐具一樣用過就丟？如果是這樣的話，對於公司整體來說實際上得到的是「惡性利潤」。</p>
+      <p>這時候通常我們都會覺得：「那就來做問卷調查」。當然可以，但問卷方式許多種，要如何挑出好的問卷調查方式跟分析，就讓我們先直接實作吧！</p>
+      <hr class="solid">
+      <h2>實作</h2>
+      <p>在設計問卷的時候，先對內容下點功夫。其中問卷資料通常包含：每位使用者的推薦意願、每位使用者在特定項目下的滿意度分數，甚至加入特定項目下的使用者開放式回復等。</p>
+      <p>也因此就會有常見類似的問題如下：</p>
+      <blockquote>「你會將這間公司/產品/服務推薦給朋友或同事嗎？」</blockquote>
+      <p>這種問法大概是常見的問卷問題，通常會要求你從 0~10 分做評分，0 分代表非常不願意推薦，10 分代表非常願意推薦。不過，會選擇 0~10 分、分 11 個區間其實是有其含意的。</p>
+      <p>OK，那麼該如何計算呢？</p>
+      <p>首先將基本調查後的評分整理，將顧客分成 9~10 分的「推薦者」、7~8分為「中立者」，以及 6 分以下的「批評者」。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*74ahiF_HjVYdk2tqKm7A6g.png"
+          data-width="1709" data-height="835"
+          src="https://cdn-images-1.medium.com/max/800/1*74ahiF_HjVYdk2tqKm7A6g.png"></figure>
+      <p>計算好每個類型的人數各有多少後，將<strong class="markup--strong markup--p-strong">每個類型的人數分別除以總人數</strong>來取得各類型的百分比。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*3G5H52XNq0dELia30k9vxQ.png"
+          data-width="1761" data-height="959"
+          src="https://cdn-images-1.medium.com/max/800/1*3G5H52XNq0dELia30k9vxQ.png"></figure>
+      <p>接著，將<strong
+          class="markup--strong markup--p-strong">「推薦者」的占比去減「批評者」占比</strong>，所得到的數字正是我們要的淨推薦值。這邊要注意的是，由於淨推薦分數一律為整數而非百分比，也因此本次範例得到
+        NPS 分數應為 -10 分。NPS 分數區間會在 -100~100 之間，所以淨推薦分數是負數也是有可能的。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*W1DpVf9yH5BcN8UAjKrSjw.png"
+          data-width="1890" data-height="585"
+          src="https://cdn-images-1.medium.com/max/800/1*W1DpVf9yH5BcN8UAjKrSjw.png"></figure>
+      <p>整理公式如下：</p>
+      <blockquote>(推薦型人數 — 批評型人數) / (總人數) x 100</blockquote>
+      <p>NPS 的計算就是這麼簡單！除了動手算，或是拿出 Excel 等工具外，網路上其實也是有不少網站提供你快速去計算 NPS 了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*ro9owUqMk_8dJS0xspoXgg.png"
+          data-width="1920" data-height="867"
+          src="https://cdn-images-1.medium.com/max/800/1*ro9owUqMk_8dJS0xspoXgg.png">
+        <figcaption class="imageCaption">網路上也是有許多提供計算的線上工具。(<a href="http://www.npscalculator.com/en"
+            data-href="http://www.npscalculator.com/en" class="markup--anchor markup--figure-anchor" rel="noopener"
+            target="_blank">連結</a>)</figcaption>
+      </figure>
+      <h2>等等，這區間的界定是哪裡來的？</h2>
+      <p>第一次聽老師介紹的時候其實也有這個疑問，於是經過後續閱讀後才知道這細節的由來。首先，我們先看最糟的情況會得到多少平均跟 NPS。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*XtNcQN-10rhxtySLCI5Omg.png"
+          data-width="1752" data-height="983"
+          src="https://cdn-images-1.medium.com/max/800/1*XtNcQN-10rhxtySLCI5Omg.png"></figure>
+      <p>當所有人都選「非常不喜歡」我們可以得到平均為 0，合理。快速計算 NPS 得到 -100 分，這目前來看也沒甚麼問題，因此往當大家都集中在 6 分的時候會得到甚麼結果。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*u-h7dn00xljjgPIwp8z1vQ.png"
+          data-width="1726" data-height="979"
+          src="https://cdn-images-1.medium.com/max/800/1*u-h7dn00xljjgPIwp8z1vQ.png"></figure>
+      <p>當所有人都選 6 分的時候，平均計算出來為 6，合理。但來到 NPS 快速計算得到的結果仍為 -100，明明已經是平均之上了，為何還會得到負數。這也就是為什麼會取 0~6
+        作為一個區間的原因，當你都平均之上了卻還是負分？這其中一定有甚麼原因。</p>
+      <p>那麼，7~8 跟 9~10 這兩個區間又是怎麼來的呢？直接一點來看已經剩下 4 個數字可以做拆分，所以兩兩一組就得到 7~8 跟 9~10 兩組。我們再稍微著重於 8、9 兩個交界點上，首先來看當所有人都選擇 8
+        分的時候。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*VLzyZk2X8Q_rnk80y4UUig.png"
+          data-width="1711" data-height="977"
+          src="https://cdn-images-1.medium.com/max/800/1*VLzyZk2X8Q_rnk80y4UUig.png"></figure>
+      <p>平均值為 8，NPS 則得到 0，而當所有人都集中到 9 的時候 NPS 就達到 100分了，也就是說將 7~8 為一組、9~10 為一組的假設是可行的。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*X49uAQPbH9_Yv7__VuLEAg.png"
+          data-width="1683" data-height="970"
+          src="https://cdn-images-1.medium.com/max/800/1*X49uAQPbH9_Yv7__VuLEAg.png"></figure>
+      <p>當然，目前我也還未看到真的解釋清楚的，不過其中似乎也與 11 區間有關，這部分有待再鑽研。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*9rzaKyl3rrEibZUMdf61ZA.jpeg"
+          data-width="750" data-height="492"
+          src="https://cdn-images-1.medium.com/max/800/1*9rzaKyl3rrEibZUMdf61ZA.jpeg">
+        <figcaption class="imageCaption">dude, 這真的有點奇異。</figcaption>
+      </figure>
+      <hr class="solid">
+      <h2>優點與缺點</h2>
+      <p>最主要的優點大概就是易於使用而且直觀，從剛剛的實作就可看到，基本上不需要靠甚麼艱澀的統計學就可以執行。這邊我們再拿最初調查完的資料來看。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*aG-2J7xriv1AhMIFUPgD3Q.png"
+          data-width="1748" data-height="904"
+          src="https://cdn-images-1.medium.com/max/800/1*aG-2J7xriv1AhMIFUPgD3Q.png"></figure>
+      <p>在上圖中可見整體感覺上好像偏向平均之上，6~10 分就有 8 個人，計算平均一下可以得到 6.8，看起來確實是不錯的，然而 NPS 算完卻是 -10，這樣的結果就相較於只計算平均就下定論來得更加嚴謹。</p>
+      <p>
+        將顧客區分為三大類：推薦型、批評型和中立型。我們雖然著重於推薦與批評型兩種類型上，中立行的存在看似沒有被納入計算或做考量，但實際上他們通常對於產品或服務是滿意的，只是沒有滿意到他們願意幫忙推廣的程度。某種層面上就跟中立選民一樣，因此如何處理好這三個類型也正是給予了公司明確的目標。另外，也能藉由這樣的分類名稱後，讓同事之間使用同一系列的詞彙來指涉不同類型的客戶。不過這是理想啦~
+      </p>
+      <p>進階一點還可以拿著你公司的產品/服務直接去跟別家公司，甚至競爭對手做比較，藉以了解您與最大競爭對手之間的實力差異。但相對的，也可能凸顯了淨推薦分數系統不夠具體的質疑。</p>
+      <p>另外，NPS 採用 11 個區間有著他的原因所在，但對於回答問題者來說卻可能是個反感點的存在，除了分數區間大之外，這些數字對他們來說有著甚麼意義也不明白。</p>
+      <p>從上述來看也許能幫助了解客戶忠誠度，但單從數字來看無法具體指出顧客變成批評者的原因。對於這部分有許多解決方法，例如再設計更具體的市場研究調查問卷、或從滿意度調查問卷進行後續追蹤。</p>
+      <hr class="solid">
+      <h2>後記</h2>
+      <p>本次輔導時間大約 2 小時左右，但基本上還是非常不夠，我很認同老師建議開成工作坊這件事，也希望明年有計畫預算能安排。</p>
+      <p>淨推薦分數是我第一次正式學習到的方法，過去其實有寫過一篇講述常見的評價方式文章(<a href="https://link.medium.com/8rJ7DFHOsbb"
+          data-href="https://link.medium.com/8rJ7DFHOsbb" class="markup--anchor markup--p-anchor" rel="noopener"
+          target="_blank">點我傳送</a>)，這次聽完老師介紹可以說是獲益良多，尤其在後續自己又去閱讀更多文章後，對於 NPS 的特色又更加瞭解。當然，也還有著許多為理解的部分，將會持續去做學習。尤其是當下對於採用
+        11 區間而非 7 格區間等方式也還未深入理解。</p>
+      <p>NPS
+        只是第一步而已，瞭解造成使用者對於產品推薦意願變動的原因為何，而進一步去解決問題，以提昇使用者的推薦意願來快速成長。或許今天算出來的分數很低，那麼該怎麼去改善呢？如果今天公司得到分析的結果有計畫性的亡羊補牢都還是好事，解決了揭露出的問題點，然而有很多時候甚至是連
+        NPS 都沒做持續失敗。這不是萬能、多麼崇高的指標，但能有效的點出公司/產品/服務等現況，來協助做改變，我想這才是最重要的使用方式。</p>
+      <p>以上，我們下次見，啾~</p>
+      <hr class="solid">
+      <h2>參考資料</h2>
+      <ul class="postList">
+        <li name="75fa" id="75fa" class="graf graf--li graf-after--h3"><a
+            href="https://blog.usejournal.com/net-promoter-score-considered-harmful-and-what-ux-professionals-can-do-about-it-fe7a132f4430"
+            data-href="https://blog.usejournal.com/net-promoter-score-considered-harmful-and-what-ux-professionals-can-do-about-it-fe7a132f4430"
+            class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Net Promoter Score Considered
+            Harmful (and What UX Professionals Can Do About It)</a></li>
+        <li name="565f" id="565f" class="graf graf--li graf-after--li"><a
+            href="https://www.questionpro.com/net-promoter-score-formula.html"
+            data-href="https://www.questionpro.com/net-promoter-score-formula.html"
+            class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">Learn How to Use Net Promoter Score
+            (NPS) Formula</a></li>
+        <li name="d06d" id="d06d" class="graf graf--li graf-after--li graf--trailing"><a
+            href="https://tingcc.medium.com/%E6%B7%A8%E6%8E%A8%E8%96%A6%E5%80%BC-net-promoter-score-nps-%E7%9A%84%E5%AF%A6%E4%BD%9C%E5%88%86%E6%9E%90-ba10c3074bc8"
+            data-href="https://tingcc.medium.com/%E6%B7%A8%E6%8E%A8%E8%96%A6%E5%80%BC-net-promoter-score-nps-%E7%9A%84%E5%AF%A6%E4%BD%9C%E5%88%86%E6%9E%90-ba10c3074bc8"
+            class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">淨推薦值(Net Promoter
+            Score,NPS)的實作分析</a></li>
+      </ul>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

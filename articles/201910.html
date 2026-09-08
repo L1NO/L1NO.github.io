@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>文組都會的 Angular 教學(1) | Ossian Lin - Product Designer</title>
+  <meta name="description" content="讓我們從安裝說起。" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/201910.html" />
+  <meta property="og:title" content="文組都會的 Angular 教學(1) | Ossian Lin" />
+  <meta property="og:description" content="讓我們從安裝說起。" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*gyW7PLKkLVvLFcFP68SKAQ.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/201910.html" />
+  <meta name="twitter:title" content="文組都會的 Angular 教學(1) | Ossian Lin" />
+  <meta name="twitter:description" content="讓我們從安裝說起。" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*gyW7PLKkLVvLFcFP68SKAQ.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        文組都會的 Angular 教學(1)
+      </h1>
+
+      <p class="article-main-subtitle">
+        讓我們從安裝說起。
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Oct 2019
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*gyW7PLKkLVvLFcFP68SKAQ.png"
+          data-width="1920" data-height="867" data-is-featured="true"
+          src="https://cdn-images-1.medium.com/max/800/1*gyW7PLKkLVvLFcFP68SKAQ.png">
+        <figcaption class="imageCaption">Angular 首頁</figcaption>
+      </figure>
+      <h2>前言</h2>
+      <p>「你是不是瞧不起文組，在那邊戰文理組！」</p>
+      <p>呃，我也是菜鳥初學者。</p>
+      <p>雖然本身也是理工背景但只會寫 Matlab，基於工作需求開始學習寫網頁前端。_(:з」∠)_</p>
+      <p>網路上一定有許多神人教學文章，但資質駑鈍的我有看也不一定懂。所以就嘗試把自己摸索的過程以圖文並茂的方式盡可能寫成文章。</p>
+      <p>喔，對了，這系列不太會寫什麼複雜的內容，我只打算按部就班以最簡單的方式寫成。另外有很多可能會比較主觀，若有建議歡迎賜正。</p>
+      <hr class="solid">
+      <h2>檔案下載</h2>
+      <p>撇除電腦網路不說，你只需要下載兩樣東西：</p>
+      <ul class="postList">
+        <li name="5869" id="5869" class="graf graf--li graf-after--p">Node.js</li>
+        <li name="78fd" id="78fd" class="graf graf--li graf-after--li">編輯器</li>
+      </ul>
+      <h2>Node.js</h2>
+      <p>進去<a href="https://nodejs.org/en/" data-href="https://nodejs.org/en/" class="markup--anchor markup--p-anchor"
+          rel="noopener" target="_blank">官方網站</a>，挑一個你喜歡的版本下載，然後按部就班安裝就對了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*MBBvaijRyOeGNWeqBoK1zQ.png"
+          data-width="1920" data-height="937"
+          src="https://cdn-images-1.medium.com/max/800/1*MBBvaijRyOeGNWeqBoK1zQ.png">
+        <figcaption class="imageCaption">Node.js 大概長這樣，挑一個你喜歡的版本安裝吧。</figcaption>
+      </figure>
+      <p>「不是，有兩個版本，還有一堆英文，差別在哪啊？」</p>
+      <p>呃，好喔，稍微解釋一下。</p>
+      <blockquote>LTS 是大多數人都在使用的版本；Current 則是目前最新的版本。</blockquote>
+      <p>個人是不強求一定要挑哪個版本啦，反正我是挑 LTS 就是了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*HzZynaZxydr4D9LJq66hdA.png"
+          data-width="790" data-height="239" src="https://cdn-images-1.medium.com/max/800/1*HzZynaZxydr4D9LJq66hdA.png">
+        <figcaption class="imageCaption">左邊多人版本，右邊最新版本。</figcaption>
+      </figure>
+      <p>下載完檔案後，點兩下左鍵開始安裝 Node.js。第一頁沒啥重點，就是 Next 下一步就對了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*gQLcKXRQLxPJVt0E-Qvs1w.png"
+          data-width="495" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*gQLcKXRQLxPJVt0E-Qvs1w.png">
+        <figcaption class="imageCaption">開始安裝第一步</figcaption>
+      </figure>
+      <p>第二頁是要你同意一些條款，記得把 “I accept the terms in the License Agreement” 前面的方框打勾，然後<code
+          class="markup--code markup--p-code">Next</code>往下。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*fJAwHcLDmoKjl6rM4rV47g.png"
+          data-width="495" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*fJAwHcLDmoKjl6rM4rV47g.png">
+        <figcaption class="imageCaption">嘛，大概也沒人會仔細看完吧。</figcaption>
+      </figure>
+      <p>第三頁是詢問你要安裝在哪個地方，通常會預設在電腦本體系統相關程式的硬碟，這邊因為個人有專門丟程式的硬碟所以有些不同。也沒甚麼特別的地方，直接<code
+          class="markup--code markup--p-code">Next</code>往下。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*Bvu16HJ45fTiTT0mc_3Cdw.png"
+          data-width="495" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*Bvu16HJ45fTiTT0mc_3Cdw.png">
+        <figcaption class="imageCaption">通常會預設在系統碟</figcaption>
+      </figure>
+      <p>接下來這頁可能會讓人感到驚慌，但不用擔心，主要是讓人客製化安裝的。一樣不用想太多，<code class="markup--code markup--p-code">Next</code>直接往下。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*gsSz1Y4TliUJ-8FpgJkE2g.png"
+          data-width="495" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*gsSz1Y4TliUJ-8FpgJkE2g.png">
+        <figcaption class="imageCaption">沒特別需求就照官方預設的安裝吧</figcaption>
+      </figure>
+      <p>這邊是問你要不要順便裝其他可能需要用到的工具，原先預設是沒打勾的，我個人剛好有需要所以勾選；如果沒特別需求，記得<strong
+          class="markup--strong markup--p-strong">不要</strong>打勾，確定後再點<code
+          class="markup--code markup--p-code">Next</code>往下。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*N-xgd03-O9R8E9U32h4Kew.png"
+          data-width="495" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*N-xgd03-O9R8E9U32h4Kew.png">
+        <figcaption class="imageCaption">沒特別需求<strong class="markup--strong markup--figure-strong">不要</strong>打勾
+        </figcaption>
+      </figure>
+      <p>一切就緒，就點下<code class="markup--code markup--p-code">Install</code>正式安裝吧。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*do87KUJlcPAuG1Ny3hkY5g.png"
+          data-width="495" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*do87KUJlcPAuG1Ny3hkY5g.png">
+        <figcaption class="imageCaption">請務必確定是否<strong class="markup--strong markup--figure-strong">沒有</strong>打勾
+        </figcaption>
+      </figure>
+      <p>好了，其實你已成功安裝完 1/2 的 Angular 了，接下來你需要一個可以撰寫的地方。</p>
+      <h2>編輯器</h2>
+      <p>編輯器有很多選擇，例如較有名的 <a href="https://notepad-plus-plus.org/downloads/"
+          data-href="https://notepad-plus-plus.org/downloads/" class="markup--anchor markup--p-anchor" rel="noopener"
+          target="_blank">Notepad++</a>、或是網頁的 <a href="https://stackblitz.com/" data-href="https://stackblitz.com/"
+          class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Stackblitz</a>, <a
+          href="https://codepen.io/" data-href="https://codepen.io/" class="markup--anchor markup--p-anchor"
+          rel="noopener" target="_blank">Codepen</a>, <a href="https://augury.rangle.io/"
+          data-href="https://augury.rangle.io/" class="markup--anchor markup--p-anchor" rel="noopener"
+          target="_blank">Augury</a>，甚至打開內建的文字編輯器也是可以。如果沒想法不如跟我一樣看到最多人推薦的就挑來用吧！微軟推出的 <a
+          href="https://code.visualstudio.com/" data-href="https://code.visualstudio.com/"
+          class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Visual Studio Code</a>
+        是近期比較多人推薦使用的，介面上也頗簡潔；另外，也有許多擴充功能來讓使用者更客製化。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*mDnwF2LRB3lRu9VebEwtEg.png"
+          data-width="1920" data-height="937"
+          src="https://cdn-images-1.medium.com/max/800/1*mDnwF2LRB3lRu9VebEwtEg.png">
+        <figcaption class="imageCaption">VS code 版本選擇建議選 Stable Build</figcaption>
+      </figure>
+      <p>下載完成後，一樣點開直接安裝。VS code 安裝是繁體中文介面，所以這邊講解上比較沒甚麼需要解釋的會走快一點。一開始需要接受合約才能往下一步前進，都要安裝了當然是接受咯！</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*0Pqbeudg-bx35hULQbQhag.png"
+          data-width="499" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*0Pqbeudg-bx35hULQbQhag.png">
+        <figcaption class="imageCaption">當然接受合約啊，不然怎麼安裝。</figcaption>
+      </figure>
+      <p>接下來是選擇要安裝的地方，我這邊一樣是放入寫程式用的路徑。一樣沒特別需求的人直接用官方預設好的，點<code class="markup--code markup--p-code">下一步</code>往下。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*R7737SXHqgEIfyLRsZN2fQ.png"
+          data-width="499" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*R7737SXHqgEIfyLRsZN2fQ.png">
+        <figcaption class="imageCaption">一樣挑一個你喜歡的路徑，或是直接使用官方預設好的</figcaption>
+      </figure>
+      <p>接下來這邊就是個問你從&quot;開始&quot;這邊點開要去哪裡找到 VS code，一樣用預設好的就可以了，直接<code class="markup--code markup--p-code">下一步</code>。
+      </p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*xCeOlwunXyD_dhc8tPXoFg.png"
+          data-width="499" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*xCeOlwunXyD_dhc8tPXoFg.png">
+        <figcaption class="imageCaption">不是很重要的步驟，直接往下。</figcaption>
+      </figure>
+      <p>這邊比較特別的是否要執行額外的工作，官方預設「加入 PATH 中」是打勾的，不太需要動到甚麼就直接下一步準備開始安裝。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*XxU77N2fuN8ETRGV_jCV7w.png"
+          data-width="499" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*XxU77N2fuN8ETRGV_jCV7w.png">
+        <figcaption class="imageCaption">沒特別需求一樣忽略，直接往下。</figcaption>
+      </figure>
+      <p>好的，最後要正式安裝前做個確認，沒問題就直接安裝吧。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*syBQ-vlm58jpCebpVwoIiw.png"
+          data-width="499" data-height="387" src="https://cdn-images-1.medium.com/max/800/1*syBQ-vlm58jpCebpVwoIiw.png">
+        <figcaption class="imageCaption">最後確認完畢就開始安裝</figcaption>
+      </figure>
+      <p>安裝完打開後可能會有許多人又感到焦慮，整個介面滿滿的英文，連選單內容都是，然後不敢亂點的情況下不知所措，甚至心想：「诶诶诶，這不是大廠微軟嗎？繁體中文介面呢？」</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*-ZvZWF8tXsxs-dgzarXcNg.png"
+          data-width="2560" data-height="1039"
+          src="https://cdn-images-1.medium.com/max/800/1*-ZvZWF8tXsxs-dgzarXcNg.png">
+        <figcaption class="imageCaption">剛剛安裝不是中文嗎？</figcaption>
+      </figure>
+      <p>沒事，這感覺我懂。我還是在選單中找了一下語言設定的，大概 5 分鐘。</p>
+      <p>然後我就問了 Google 大神。</p>
+      <p>Google 大神很慷慨地給了專業解答，就是 VS code 他老爸—微軟。</p>
+      <p>「 自己去找吧，我把全 VS code 的擴充功能都放在<a href="https://marketplace.visualstudio.com/vscode"
+          data-href="https://marketplace.visualstudio.com/vscode" class="markup--anchor markup--p-anchor" rel="noopener"
+          target="_blank">那裡</a>了。」</p>
+      <p>嗯，點了上面連結的同學進去一定在想：「說好的繁體中文介面呢？」</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*nvFDaAOTc8O4_CVItHH_kw.jpeg"
+          data-width="431" data-height="486"
+          src="https://cdn-images-1.medium.com/max/800/1*nvFDaAOTc8O4_CVItHH_kw.jpeg">
+        <figcaption class="imageCaption">別激動啊！</figcaption>
+      </figure>
+      <p>呃，如果你是趕時間的請往<a
+          href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hant"
+          data-href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hant"
+          class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">這邊</a>，下載並安裝就完成繁體中文化了；不趕時間的容我稍作解釋。</p>
+      <p>簡單來說，就是 VS code 的某些功能是要靠擴充功能來更改，而第一個連結導入到的是擴充功能主頁面，你可以想成是個大賣場；從 VS code 程式內點也可以進行擴充功能的安裝，比較像網路購物。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*iY86u4frFuWXF7XMCTw-Vw.png"
+          data-width="349" data-height="338" src="https://cdn-images-1.medium.com/max/800/1*iY86u4frFuWXF7XMCTw-Vw.png">
+        <figcaption class="imageCaption">VS code 內部擴充功能選項</figcaption>
+      </figure>
+      <p>「好的，我點了，然後呢？」</p>
+      <p>我有嘗試過直接搜尋&quot;中文&quot;但沒有理想答案，不過單純輸入 “Chinese” 是可以的，為了精準一點這邊示範輸入 “Traditional Chinese” 並劃上重點讓各位清楚點。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*CXmAMmGPy8y_pLhQW7Yu3Q.png"
+          data-width="1438" data-height="566"
+          src="https://cdn-images-1.medium.com/max/800/1*CXmAMmGPy8y_pLhQW7Yu3Q.png">
+        <figcaption class="imageCaption">語言包有許多種，建議還是以原廠提供為主</figcaption>
+      </figure>
+      <p>大致上 Visual Studio Code 的安裝教學就到這邊，大致都完成了。</p>
+      <hr class="solid">
+      <h2>開始安裝</h2>
+      <p>好的，接下來打開命令提示字元(cmd)安裝剩下 1/2 的 Angular 吧！</p>
+      <p><em class="markup--em markup--p-em">“OK，Google. How to open cmd?”</em></p>
+      <p>打開命令提示字元的方法有很多種，可以問 Google 大神，這邊就只教兩種方法。</p>
+      <p>第一種方法就是看看你電腦左下角&quot;開始&quot;旁邊是否有個&quot;搜尋&quot;的按鈕，有的話點下去然後輸入<code
+          class="markup--code markup--p-code">cmd</code>就看的到了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*akQie_1Lc7vOKJuHE0io_w.png"
+          data-width="560" data-height="644" src="https://cdn-images-1.medium.com/max/800/1*akQie_1Lc7vOKJuHE0io_w.png">
+        <figcaption class="imageCaption">從搜尋直接叫出命令提示字元方式</figcaption>
+      </figure>
+      <p>沒有的同學也別緊張，另外一個慢慢找的方法就是點開<code class="markup--code markup--p-code">開始</code>→<code
+          class="markup--code markup--p-code">所有應用程式</code>→找到<code
+          class="markup--code markup--p-code">Windows 系統</code>資料夾→點進去就有了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*s8uHRsSJMARTk-GvrjiyvA.png"
+          data-width="954" data-height="736" src="https://cdn-images-1.medium.com/max/800/1*s8uHRsSJMARTk-GvrjiyvA.png">
+        <figcaption class="imageCaption">從開始路徑尋找</figcaption>
+      </figure>
+      <p>「诶诶诶，這是甚麼？這裡是哪裡？我是誰？」</p>
+      <p>冷靜，接下來要安裝了，跟著步驟走保證沒問題。(大概啦)</p>
+      <p>不過在開始之前，先回頭檢查個東西，就是 Node.js。檢查方式很簡單，就是輸入下面這段文字然後看有沒有跑出版本號這樣。</p>
+      <pre name="815b" id="815b" class="graf graf--pre graf-after--p">node -v</pre>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*Vp89ymBbiQvSRb30i7Gelw.png"
+          data-width="604" data-height="150" src="https://cdn-images-1.medium.com/max/800/1*Vp89ymBbiQvSRb30i7Gelw.png">
+      </figure>
+      <p>另外確認是否有安裝到 NPM 的方法就是輸入：</p>
+      <pre name="10b8" id="10b8" class="graf graf--pre graf-after--p">npm -v</pre>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*cN_jrxHnWM_7Wpr6MiSqMw.png"
+          data-width="590" data-height="150" src="https://cdn-images-1.medium.com/max/800/1*cN_jrxHnWM_7Wpr6MiSqMw.png">
+        <figcaption class="imageCaption">上排是沒有安裝時顯示的內容，下排則是有安裝成功的。</figcaption>
+      </figure>
+      <p>好的，如果確認沒問題後，就往下吧！首先，把這段文字複製貼上，或是手動打上去，然後按下鍵盤上的<code class="markup--code markup--p-code">Enter</code>他就開始跑了。</p>
+      <pre name="0130" id="0130" class="graf graf--pre graf-after--p">npm install -g @angular/cli</pre>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*9ot3mr5W4ZkWcrkBkzOCtA.png"
+          data-width="1467" data-height="767"
+          src="https://cdn-images-1.medium.com/max/800/1*9ot3mr5W4ZkWcrkBkzOCtA.png">
+        <figcaption class="imageCaption">哇 say，太神奇了吧！</figcaption>
+      </figure>
+      <p>跑完後他會問你是否要匿名分享資料給 Angular 團隊並附上聲明，這邊就看個人決定吧！公司用的電腦是選擇<code
+          class="markup--code markup--p-code">Yes</code>，家用電腦我則是選擇<code class="markup--code markup--p-code">No</code>。
+      </p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*a0xwPjiwY6wQP8vLTEUEUA.png"
+          data-width="1467" data-height="768"
+          src="https://cdn-images-1.medium.com/max/800/1*a0xwPjiwY6wQP8vLTEUEUA.png">
+        <figcaption class="imageCaption">安裝完成</figcaption>
+      </figure>
+      <p>然後先稍微檢查一下是否安裝成功，在下面輸入這段文字：</p>
+      <pre name="37d3" id="37d3" class="graf graf--pre graf-after--p">ng version</pre>
+      <p>然後就會出現如下圖所示，這樣就是完成 Angular 安裝了。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*FHULNzQZU_LR1uCfDcOZzw.png"
+          data-width="1466" data-height="767"
+          src="https://cdn-images-1.medium.com/max/800/1*FHULNzQZU_LR1uCfDcOZzw.png">
+        <figcaption class="imageCaption">有沒有感覺超酷的。</figcaption>
+      </figure>
+      <hr class="solid">
+      <h2>後記</h2>
+      <p>好的，你已經會安裝 Angular 了，接下來就可以開始寫網頁前端了。</p>
+      <p>有些文章都會介紹建置一份網頁做為測試，不過我覺得留到下一次再說，畢竟開一份新網頁的步驟也差不多，所以這邊就先不做教學。</p>
+      <p>希望這圖文並茂的文章能讓你感到手把手般、有安心踏實的教學。</p>
+      <p>如果有任何疑問或是建議都歡迎賜正。</p>
+      <p>To be continued…</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

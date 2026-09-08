@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>📝Soking 老師週報心得(2023/08/28) | Ossian Lin - Product Designer</title>
+  <meta name="description" content="本週主題：如何畫出爛爛沒人看的 User Flow？" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202308-01.html" />
+  <meta property="og:title" content="📝Soking 老師週報心得(2023/08/28) | Ossian Lin" />
+  <meta property="og:description" content="本週主題：如何畫出爛爛沒人看的 User Flow？" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*MeZYd_b7Oh_x90QjPdf3uQ.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202308-01.html" />
+  <meta name="twitter:title" content="📝Soking 老師週報心得(2023/08/28) | Ossian Lin" />
+  <meta name="twitter:description" content="本週主題：如何畫出爛爛沒人看的 User Flow？" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*MeZYd_b7Oh_x90QjPdf3uQ.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">Others</span>
+      </div>
+
+      <h1 class="article-main-title">
+        📝Soking 老師週報心得(2023/08/28)
+      </h1>
+
+      <p class="article-main-subtitle">
+        本週主題：如何畫出爛爛沒人看的 User Flow？
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Aug 2023
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*MeZYd_b7Oh_x90QjPdf3uQ.png" data-width="1440" data-height="804" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*MeZYd_b7Oh_x90QjPdf3uQ.png"></figure><h2>前言</h2><p>2023 年 8 月第四週週報，同時也是 8 月最後一篇~</p><p>不論在開發功能或是規劃服務流程時，通常都會討論到使用者如何用我們的產品，然後有點故事性的描繪一套流程，就是熟悉的<strong class="markup--strong markup--p-strong">使用者流程(User Flow)</strong>。實際工作上團隊用心討論的使用者流程許多時候畫完也不是大家都能理解，Soking 老師列舉許多、這邊題幾個常見如：到底是針對某個功能還是整件事操作行為的顆粒度不均勻、沒有專注鎖死在使用者身上的觀點變動，以及流程內容寫好寫滿如介面狀態變化、 API 等細節過度展開，這些都是常見在畫使用者流程會遇到的問題。</p><p>當然這是人之常情，想要一張流程圖就塞滿需求跟規格，光是圖像化呈現就比看文字輕鬆了、何況還能一張搞定任誰都想要，但這樣很容易就失焦而忘記原有的目的，最後繪製出來的流程圖自然就會非常混亂、難以辨識閱讀。</p><p>接下來就跟著 Soking 老師本週週報，了解如何分辨及繪製良好的流程圖。</p><hr class="solid"><h2>關於流程圖之目的</h2><p>流程圖就字面上來看即有順序性的一套旅程，就 Soking 老師舉例其本質上跟 RPG 遊戲解任務是一樣的，通常一項任務會要玩家去哪邊、打幾隻怪、撿幾樣東西，或是送跑腿任務。任務過程中可能會碰到許多新事件，但通常都有著明確事項要玩家們完成，例如運送一封信件、收集怪物掉落物等。</p><p>整個任務過程藉由編劇的故事安排讓玩家對於冒險有帶入感，也可能遊戲機制設計讓玩家在執行過程多樣化，這些額外要素的加入讓單純一個跑腿任務、甚至只是個小支線能變得十分有趣，實際上玩家需要完成的事情只有「將包裹送給某位角色」；同理，今天如果我們要設計「接單派送」這類服務，對於外送員在接單派送的動作也是類似概念。從上述說明及舉例，我們可以得知當我們已有明確事項時，在討論及繪製流程圖時最重要的則是「實現目的的必要步驟」。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*MhmcWd-S1FlbOryi5Ixy5w.jpeg" data-width="1280" data-height="641" src="https://cdn-images-1.medium.com/max/800/1*MhmcWd-S1FlbOryi5Ixy5w.jpeg"><figcaption class="imageCaption">在《巫師3》與 NPC 對話中既微妙且頗常讓玩家分心的謎因選項：先來打一場昆特牌！</figcaption></figure><hr class="solid"><h2>由大化小將目標有效拆解</h2><p>既然流程圖的目的是「實現目的的必要步驟」，那麼對於其他狀況的考量就是將大目標拆解成小目標，以利我們前期溝通討論。明確的定義每一個小目標具體該如何「交付」，才能推進到下一個小目標，最終串連起來完成整體目標。以前面提到的跑腿任務或外送貨物，將物品送達指定目的地有許多種方式抵達完成，例如徒步、騎馬、傳送快速移動等，只要是允許的方式都有可能幫助我們完成此步驟所需的結果，但這些方式並非使用者的需求目標。</p><p>在討論及盤點產品過程中，大家總會根據自身情況發散想法，因此經常陷入功能優先、技術優先等討論情境，導致在繪製流程圖時開始塞滿各方需求或條件，讓整份流程圖看上去很繽紛卻凌亂。當我們先針對某項目進行定義時，團隊就能依循流程圖中被識別出需要打造什麼樣的功能機制，沿著脈絡延伸討論相關事項，幫助使用者每一個任務步驟，最終以實現使用者目的。</p><hr class="solid"><h2>確立角色及流程圖的讀者</h2><p>以個人經驗來說挺常繪製使用者流程，而且也不排斥動手繪圖，畢竟是開發及討論時很好用的材料，也是跨團隊溝通時的橋樑。然而多數時候在繪製流程圖時並非經過團隊討論，甚至趨近於零的使用者研究，就必須對於情境進行「通靈」，與此同時在繪製上還有另個問題，就是流程圖的「讀者」。</p><p>這個「讀者」指的不單是團隊內部同仁，還包含跨部門協作同仁。以個人負責內容通常是通靈完後將設計需求傳給 RD 部門，因此在繪製流程圖所交代的畫面、資訊和說明，就必須以 RD 能看得懂的內容撰寫，同時讓其他成員也能讀懂。這樣的繪製流程圖方式品質挺糟的，但用於初次對齊需求的會議上卻是有幫助的，因為彼此能依據這份流程圖對齊視野，即便東缺西漏也能在會議時找出未發現的資訊，將大目標切開成各個小目標讓參與者們挖掘、提出各自需求，有時候可能在討論過程中就發現實際上沒有這項需求呢！</p><hr class="solid"><h2>後記</h2><p>本週 Soking 老師藉由熟悉的 RPG 遊戲中的任務內容，以簡單的方式介紹如何分辨及繪製一份良好的流程圖。對於一份流程圖的繪製主要目的為「將目標定義明確、將步驟由大化小」，讓整體乾淨易讀，太快進入細節很容易讓我們忘記為什麼使用者需要這些功能。最後，實際繪製時我們要確定該流程的主要角色，許多時候提供的流程圖並非自己閱讀，釐清閱讀者角色、同時確保旁人也能閱讀，這樣才能繪製出一份合宜的流程圖。</p><p>題外話，大家熟悉的北極熊 UX Collective 幾天前也上了近期火熱的<em class="markup--em markup--p-em">柏德之門3(Baldur’s Gate 3)</em>討論 UX 寫作(<a href="https://medium.com/user-experience-design-1/the-ux-writing-of-baldurs-gate-3-6ea80e6cc278" data-href="https://medium.com/user-experience-design-1/the-ux-writing-of-baldurs-gate-3-6ea80e6cc278" class="markup--anchor markup--p-anchor" target="_blank">文章連結</a>，需會員)，對於這種文本量龐大、多支線選項的 TRPG 遊戲推薦值得一看。</p><pre data-code-block-mode="0" spellcheck="false" name="5901" id="5901" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">Take away:<br>1. 繪製流程圖常見問題通常都是過於貪心，甚麼都塞而太早展開不必要的細節。<br>2. 流程圖的溝通重點在於將大目標拆解為明確交付的小目標，讓彼此能更加確認需要做的事情。<br>3. 團隊依循流程圖的步驟，去延伸拓展打造相關功能機制，達到確保幫助使用者能達成目的。</span></pre><p>以上，我們下週見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

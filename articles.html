@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing | Ossian Lin - Product Designer</title>
+  <meta name="description"
+    content="A curated collection of essays, practical frameworks, and research notes on product design, UX research, and digital craftsmanship by Ossian Lin." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="articles-data.js" defer></script>
+  <script src="articles-render.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="articles-page-container">
+    <!-- Back Navigation -->
+    <a href="index.html" class="back-link">
+      <span>←</span>
+      <span>Back to Home</span>
+    </a>
+
+    <!-- Articles Hero Header -->
+    <section class="articles-hero">
+      <h1>Writing</h1>
+      <p>
+        A curated collection of essays, practical frameworks, and research notes on product design, UX research, and
+        digital craftsmanship.
+      </p>
+    </section>
+
+    <!-- Search Input -->
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input"
+        placeholder="Search articles by title, topic, or keyword..." aria-label="Search articles" />
+    </div>
+
+    <!-- Category Filter Tabs (Dynamically generated from articles-data.js) -->
+    <div class="filter-container" id="filterContainer">
+      <!-- Dynamically rendered by articles-render.js -->
+    </div>
+
+    <!-- Articles Archive List (Dynamically generated) -->
+    <div class="articles-grid" id="articlesList">
+      <!-- Dynamically rendered by articles-render.js -->
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination-container" id="paginationContainer">
+      <!-- Dynamically rendered if total articles exceed items per page -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

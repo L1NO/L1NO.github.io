@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>最小可行性的易用性測試 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="Soking 老師的易用性測試實作工作坊課後心得" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202303-03.html" />
+  <meta property="og:title" content="最小可行性的易用性測試 | Ossian Lin" />
+  <meta property="og:description" content="Soking 老師的易用性測試實作工作坊課後心得" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*GipN3uqNi0Moir_b4zlwhg.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202303-03.html" />
+  <meta name="twitter:title" content="最小可行性的易用性測試 | Ossian Lin" />
+  <meta name="twitter:description" content="Soking 老師的易用性測試實作工作坊課後心得" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*GipN3uqNi0Moir_b4zlwhg.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        最小可行性的易用性測試
+      </h1>
+
+      <p class="article-main-subtitle">
+        Soking 老師的易用性測試實作工作坊課後心得
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Mar 2023
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*GipN3uqNi0Moir_b4zlwhg.png" data-width="1440" data-height="804" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*GipN3uqNi0Moir_b4zlwhg.png"></figure><h2>前言</h2><p>自從上次因為猶豫而導致沒搶到 Soking 老師易用性測試工作坊，某天收到老師新的一年開課通知信件，這次就毫不猶豫的馬上訂下去。相較於前次使用者訪談半天的課程(<a href="https://link.medium.com/NFsuKAoNAyb" data-href="https://link.medium.com/NFsuKAoNAyb" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">內容回顧</a>)，這次時間上除了較短只有三小時外，也選擇在平日晚上舉辦，不變的是依然保有人數少、小空間的集中課程，讓老師能更容易與學員們互動</p><p>本次課程 Soking 老師將帶領大家藉由易用性三原則，主要以<strong class="markup--strong markup--p-strong">放聲思考(Thinking Aloud)</strong>的方式進行易用性測試來找出產品優先改善處，並在實際演練中與組員合作從測試前準備到實際測試，以及最後分析問題排列優先順序，以上內容都能在這精實的三小時內學完。</p><p>接下來就讓我們回顧這堂課可以學到什麼新知識及技巧~</p><hr class="solid"><h2>易用性三原則</h2><p><strong class="markup--strong markup--p-strong">易用性測試(Usability test)</strong>，應該許多設計圈朋友都有聽過也可能有實作經驗，在前面 Soking 老師快速帶一些經驗案例介紹，讓還不熟悉的學員能跟上腳步、老朋友則當作整理複習。在聽完老師介紹後，各組進行討論希望可以將易⽤性測試應⽤在什麼情況下，多數都希望能在上線前進行易用性測試來讓產品更穩定，剩下則是開發中同步測試偏多。</p><p>常見的測試方式有三種：</p><ol class="postList"><li name="96ce" id="96ce" class="graf graf--li graf-after--p">紙上原型進行概念測試。</li><li name="0e06" id="0e06" class="graf graf--li graf-after--li">互動原型溝通流程可行性。</li><li name="b3cb" id="b3cb" class="graf graf--li graf-after--li">招募目標用戶驗證關鍵流程。</li></ol><p>有了易用性測試概念後，Soking 老師請一位同學直接來演示測試情境，同時帶入下一個主題—<strong class="markup--strong markup--p-strong">易用性三原則</strong>。老師選了 ACCUPASS 後臺管理人員權限的頁面做示範，在一陣讓人會沮喪、突然驚喜的互動下，我們瞭解到 ACCUPASS 後臺管理多難用，呃，還有如何作測試及三項原則。</p><p>我們常會反映「這個 App 好難用」，其中「難用」包含無法理解介面上資訊的<strong class="markup--strong markup--p-strong">看不懂</strong>、無法理解系統目前狀態的<strong class="markup--strong markup--p-strong">爛回饋</strong>，以及無法符合期待的資訊摺疊收納的<strong class="markup--strong markup--p-strong">找不到</strong>，那對於產品服務好不好用又該如何衡量呢？經由 Soking 老師解說，易用性是「衡量產品軟體是否<strong class="markup--strong markup--p-strong">符合特定情境下，⽬標使⽤者的意圖</strong>」，必須要在特定情境下否則會過於發散無法專注單一狀況，而評量指標可以分為以下三項：</p><ol class="postList"><li name="9d65" id="9d65" class="graf graf--li graf-after--p">使用者是否有意識到產品幫助他們解決問題的<strong class="markup--strong markup--li-strong">有效性(effectiveness)</strong>。</li><li name="4fe1" id="4fe1" class="graf graf--li graf-after--li">使用者能否快速操作使用、節省耗費的<strong class="markup--strong markup--li-strong">效率(efficiency)</strong>。</li><li name="0fea" id="0fea" class="graf graf--li graf-after--li">使用者是否喜歡我們提供的產品服務的<strong class="markup--strong markup--li-strong">滿意度(satisfaction)</strong>。</li></ol><p>介紹完三項原則後，各組進行問題分類的練習。題目是「籌備員工旅遊」，組員都必須寫出至少五項籌備員工旅遊時會遇到的問題，然後依據三原則分類，最後排出優先順序。本次組員們想到的內容重複性頗高，因此很快就進行收斂、完成排序，不過在分享時我們發現其時考量的情境挺完美的，沒考量公司規模、參與人數，進而影響籌備可用資金等，雖然只是個快速練習，但回頭看才會發現原來有這麼多細節被我們給疏忽。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*ZIK4Lm05ROkPAN9y50f-eg@2x.jpeg" data-width="3024" data-height="4032" src="https://cdn-images-1.medium.com/max/800/1*ZIK4Lm05ROkPAN9y50f-eg@2x.jpeg"><figcaption class="imageCaption">本次團隊依據三項原則討論完的結果。</figcaption></figure><hr class="solid"><h2>放生(X)放聲(O)思考</h2><p>在易用性測試中有個常見且好用的方式就是<strong class="markup--strong markup--p-strong">放聲思考(Thinking Aloud)</strong>，誠如其名就是要受測者<strong class="markup--strong markup--p-strong">勇於將內心話講出來、給予最直接的回饋</strong>。進行放聲思考時會需要有人負責持續與受測者對話、引導帶領他們進入狀況、確保在正軌上完成任務等事項，另外則會有隊友負責做紀錄及其他工作，當然也可以一人包辦；受測者則是在操作中順著引導人給的角色設定、任務指示等後開始操作產品或原型，並邊操作邊說出當下想法。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*K07UD3SjIi2fXfhCzQOAbg@2x.jpeg" data-width="3024" data-height="4032" src="https://cdn-images-1.medium.com/max/800/1*K07UD3SjIi2fXfhCzQOAbg@2x.jpeg"><figcaption class="imageCaption">老師用簡單的圖片讓學員觀察分析並放聲說出想法，正是放聲思考的精隨。</figcaption></figure><p>整個測試過程中，個人覺得引導人的角色最重要，對我來說也是最有壓力的角色，必須不斷跟受測者對話。畢竟這樣放聲下可能會出現放生的狀況，因此受測者偏離軌道時就要考驗臨場反應，例如提出設計建議並開始滔滔不絕分享，可能藉由鼓勵或感謝等回饋方式讓受測者回到正軌繼續任務；另外人都有求好心切，總會想主動去伸出援手給予建議，「明明就設計這麼明顯怎麼不會操作？」，同時想主動提醒受測者的舉動都必須忍住，在測試後才可針對觀察到的問題進行提問。</p><p>這種方式相較於書籍文章等會提到的測試情境(e.g. 什麼會架設錄影裝置等)顯得輕巧，需要的資源不必到太多就能進行直接回饋的測試，而且還是可以看到受測者操作，比我們熟悉的問卷方式能明顯的觀察使用方式，算是小團隊、少資源狀況下可嘗試的作法。</p><hr class="solid"><h2>實際演練</h2><p>坐而言不如起而行，前面老師講那麼多、也做了模擬練習，現在就挑一個組員們共同想探討的產品來做易用性測試，實戰演練如果要執行大概怎麼做。我們組別原本要挑選一款叫做 <a href="https://www.myfunnow.com/" data-href="https://www.myfunnow.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">FunNow</a> 的 App 作為練習題目，不過除了我沒聽過使用外，其他組員也沒有實際完成操作過的經驗，因此就轉往前陣子剛交完初稿的台北捷運 Go 來做測試。</p><p>在做用戶任務設計主要有幾個步驟：<strong class="markup--strong markup--p-strong">使用者操作終點、任務最佳流程、引導語、測試腳本</strong>等，前面兩者是要探討受測者是否能按照最佳路徑完成任務，後兩者則是測試時需要的材料。我們探討「外地輪椅旅客需要移動到目的車站搭乘電梯與朋友會面」，流程大概五個步驟分別是「從首頁進入路徑規劃後找到車站資訊及有電梯的出口位置」，擬稿完相關資料後我們也實際測試看看到底操作起來多難用，恩，是真的難用。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*Er_vBLQFzlof9A5omU853A.png" data-width="3196" data-height="1727" src="https://cdn-images-1.medium.com/max/800/1*Er_vBLQFzlof9A5omU853A.png"><figcaption class="imageCaption">台北捷運Go旅途規劃流程。</figcaption></figure><p>經過兩次交換受測者後，我們發現幾個很有趣的地方，像是選擇起迄站的畫面都會直覺點選上方搜尋欄位，而不是從畫面中捷運地圖點選、甚至覺得地圖無法做互動，又或是明明都是同樣功能的選項，兩位受測者都習慣點上方的快捷區、而不是下方選單，經過詢問後是因為不明顯造成，這些都是我們當時沒想到的。藉由兩次受測結果依據前段提到的有效性、效率，以及滿意度三項大分類，最後將問題排列優先順序得到產品優先改善處。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*o6hv_Dp-U71j3LtZ6olcnQ@2x.jpeg" data-width="2268" data-height="4032" src="https://cdn-images-1.medium.com/max/800/1*o6hv_Dp-U71j3LtZ6olcnQ@2x.jpeg"><figcaption class="imageCaption">根據受測結果我們將需要優先改善的地方列出，其中不少都是測試前一致的痛點呢！</figcaption></figure><hr class="solid"><h2>後記</h2><p>課程剛開始時還以為 Soking 老師要講的易用性測試為<strong class="markup--strong markup--p-strong">淨推薦值(Net Promoter Score, NPS)、狩野分析(Kano Model)</strong>這些，因為過往已聽過不少如 Nor 老師的課程介紹及實作(<a href="https://link.medium.com/uLAMDCxPAyb" data-href="https://link.medium.com/uLAMDCxPAyb" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">內容回顧</a>)，不過在密集的三小時課程練習後，除了課程內容的不同而學習到新知識外，在練習上也學到不少小技巧。</p><p>像是練習易用性三原則時，普遍組別應該都是專注於常會發生的事項，在聽了分享以後會發現有組別因為提出了「簽證」而考慮員工旅遊是否限制國內外，這個是很重要卻當下忽略到的問題；實作練習下也讓我發現到，其實用圖像呈現捷運地圖設定路徑對於使用者可能會覺得還不如直接輸入比較快。</p><p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>無障礙指南之外的數位平權：從語音輔助現實探討無障礙設計的困境與未來 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="The Reality Beyond WCAG Guidelines 講座心得" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202607.html" />
+  <meta property="og:title" content="無障礙指南之外的數位平權：從語音輔助現實探討無障礙設計的困境與未來 | Ossian Lin" />
+  <meta property="og:description" content="The Reality Beyond WCAG Guidelines 講座心得" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*VHOSa85jnZJ8qdRpb2bGPg.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202607.html" />
+  <meta name="twitter:title" content="無障礙指南之外的數位平權：從語音輔助現實探討無障礙設計的困境與未來 | Ossian Lin" />
+  <meta name="twitter:description" content="The Reality Beyond WCAG Guidelines 講座心得" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*VHOSa85jnZJ8qdRpb2bGPg.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">Design Systems</span>
+      </div>
+
+      <h1 class="article-main-title">
+        無障礙指南之外的數位平權：從語音輔助現實探討無障礙設計的困境與未來
+      </h1>
+
+      <p class="article-main-subtitle">
+        The Reality Beyond WCAG Guidelines 講座心得
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Jul 2026
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*VHOSa85jnZJ8qdRpb2bGPg.png" data-width="1440" data-height="804" src="https://cdn-images-1.medium.com/max/800/1*VHOSa85jnZJ8qdRpb2bGPg.png"></figure><h2>前言</h2><p>2026 年 5 月底再次參加由 A11y Tokyo 所舉辦的<a href="https://medium.com/sekkei-tori-seikatsu/%E6%94%9C%E6%89%8B%E5%B0%8E%E8%81%BE%E7%8A%AC%E8%B7%A8%E8%B6%8A%E7%84%A1%E8%81%B2%E7%9A%84%E9%AB%98%E7%89%86-8289ffae3aa3" data-href="https://medium.com/sekkei-tori-seikatsu/%E6%94%9C%E6%89%8B%E5%B0%8E%E8%81%BE%E7%8A%AC%E8%B7%A8%E8%B6%8A%E7%84%A1%E8%81%B2%E7%9A%84%E9%AB%98%E7%89%86-8289ffae3aa3" class="markup--anchor markup--p-anchor" target="_blank">實體活動</a>，請來日本補助犬情報センター的理事成員松本江理 (Eri Matsumoto) 分享導聾犬 (Hearing Dog) 是怎麼協助聽覺障礙的人們生活，以及日本在輔導犬推動上的現況與未來展望。當時已先預告於 7 月底將有另一場實體講座，同時也公布是關於軟體層面的主題，因此很期待這場講座的到來。</p><p>本次講座主題為「<a href="https://www.meetup.com/a11ytokyo/events/315610275/" data-href="https://www.meetup.com/a11ytokyo/events/315610275/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">The Reality Beyond WCAG Guidelines</a>」，邀請到 <a href="https://smart-a11y.com/" data-href="https://smart-a11y.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">NPO 法人スマートアクセシビリティ</a>的理事長、LINE「VoiceOver社群」的創辦人相沢浩貴 (Hirotaka Aizawa) 先生來分享結合自身漸進性視力障礙的經驗、社群實務反饋與技術觀察，深刻剖析 VoiceOver 於日文環境下的語音讀取盲點、AI 技術導入帶來的利弊、金融服務的無障礙通訊困境，並提出社群自發性解決方案，為現代 UI/UX 設計師、軟體工程師與產品經理等提供具體的改善視角。</p><p>接下來，就讓我們一同回顧當天的活動內容，並分享一些個人簡易心得吧！</p><hr class="solid"><h2>規範之外的真實困境</h2><p>講座開場時，講師簡單進行了自我介紹。他在罹患罕見疾病「視網膜色素變性症」(Retinitis Pigmentosa) 後視力逐漸退化，目前僅能感知強光。離開原有的研發職位後，他開始積極學習並熟練掌握 iOS 的 VoiceOver 語音輔助功能。為了改善視障者在使用智慧型裝置時的資訊孤立困境，他於 2020 年創立 VoiceOver LINE 線上社群，並於 2022 年正式成立非營利組織 Smart Accessibility (<a href="https://smart-a11y.com/" data-href="https://smart-a11y.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">NPO 法人スマートアクセシビリティ</a>)，其營運社群品牌為 SmartAlly。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*3uZkzOANAwNKeWeaDAoicg.png" data-width="1024" data-height="768" src="https://cdn-images-1.medium.com/max/800/1*3uZkzOANAwNKeWeaDAoicg.png"><figcaption class="imageCaption">SmartAlly 其中一項服務為營運 LINE OpenChat 的「VoiceOver 社群」。</figcaption></figure><p>這段從技術研發者轉變為使用者、再到無障礙推動者的親身經歷，讓他深刻體會到現行規範與真實體驗之間的落差。一般而言，開發者在落實無障礙規範 (Accessibility Guidelines) 時，多半聚焦於語意化標籤 (Semantic HTML)、對比度與焦點順序 (Focus Order)。然而，在系統原生層級與語言學的交會之處，卻存在著現有規範難以涵蓋的系統性缺陷。</p><h3>iOS 系統層級的朗讀缺失</h3><p>講師指出，第一個嚴重的困境在於系統層級的跳讀與遺漏。即便開發者嚴格遵循規範、撰寫出正確無誤的程式碼，iOS 的 VoiceOver 仍可能因系統辭典的瑕疵，選擇性地完全忽略某些詞彙。例如日文中的「御守」，若以常見的漢字加假名「お守り」呈現，VoiceOver 會直接跳過不讀，唯有改寫為純假名「おまもり」才能正常朗讀；甚至連「終始 (しゅうし)」、「買い置き (かいおき)」、「打ち水 (うちみず)」等極為常見的生活詞彙，都曾出現被系統無預警漏讀的狀況。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*S2tuIgLrzyPCqlg5YePUOA.png" data-width="1024" data-height="768" src="https://cdn-images-1.medium.com/max/800/1*S2tuIgLrzyPCqlg5YePUOA.png"><figcaption class="imageCaption">講師稱這類系統錯誤為 iOS 的 bug。</figcaption></figure><h3>語意誤讀與發音扭曲 (Homograph &amp; Context Issues)</h3><p>除了直接漏讀，另一個更為頻繁的挑戰則是語意誤讀。當語音合成引擎缺乏對上下文語境 (Context) 的理解時，極易產生嚴重的發音扭曲，造成使用者資訊接收錯亂。在日常詞彙中，「超值商品」(お得な商品) 會被誤讀為語意不明的發音，「回鍋肉」被字面直譯朗讀成「貝/鍋/肉」，連簡單的「這是誰？」(これ誰？) 中的「誰」字都會被誤讀成字音；而在專有名詞與外來語上情況更為嚴峻，電信品牌「LINE モ (mo)」會被誤讀為「Linimo」，AI 工具「Microsoft Copilot」讀成「Copy-lot」，甚至連「全球數位無障礙意識日」（GAAD）都被誤讀成神明「God」。</p><p>視障者高度仰賴聽覺建立對世界的認知，當朗讀發音與既有認知不符時，極易導致使用者誤以為出現了全新的產品或概念，例如將「LINE モ」聽成「Linimo」後，誤以為是某家實體電信業者而白跑一趟門市。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*X_wolXoYThI2HvGK1wig8A.png" data-width="1024" data-height="768" src="https://cdn-images-1.medium.com/max/800/1*X_wolXoYThI2HvGK1wig8A.png"><figcaption class="imageCaption">日文中有許多字跟發音是不同的，系統上也會發生這種無法判讀的狀況。</figcaption></figure><h3>視覺相似符號引發的語意災難：Unicode 編碼陷阱</h3><p>第三個隱形陷阱，來自於「視覺相似符號」在 Unicode 系統中的語意分歧。視覺上幾乎相同的符號，在底層編碼中卻代表截然不同的意義，進而對 VoiceOver 產生劇烈影響。例如標準的感歎號 (Exclamation Mark，<code class="markup--code markup--p-code">U+0021</code>) 在預設情況下會被 VoiceOver 直接忽略不發音；但視覺上與其極為相似的國際音標符號「齒莖吸着音」(Alveolar Click，<code class="markup--code markup--p-code">U+01C3</code>)，VoiceOver 預設卻會直接將其朗讀為「齒莖吸着音」(はぐききゅうちゃくおん)。當開發者不慎誤用字符時，視障使用者就會在閱讀文句中無預警聽到這個冷門的語音學名詞，造成極大的理解障礙。</p><p>另外，常見的時間與日期格式也存在著類似的語意脈絡困境。當前端未適當指定資料格式時，VoiceOver 只能進行最字面的物理翻譯：時間「20:30」會被直譯朗讀為「20 冒號 30」，而非自然的「20 時 30 分」；日期「2026/07/24」更會被生硬地讀成「2026 斜線 7 斜線 24」。這再次證明了無障礙往往不是符號本身的問題，而是系統是否能精準傳達語意「脈絡」的問題。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*PG0CFLuW-pCl8adPKdve3g.png" data-width="1024" data-height="768" src="https://cdn-images-1.medium.com/max/800/1*PG0CFLuW-pCl8adPKdve3g.png"><figcaption class="imageCaption">這跟平時打字有異曲同工之妙，英打跟中打的驚嘆號也長得不太一樣，應該底層內容也有差。</figcaption></figure><h3>破壞語感與邏輯的排版符號：中黑點問題</h3><p>第四個困境，則是日常排版習慣對語感與邏輯的破壞。在日文中，開發者與設計師習慣使用「中黑點」(・) 來分隔外文人名或作為項目符號。然而 VoiceOver 會強制將中黑點逐字讀成「Nakaguro」（なかぐろ），這引發了兩大荒謬的理解災難：</p><ol class="postList"><li name="a079" id="a079" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">人名間隔變成額外單字</strong>：外文人名「マイケル・ジャクソン」(麥可・傑克森) 會被朗讀為「マイケル なかぐろ ジャクソン」(麥可 Nakaguro 傑克森)。</li><li name="4c8d" id="4c8d" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">列舉符號扭曲文本語意</strong>：若在段落開頭用中黑點作為列表標示，如「・中学校の歴史」(國中歷史)，VoiceOver 會直接朗讀成「中黑國中歷史」(なかぐろちゅうがっこうのれきし)，導致使用者誤以為這是一所名為「中黑國中」的學校。</li></ol><figure class="article-figure"><img class="graf-image" data-image-id="1*c0K8eXLw7RiU5aNILRJtIA.png" data-width="1024" data-height="768" src="https://cdn-images-1.medium.com/max/800/1*c0K8eXLw7RiU5aNILRJtIA.png"><figcaption class="imageCaption">外來語和分段符號這種變獨有誤的狀況，大概平時很難想像的到。</figcaption></figure><h3>開發端的最佳實踐與因應策略</h3><p>面對這些規範未涵蓋的系統缺陷，講師強調開發團隊不能僅依賴自動化檢測工具或規範清單。在實務上，應採取以下因應策略：</p><ul class="postList"><li name="629d" id="629d" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">實機測試與讀音指定：</strong>進行 VoiceOver 實機人工測試，靈活調整漢字與假名組合，或強制使用 aria-label / accessibilityLabel 指定正確讀音。</li><li name="92ec" id="92ec" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">使用語意化列表語法：</strong>針對項目符號，應避免手動輸入中黑點，改為採用標準 HTML 列表語法（&lt;ul&gt; 與 &lt;li&gt;）。當採用標準語法時，VoiceOver 便會將其識別為項目符號，朗讀為「Bullet」（ビュレット）並自動進行適當停頓，確保語意的清晰與連貫。</li></ul><p>這些案例不僅揭示了技術規範之外的真實盲點，更提醒著開發者：真正的無障礙不能僅停留在「通過規範檢測」，而是必須深入回歸使用者最真實的聆聽體驗。</p><hr class="solid"><h2>社群主導的補救措施與技術變革</h2><p>面對作業系統與應用程式層級的朗讀瑕疵，SmartAlly 社群展現了強大的自發解決能力，串聯起從「使用者端的配置優化」到「系統廠商的架構改變」的完整鏈條。</p><p>在第一階段，為了解決如中黑點與無意義裝飾符號所造成的干擾，SmartAlly 團隊首先打包了改善後的 iOS「句讀點與符號」設定檔 (Custom Pronunciation Files)，讓社群成員可以直接下載並匯入 iPhone，率先在使用者端強制過濾不必要的標點朗讀。</p><p>然而，要真正解決廣泛的誤讀問題，仍須回到系統核心。因此 SmartAlly 進一步發起「Project V」計畫，由社群使用者自發反饋並收集了超過 190 組常見的 VoiceOver 誤讀詞彙，涵蓋在地地名、車站名、品牌名與日常生活用語。這份凝聚了社群力量的數據庫，隨後被正式提案提交給 Apple 團隊，成功促成了關鍵的突破點。</p><p>在 Apple 的系統更新規劃中 (如 iOS 18/19 展望及未來 iOS 27 測試架構)，擬正式導入 CSV 字典檔案的匯入與共享機制。這項轉變讓未來使用者與企業團體將能透過簡單的 CSV 檔案，輕鬆修復並跨平台分享正確的在地化發音字典，成功將社群的自救行動，轉化為推動全球作業系統升級的變革力量。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*pCDQj1-dFuX-K6UBYIidjA.png" data-width="1024" data-height="768" src="https://cdn-images-1.medium.com/max/800/1*pCDQj1-dFuX-K6UBYIidjA.png"><figcaption class="imageCaption">透過社群的自救方式，逐步成功推向 Apple 企業內部，並直接支援相應的裝置。</figcaption></figure><hr class="solid"><h2>AI 普及化下的設計新挑戰與金融服務阻礙</h2><p>講師在後半段將視野延伸至 AI 影像解析普及後的衍生風險，以及金融科技領域的無障礙轉型困境。</p><h3>AI 影像解析的雙面刃：詐欺廣告的「無障礙化」</h3><p>隨著端側 AI（On-device AI）與多模態模型整合至 iOS 系統，視障者辨識圖片內容的門檻大幅降低；然而，這也帶來了全新風險。在過去，視障者在使用 App 或網頁時，往往因為圖片解析繁瑣、螢幕閱讀器無法辨識「影像格式」的內容，視障者通常會忽略無 Alt Text 的廣告圖片，幸運地避開了視覺陷阱。</p><p>現在的 AI 能精準讀出廣告圖像中的文字，例如「您的儲存空間已滿」或「系統偵測到威脅」。對於高度依賴 VoiceOver（iOS 螢幕閱讀器）的使用者來說，存在著一種心理因素：他們傾向於「直覺地接受」，極易誤以為手機真遭病毒感染或空間不足，進而陷入詐騙陷阱。</p><p>不良資訊也同樣變得 Accessibility ，未來 Accessibility 的推動，必須伴隨資訊素養（Information Literacy）與資安意識的教育。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*lN7y0X-BhUgdiCY06J-qtw.png" data-width="1024" data-height="768" src="https://cdn-images-1.medium.com/max/800/1*lN7y0X-BhUgdiCY06J-qtw.png"><figcaption class="imageCaption">AI 廣告對於一般使用者已經夠煩，對於視障者更是難以理解。</figcaption></figure><h3>AI 代理人 (AI Agents) 時代的 UI 設計思維</h3><p>隨著科技演進，未來 AI 代理人將日漸頻繁地代為操作 UI 介面。在此趨勢下，若介面圖示的設計缺乏明確的語意定義，不僅會困擾視障使用者，連 AI 也會產生誤操作。例如在 iOS 26 的系統中，部分位置的社群平台「X」圖示，因視覺造型為「✕」，竟被系統 AI 誤判為「關閉按鈕」，進而被朗讀成「大文字 X 閉じる」。這項案例深刻表明，未來的設計師在構思 UI 時，已不能僅考量人類視覺的理解，更必須同時兼顧 AI 代理人的語意解析。</p><h3>金融服務 (FinTech) 的無障礙障礙與調研瓶頸</h3><p>除了日常工具與 AI 的交會，金融服務領域的無障礙缺失，更是目前對視障者日常生活影響最深遠的難題。然而，要解決金融與證券 App 的 Accessibility 問題，卻正面臨著難以跨越的結構性困境。</p><p>首先是嚴格的隱私與安全限制。由於金融帳戶具備高度個人私密性，第三方非營利組織或外包測試團隊，根本無法跨越身份驗證進行第三方測試與除錯。其次則是客服管道的單一與低效，現行金融機構針對視障者提供的專屬服務，多半侷限於傳統電話客服。然而，電話客服人員往往不理解 VoiceOver 的操作邏輯，也無法處理文字化或截圖式的 Bug 反饋，導致金融 App 的無障礙問題長期處於無法妥善修復的死角。</p><hr class="solid"><h2>後記</h2><p>在本次講座中，講師的分享揭示了一個關鍵真理：符合無障礙規範僅僅是起點，真正優質的體驗，永遠取決於細節裡的實機測試與對使用者的真實理解。從最初面對系統漏讀的無奈，到發起 Project V 推動 Apple 導入字典共享機制，SmartAlly 社群用行動證明微小的社群力量能有翻轉技術架構的一天。當更多開發者與設計師願意跨越普通和理所當然的思維局限、多接觸實際使用者時，才能打造出一個真正沒有資訊孤島的數位世界。</p><p>本次會後與現場來賓進行 Networking 挺有趣的，首先是遇到一組來自 <a href="https://smarthr.co.jp/" data-href="https://smarthr.co.jp/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">SmartHR</a> 的設計師和工程師共 4 人，其中工程師是個日文流利的外國人，讓人印象深刻。他們分享到在工作上也有需要考量到無障礙設計，同時也有一位來賓也是在經營無障礙社群的，綜觀下來日本在無障礙這塊的重視程度相對於台灣來說是較高度討論。最後主辦方在開場簡介時也先預告接下來秋季將有一場實體講座，是關於一位外國人在日本如何提供外國遊客租借和服服務，光是從標題和簡介上就挺吸引我，屆時應該也是會準時出席。</p><p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

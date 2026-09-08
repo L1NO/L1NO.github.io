@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>不用懂程式也能玩的跨螢幕拼接技術 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="No-Code 跨螢幕互動遊戲創作工作坊之活動心得" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202202.html" />
+  <meta property="og:title" content="不用懂程式也能玩的跨螢幕拼接技術 | Ossian Lin" />
+  <meta property="og:description" content="No-Code 跨螢幕互動遊戲創作工作坊之活動心得" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*E7CmGQp2jUZ38CQrDc-8sA.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202202.html" />
+  <meta name="twitter:title" content="不用懂程式也能玩的跨螢幕拼接技術 | Ossian Lin" />
+  <meta name="twitter:description" content="No-Code 跨螢幕互動遊戲創作工作坊之活動心得" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*E7CmGQp2jUZ38CQrDc-8sA.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        不用懂程式也能玩的跨螢幕拼接技術
+      </h1>
+
+      <p class="article-main-subtitle">
+        No-Code 跨螢幕互動遊戲創作工作坊之活動心得
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Feb 2022
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*E7CmGQp2jUZ38CQrDc-8sA.png" data-width="1440" data-height="804" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*E7CmGQp2jUZ38CQrDc-8sA.png"></figure><h2>前言</h2><p>螢幕裝置拼接技術在生活中較常見大概是大型螢幕，多個螢幕接線連結至同一裝置上，由一個核心主控台去控制投放內容；小型一點的例如 Nintendo Switch 之前出的<a href="https://youtu.be/I-DsOVUYxXw?t=257" data-href="https://youtu.be/I-DsOVUYxXw?t=257" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">《世界遊戲大全 51》(Clubhouse Games: 51 Worldwide Classics)</a> 也有用到類似的拼接技術。以上這些實例都是特定方式下達成，如果一般使用者也想操作跨螢幕拼接的應用，且不需要具備專業或麻煩的技術，本次工作坊的主角 BRICKS 正是最好的選擇。</p><p>本次參與由 IxDA Taiwan 所舉辦第 59 次的互動聚會，找來之前在十年大會閉幕場有展示技術的廠商 BRICKS，帶領學員一起體驗無程式壓力、輕鬆動手玩拼接螢幕的技術，除了小組內部的實作外，也在最後串接全部八組完成一齣無間斷的故事展出。接下來就來一探 BRICKS 到底有著什麼神奇魅力，能讓一般使用者能不用程式背景就能玩的技術吧！</p><figure class="article-figure"><img class="graf-image" data-image-id="1*UDK6UB0pqKGGVEDfvVrNIQ.png" data-width="2048" data-height="1072" src="https://cdn-images-1.medium.com/max/800/1*UDK6UB0pqKGGVEDfvVrNIQ.png"><figcaption class="imageCaption">本次活動主視覺。(截自：<a href="https://www.facebook.com/ixda.tw" data-href="https://www.facebook.com/ixda.tw" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">IxDA Taiwan FB</a>)</figcaption></figure><hr class="solid"><h2>No code，就是真的不用學寫程式</h2><p>BRICKS 設計上採用網頁進行工作，就跟設計師近年熟悉的 Figma 一樣，只要有網路、不論你是 Windows 還是 Mac 作業系統都可以隨開即用。介面上雖然還是有點工程味道，對於學習新軟體程式會害怕的新手還是乖乖照著官方教學跑一次設定比較實在。按部就班跑完相關裝置設定後，就可以開始設計新專案。</p><p>進到設計階段就跟常用的設計工具、甚至簡報製作工具類似，畫布、幾何形狀、影音插入等，全部都可以丟進來並呈現於連結裝置上，而這些步驟都不需要到任何 coding 就能完成。然而不確定是否還在開發迭代中，很多調整設定上不是很明顯外，有些還是以理工程式敘述方式呈現，甚至部分調整看上去是可以用圖像化解釋，關於這部分或許團隊在未來會逐步做更新吧。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*wWK4WBCdBdAA9trRX2zdtQ.png" data-width="1287" data-height="927" src="https://cdn-images-1.medium.com/max/800/1*wWK4WBCdBdAA9trRX2zdtQ.png"><figcaption class="imageCaption">除了參數調整介面小不適應，滑鼠的操作跟 Figma、Photoshop 等不同也需稍微習慣。</figcaption></figure><hr class="solid"><h2>簡單概念玩出新技術</h2><p>BRICKS 的螢幕拼接概念很有趣，在單一張大畫布下把所有裝置都擺放上去，就是整個拼接可使用範圍；簡單來說，就是一張投影片的大小，決定所有裝置放進來擺設的範圍(就像封面圖那樣！)。這樣的操作方式能讓使用者在一張投影片內設計全部裝置要呈現的內容，再利用各張投影片的切換來達到所有裝置同時變化的效果。</p><p>要讓物件動起來，其實跟簡報軟體(如 Powerpoint, Keynote)等「換頁」概念類似。在 BRICKS 裡面則能調整的細節非常多樣、精細，例如 PPT 可能只是單純飛入淡出等方式，但在這裡可以針對如「時間-位置」設定不同而帶來細微的移動方式。這些稱為緩動函數<strong class="markup--strong markup--p-strong"> </strong>(Easing function) 的功能非常詳盡，然而問題在於對於輕度使用者、甚至同組內成員也都反映這些「只有文字敘述」的呈現方式感到疑惑，或許產品團隊未來會<a href="https://easings.net/zh-tw" data-href="https://easings.net/zh-tw" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">加入圖像化的輔助</a>，讓使用者能更瞭解調整的意義。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*J_W7bthwuVE6YVRTtifyHQ.png" data-width="2192" data-height="805" src="https://cdn-images-1.medium.com/max/800/1*J_W7bthwuVE6YVRTtifyHQ.png"><figcaption class="imageCaption">只有數值跟文字敘述對於輕度使用者很難理解其義。</figcaption></figure><hr class="solid"><h2>管你大小螢幕，通通拼起來</h2><p>前面提到拼接的概念後，就只要將想要配對的裝置放進範圍內即可。裝置配對上利用的技術在於「所有想拼接的裝置連上同一網域即可」，例如連上同一個 Wi-Fi 並與電腦端輸入生成的密碼或 QR code 即可。接著就能調整已配對的裝置擺放方式、呈現尺寸大小，甚至重疊裝置呈現內容也是可行的！</p><p>然而拼接需要考量到裝置螢幕大小、擺放方向等問題，對於使用者在擺放上或是專案設計上都需要一些數學計算跟拼接技巧。雖然能對每隻裝置的螢幕範圍作調整且系統會提示建議長寬，但當使用者沒有計算過螢幕尺寸來呈現畫面時，就會遇到物件超出畫面或不在正確位置上等問題出現。</p><p>另外，由於裝置配對和擺設方式的設定，與設計內容並不在同一頁面上，即便能在設計頁得知擺放方式及範圍，在實作上也非「設計內容聯動裝置」，因此如何有效對準裝置方向，也是有待改善的部分。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*Tdb8Ufgtwu8Ljo-Yq9oZGg.png" data-width="1489" data-height="805" src="https://cdn-images-1.medium.com/max/800/1*Tdb8Ufgtwu8Ljo-Yq9oZGg.png"><figcaption class="imageCaption">連接裝置方法非常簡單易懂且快速。</figcaption></figure><hr class="solid"><h2>網路連線雙面刃，優點既缺點</h2><p>既然是只要網路就能操作，那麼當網路連線出問題時自然就受到影響。當天上午工作坊初期連線人數較多，供應的網路流量似乎趨近飽和狀況下，導致發生不少次連線不穩定的狀況。好在 BRICKS 在連線上只要有一台負責提供 Wi-Fi 熱點的手機供小組連線用，還是能達成與其他組別串接的動作。</p><p>由於是在網頁上操作，對於記憶體吃重上似乎也對操作體驗帶來直接性的影響。在下午場小組開始建置各組專案時，有限的時間下需要場景設計、動作配置，甚至裝置配對狀況下，遇到記憶體吃緊而卡住或是 lag 對於使用者都是非常灰心的。</p><p>另外就是 BRICKS 目前還未支援近年來熱門的「協作」功能，也就是說一項設計只能由一台電腦來做主控，對於其他小組成員除了幫忙素材收集外，也無法同時分工不同場景的狀況。不過當天詢問工程師表示，近期這部分已著手準備更新，希望能在接下來的版本看到這項功能的出現。</p><hr class="solid"><h2>後記</h2><p>本次活動雖然在操作體驗上偶有不佳，但對於 BRICKS 的技術跟概念學員們整體是給予正面的，從上午不到半天的摸索學習時間，到下午場大概給各位 1.5 小時完成各自負責主題後就展開大型拼接，還能一次就達成無間斷地順利串接八個小組、約 40 多台的行動裝置，可以說是非常的成功。</p><p>對於 BRICKS 團隊本次的帶領下，以及藉由各位學員操作回饋，工程師也在現場展開 debug 來讓活動順利進行，相信 BRICKS 團隊能在本次活動後為產品帶來更多改善及最佳化，很期待這項產品能在未來成為全球跨螢幕拼接技術的指標。</p><p>另外本次的主辦 IxDA Taiwan 一樣秉持著優秀的服務品質，不但為活動做足準備，連當日餐點也都準備得非常用心，讓與會者能很放鬆的參加工作坊之餘，藉著美食補充消耗創意的腦袋，以及用餐時間的交流去認識新朋友。</p><p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

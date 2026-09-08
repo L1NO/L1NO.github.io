@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>易用又有效的狩野分析 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="這是一篇參加初級狩野分析工作坊的心得" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202006.html" />
+  <meta property="og:title" content="易用又有效的狩野分析 | Ossian Lin" />
+  <meta property="og:description" content="這是一篇參加初級狩野分析工作坊的心得" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/2560/1*aMAqLArfnKzeZOQim7qEKA.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202006.html" />
+  <meta name="twitter:title" content="易用又有效的狩野分析 | Ossian Lin" />
+  <meta name="twitter:description" content="這是一篇參加初級狩野分析工作坊的心得" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/2560/1*aMAqLArfnKzeZOQim7qEKA.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        易用又有效的狩野分析
+      </h1>
+
+      <p class="article-main-subtitle">
+        這是一篇參加初級狩野分析工作坊的心得
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Jun 2020
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*aMAqLArfnKzeZOQim7qEKA.png"
+          data-width="1921" data-height="1080" data-is-featured="true"
+          src="https://cdn-images-1.medium.com/max/2560/1*aMAqLArfnKzeZOQim7qEKA.png"></figure>
+      <h2>前言</h2>
+      <p>南部地區很難得的 3 月初由 UX cube
+        所舉辦的初階狩野分析工作坊，雖然說是在台南，但高雄地區的鄉親大約一小時左右的區間車也能輕鬆抵達；本次活動場地在鄰近於台南火車站與成功大學的台南文創園區，從車站過去也不到10分鐘來著，整體來說場地挑的非常好。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*fUiiSDAi0S9_8o776qdY1w.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*fUiiSDAi0S9_8o776qdY1w.jpeg">
+        <figcaption class="imageCaption">台南文創園區鄰近著成功大學</figcaption>
+      </figure>
+      <p>本篇文章會傾向「基本狩野分析」+「本次工作坊心得」為主，較深入的內容不會有過多探討，當然各方高手輩出，若有不及之處，或是有誤都歡迎給予賜正。</p>
+      <hr class="solid">
+      <h2>開始之前</h2>
+      <p>在工作坊前半段的內容，講師主要是在談關於「使用者體驗是甚麼？」「服務設計是甚麼？」，對於已經有先備知識的算是個複習吧。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*lE53csqmtJkyXs49ELejqw.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*lE53csqmtJkyXs49ELejqw.jpeg">
+        <figcaption class="imageCaption">使用者體驗不是單個項目，而是一個過程。</figcaption>
+      </figure>
+      <p>講師藉由許多例子，讓大家比較能快速瞭解外，同時也慢慢導出狩野分析的用途，其中有一個例子是：在飛機起飛前 5 小時成功網路購物急需品的顧客心境轉換。</p>
+      <p>在這個例子中：</p>
+      <ol class="postList">
+        <li name="50c9" id="50c9" class="graf graf--li graf-after--p">使用者要在 5 小時內購入商品而<strong
+            class="markup--strong markup--li-strong">產生需求，並尋求解法</strong>。</li>
+        <li name="4318" id="4318" class="graf graf--li graf-after--li"><strong
+            class="markup--strong markup--li-strong">選擇</strong>某個網路購物平台作為<strong
+            class="markup--strong markup--li-strong">解決方法，同時產生預期</strong>。</li>
+        <li name="f156" id="f156" class="graf graf--li graf-after--li">當服務如期達成使用者需求時，不單是實質上的滿足，也<strong
+            class="markup--strong markup--li-strong">滿足了使用者的預期，進而留下記憶</strong>(亦即好的體驗)。</li>
+        <li name="f2ae" id="f2ae" class="graf graf--li graf-after--li">當使用者下次有同樣產生類似需求時，自然地就會<strong
+            class="markup--strong markup--li-strong">想到前一回的體驗</strong>，而從該網路購物平台尋求解決方法。</li>
+      </ol>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*50WRb9u9G4StDq4MuXNOmg.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*50WRb9u9G4StDq4MuXNOmg.jpeg">
+        <figcaption class="imageCaption">顧客心境的轉換是使用者體驗中常見的一環。</figcaption>
+      </figure>
+      <p>之前文章都有提到過「使用者體驗不是一項任務，而是一段長時間的過程」，從服務前、服務中，到服務後這段過程都是使用者體驗的範圍。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*wd-VoJUGsQkT_WMUQr-74A.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*wd-VoJUGsQkT_WMUQr-74A.jpeg"></figure>
+      <p>瞭解了整個服務流程跟顧客體驗後，接下來就可以開始親自實作了。</p>
+      <hr class="solid">
+      <h2>找到狩獵的目標</h2>
+      <p>今天我們要打甚麼？一頭水牛？老鼠？還是雄火龍？</p>
+      <p>我們可以藉由較簡單的方式先找出<strong class="markup--strong markup--p-strong">服務缺口</strong>，也就是對於目前產品現有的功能中，哪些是我們要去做改善的。</p>
+      <p>在本次工作坊中有著不同主題的產品服務，由各組挑選一個主題去進行分析。本次小組在各自過往經驗下決定選用 Google Map 作為分享對象；選定產品後，成員們要想出四種 Google Map
+        現有提供的功能，用來作為後續探討其功能/服務在使用者們體驗後的需求度，以下是本次提出的功能：</p>
+      <ol class="postList">
+        <li name="02f2" id="02f2" class="graf graf--li graf-after--p">搜尋功能；<br>讓使用者知道附近指定店家地址，明確知道距離與交通方式。</li>
+        <li name="48bf" id="48bf" class="graf graf--li graf-after--li">標記功能：<br>讓使用者標記想去的地點，並可回顧已找過的地點。</li>
+        <li name="e4cb" id="e4cb" class="graf graf--li graf-after--li">商店資訊：<br>讓使用者知道店家的資料簡化搜尋時間、過程。</li>
+        <li name="3327" id="3327" class="graf graf--li graf-after--li">顧客評價、評論：<br>讓使用者可以觀看評論、瞭解其他使用者的體驗與感受。</li>
+      </ol>
+      <p>有了目標之後，就會需要去詢問使用者的評價，基本上會有兩個指標 — <strong class="markup--strong markup--p-strong">重要度&amp;滿意度</strong>。</p>
+      <p>重要度指的是<strong class="markup--strong markup--p-strong">「該服務影響使用者本人會選用貴公司」</strong>的影響程度，滿意度則是<strong
+          class="markup--strong markup--p-strong">「當使用者體驗過這項服務後對它(產品功能/服務)的滿意程度」</strong>；兩者的評分方式都是以<strong
+          class="markup--strong markup--p-strong">給予分數</strong>去做評比。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*mHn_oCBDN51SzwfdXn6AgA.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*mHn_oCBDN51SzwfdXn6AgA.jpeg">
+        <figcaption class="imageCaption">找出要探求的功能或服務，並藉由重要度與滿意度評分來回推其功能或服務的需求度。</figcaption>
+      </figure>
+      <p>
+        藉由簡單的分析可以得到重要度與滿意度的平均值，將兩者相減便可得到服務缺口的數值。這樣的概念雖然能明確看出哪項功能/服務是當前缺口，然而這邊有個盲點：就是有些人喜歡的是不重要的服務，而且還為此而來使用。因此我們要進一步的去探討出這些服務屬於哪個種類，進而在使用者體驗上有甚麼樣的變化。
+      </p>
+      <hr class="solid">
+      <h2>讓我們換個方式來打獵！</h2>
+      <p>有別於重要度與滿意度的詢問方式，狩野分析會讓使用者針對某功能/服務去回答<strong class="markup--strong markup--p-strong">正向問題</strong>和<strong
+          class="markup--strong markup--p-strong">負向問題</strong>，而回答的選項都是一樣的：1.喜歡、2.應該的、3.無所謂、4.能忍受、5.不喜歡。</p>
+      <p>例如「餐廳提供餐具」這項服務，多數人應該都是覺得理所當然，但某些習慣自備餐具的可能認為可以沒有。而這時候就可以針對這項服務進行詢問：</p>
+      <pre name="2f7c" id="2f7c"
+        class="graf graf--pre graf-after--p">「如果餐廳<strong class="markup--strong markup--pre-strong">有</strong>提供餐具這項服務，你覺得如何？」<br>「如果餐廳<strong class="markup--strong markup--pre-strong">沒有</strong>提供餐具這項服務，你覺得如何？」</pre>
+      <p>藉由同一項功能/服務去同時評比正反兩面，用量化的方式來取得方向會較有效。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*qSFWgq1cAu0mzmKignPKVg.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*qSFWgq1cAu0mzmKignPKVg.jpeg">
+        <figcaption class="imageCaption">本次工作訪使用的狩野分析意見收集表，基本上沒有制式格式，只要能有效收集都可以。</figcaption>
+      </figure>
+      <hr class="solid">
+      <p>接著，收集回來的資料會使用「評價結果分類對照表」來做對應，找出該功能/服務是屬於哪種需求類型。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*JV6km5OOx2RdNA7SA7Jsdg.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*JV6km5OOx2RdNA7SA7Jsdg.jpeg">
+        <figcaption class="imageCaption">評價結果分類對照表。</figcaption>
+      </figure>
+      <p>我們將正反兩面問題的選項以數字代替好方便對照，縱軸為正向問題、橫軸為負向問題，便可得到<strong
+          class="markup--strong markup--p-strong">「該功能對於該使用者」</strong>的需求類行為何。注意，這裡只是得到<strong
+          class="markup--strong markup--p-strong">一個人的需求類型</strong>，有了每個人回答正反兩向的答案後，得到的需求類型也不一定會一致的喔！</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*P74xeH3UDyF27r6f57wlYQ.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*P74xeH3UDyF27r6f57wlYQ.jpeg">
+        <figcaption class="imageCaption">本次工作訪各服務需求類型分析結果。</figcaption>
+      </figure>
+      <p>分析完需求類型了，就要來介紹需求類型是甚麼。這邊以 5+1 種來解釋，通常會被注意到的其實只有 5 種，額外 1 種是特例狀況。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*l7WcD_arkm6IQqCJSoxNQg.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*l7WcD_arkm6IQqCJSoxNQg.jpeg">
+        <figcaption class="imageCaption">5+1 種不同類型的需求。</figcaption>
+      </figure>
+      <p>5+1 種類型分別是：</p>
+      <ol class="postList">
+        <li name="0690" id="0690" class="graf graf--li graf-after--p">基本型需求(M) Must-be<br>就是指<strong
+            class="markup--strong markup--li-strong">一個產品或服務該有的基本要求</strong>。因為是基本需求，也因此使用者不會因此感到滿意，因為那是<strong
+            class="markup--strong markup--li-strong">「最基本」</strong>該有的；反言之，拿掉了這項自然會得到強烈的反彈。</li>
+        <li name="d198" id="d198" class="graf graf--li graf-after--li">期望型需求(O) One-dimensional<br>在基本之上<strong
+            class="markup--strong markup--li-strong">額外追加</strong>的，<strong
+            class="markup--strong markup--li-strong">當有滿足需求時，會讓使用者感到滿意，而且滿意度會較基本型更快速提升</strong>；沒有的話並不會影響到基本的需求，但也可能<strong
+            class="markup--strong markup--li-strong">造成反效果而讓不滿意快速下降</strong>。</li>
+        <li name="b325" id="b325" class="graf graf--li graf-after--li">魅力型需求(A) Attractive<br>當此要素<strong
+            class="markup--strong markup--li-strong">充足時使用者會感到滿意，不具備時也不會造成不滿意。</strong></li>
+        <li name="f6ac" id="f6ac" class="graf graf--li graf-after--li">無差異需求(I) Indifferent<br><strong
+            class="markup--strong markup--li-strong">有也好、沒有也好</strong>，就是個讓使用者沒甚麼感覺的狀況。</li>
+        <li name="2e0b" id="2e0b" class="graf graf--li graf-after--li">反向品質要素(R) Reverse<br>期望型的相反，當這功能/服務<strong
+            class="markup--strong markup--li-strong">充足時會讓使用者超不爽，但當它沒有、消失了反而讓人感到滿意。</strong></li>
+      </ol>
+      <pre name="daed" id="daed"
+        class="graf graf--pre graf-after--li">假設飯店提供 morning call 服務，是由服務生溫柔的到你床邊喚醒你，你感到很爽且滿足需求，這就是期望型。<br>反之，今天是由一個大媽或是壯漢粗魯的叫你起床，恩，大概就是這樣。¯\_(ツ)_/¯</pre>
+      <ol class="postList">
+        <li name="deb0" id="deb0" class="graf graf--li graf-after--pre">有疑問(Q)
+          Questionable<br>這狀況比較不常見，其表示結果有疑問。有可能問題的問法不合理、沒有被很好地理解等狀況。</li>
+      </ol>
+      <p>瞭解各種類型需求後，各種類型一樣也有優先處理度，其優先度為：M&gt;O&gt;A&gt;I，至於 R？當然是趕快拿掉RRRRR~</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*hGkb4IPjhZRkG8owXzNvjA.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*hGkb4IPjhZRkG8owXzNvjA.jpeg">
+        <figcaption class="imageCaption">分析完得到各種類型要處理的優先程度</figcaption>
+      </figure>
+      <hr class="solid">
+      <h2><strong class="markup--strong markup--h3-strong">「我鎖定你了！」</strong></h2>
+      <p>藉由剛剛的問卷調查以及需求類型的介紹後，我們可以算出每個英文代號的百分比，來更明確得知該功能/服務對於使用者來說是甚麼樣的存在。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*9n5W_LpkLfJbwlliTzYUXw.jpeg"
+          data-width="1396" data-height="222"
+          src="https://cdn-images-1.medium.com/max/800/1*9n5W_LpkLfJbwlliTzYUXw.jpeg">
+        <figcaption class="imageCaption">將結果百分比來得知該功能/服務真正屬於哪一種需求類型。(圖源：<a href="https://img.akanelee.me/20150518-3.jpg"
+            data-href="https://img.akanelee.me/20150518-3.jpg" class="markup--anchor markup--figure-anchor"
+            rel="noopener" target="_blank">Akane 老師</a>)</figcaption>
+      </figure>
+      <p>當然，這是對於一個功能/服務做分析的結果。如果今天有很多功能/服務要去做分析的話，又或是你覺得怕怕的想更精準，該怎麼辦呢？</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*4ct18a0W8kjWTAwDKBzOXw.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*4ct18a0W8kjWTAwDKBzOXw.jpeg">
+        <figcaption class="imageCaption">敏感度分析的公式計算。</figcaption>
+      </figure>
+      <p>這時候就會使用到敏感度分析(Better-worse)，去計算 Sensitive Indicator (SI)、Dis-sensitive Indicator (DSI)，其公式如下：</p>
+      <pre name="f2cf" id="f2cf"
+        class="graf graf--pre graf-after--p">SI =（A+O) / (A+O+M+I)<br>DSI = (O+M) / (A+O+M+I) × -1</pre>
+      <p>藉由計算這兩個係數，SI 可增加滿意度的係數、DSI 消除不滿意度的係數，最後可以去畫出 KANO 模型分析。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*F4Up01mhgavRAqhLr33MEg.jpeg"
+          data-width="382" data-height="424"
+          src="https://cdn-images-1.medium.com/max/800/1*F4Up01mhgavRAqhLr33MEg.jpeg">
+        <figcaption class="imageCaption">KANO 模型分析圖大概長這樣。(圖源：<a href="https://img.akanelee.me/20150518-5.jpg"
+            data-href="https://img.akanelee.me/20150518-5.jpg" class="markup--anchor markup--figure-anchor"
+            rel="noopener" target="_blank">Akane 老師</a>)</figcaption>
+      </figure>
+      <p>如果計算出來的結果讓該功能落在於灰色範圍內，則代表敏感性不大、可暫時不考慮的功能；反之離原點越遠的優先程度越重。</p>
+      <hr class="solid">
+      <h2>總結</h2>
+      <p>在整個狩野分析實際操作過後，講師有提到一些狩野分析不具備的特性，其中一項是不具備恆常性，例如觸控手機早期的出現對於使用者來說可能是魅力型，隨著時間的推移、產量的擴增慢慢走向基本需求，最後變成無差異。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*5yBLPDBMQfYkqfVVycM6xw.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*5yBLPDBMQfYkqfVVycM6xw.jpeg">
+        <figcaption class="imageCaption">現在觸控手機應該已是常態。</figcaption>
+      </figure>
+      <p>而整個專案的流程中，狩野分析的切入點並不在最一開始，而會是對於使用者體驗的營造中去做分析。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*2OZnm8jkGO2MB1LQvk7BKA.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*2OZnm8jkGO2MB1LQvk7BKA.jpeg">
+        <figcaption class="imageCaption">一般來說 case 的架構與狩野分析的切入點。</figcaption>
+      </figure>
+      <p>最後的最後，很難得南部有開這樣的工作坊，而且不算遠、交通也方便。來場的基本上都是業界人士，也有部分是博士班學生，可以同時交流學術及業界範圍。</p>
+      <p>對於第一次學習的我藉由這樣的工作坊，很快速的在這短短幾小時內也學會了狩野分析。即便現行的工作不太有機會使用，但仍有機會帶入其中。</p>
+      <p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>N.T.U.S.T — Match you up in Tinder | Ossian Lin - Product Designer</title>
+  <meta name="description" content="UX learning note. No. 001" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/201909.html" />
+  <meta property="og:title" content="N.T.U.S.T — Match you up in Tinder | Ossian Lin" />
+  <meta property="og:description" content="UX learning note. No. 001" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*VMepLHe_YhGTROEfeZFyeQ.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/201909.html" />
+  <meta name="twitter:title" content="N.T.U.S.T — Match you up in Tinder | Ossian Lin" />
+  <meta name="twitter:description" content="UX learning note. No. 001" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*VMepLHe_YhGTROEfeZFyeQ.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        N.T.U.S.T — Match you up in Tinder
+      </h1>
+
+      <p class="article-main-subtitle">
+        UX learning note. No. 001
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Sep 2019
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+      <h2>前言</h2>
+      <p>從年初準備要寫拖稿到現在，我看下一篇大概又是一年後了吧~</p>
+      <p>初入 UX 設計這一行還有很多要學的，除了嘗試各種 app、看網路上各路前輩的文章外，看完、學了總是要有一些心得，所以，就嘗試寫看看吧。</p>
+      <blockquote>Don’t just use apps, study them.</blockquote>
+      <p>忘記從哪邊聽到的，不過真的頗重要。</p>
+      <p>最後開始之前還是先說明一下：</p>
+      <p>這是小弟我個人的第一篇草率 UX 研究心得，網路上已經有許多專業分析 Tinder 的心得，但總是想嘗試寫看看，因此如有任何建議都歡迎給予指教。</p>
+      <hr class="solid">
+      <h2>kNow</h2>
+      <p>先稍微介紹一下 Tinder 的背景。</p>
+      <p>你聽過 Tinder 嗎？</p>
+      <p>記得大學時就對這個交友 app 有所耳聞，但個人沒有特別使用交友軟體的動機，加上網路論壇或是新聞多半對交友軟體是各種負面評價，自然就更不會去接觸。</p>
+      <p>直到出社會當了 UI/UX designer。</p>
+      <p>當時剛好有打算採用卡片式設計，另外產品也帶有一點遊戲性質；既然要設計優秀的卡片式設計，那就要從最著名的成品來學習，因此就選擇了 Tinder。</p>
+      <p>時間拉回到 2012 年 9 月，由 Sean Rad 和 Justin Mateen
+        等人發表了一款紅遍全球、且讓不少後輩設計上相繼效法的交友軟體—Tinder。有著基本免費、簡單的註冊方式，自然吸引了不少使用者前來使用。</p>
+      <p>根據使用者的性向、興趣、及地理位置等要素，Tinder
+        有著一套獨自的演算法來推薦使用者潛在配對對象。獨特的卡片式設計讓介面簡潔好上手：右滑喜歡、左滑不喜歡，讓人單手就能操作。如果兩個人都喜歡彼此，便會跳出配對成功的訊息，進而展開下一步動作。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*VMepLHe_YhGTROEfeZFyeQ.png"
+          data-width="1920" data-height="937" data-is-featured="true"
+          src="https://cdn-images-1.medium.com/max/800/1*VMepLHe_YhGTROEfeZFyeQ.png">
+        <figcaption class="imageCaption">Tinder官方網站首頁明確地寫出產品目標，同時也可能是使用者的動機。</figcaption>
+      </figure>
+      <hr class="solid">
+      <h2>Try</h2>
+      <p>「嗯？你有用交友 app 喔？」、「你去裝那個&quot;約跑&quot;軟體啊！」</p>
+      <p>相信這類似的話是許多人聽到後會馬上露出略帶嫌棄、稍有戲謔表情的回答。在網路資訊發達的現代，許多言論文章都會對這類型產品標上不同的籤，支持與反對只要一瞬間就能被成立與反轉。</p>
+      <p>使用者的動機各式各樣，從比較正向的交友、來段新關係、尋找屬於自己的 Mr. / Ms. Right，到比較黑暗的 hook-up
+        都有。但其實如果心態和使用方式正確，網路交友是一個跳脫受到生活圈、地理位置等空間因素限制，而更多元且先進的交友方式。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*5ftC45s1H9-C_YmjqV_ptQ.png"
+          data-width="952" data-height="827" src="https://cdn-images-1.medium.com/max/800/1*5ftC45s1H9-C_YmjqV_ptQ.png">
+        <figcaption class="imageCaption">Pairs網頁上明確展示了使用後成功案例。</figcaption>
+      </figure>
+      <p>接著先撇除研究目的來談談我自己使用的動機。</p>
+      <p>網路交友對我來說「也許」不算是很特別的事，開始接觸網路遊戲一路到現在，從單純遊戲公會認識到當紅的 Discord 各種群組加入，這些年來除了現實生活上的社交，也從網路上認識甚至見面不少朋友。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*JRbvg0il-3jypcmmgfQ2Cg.png"
+          data-width="1902" data-height="936"
+          src="https://cdn-images-1.medium.com/max/800/1*JRbvg0il-3jypcmmgfQ2Cg.png">
+        <figcaption class="imageCaption">近年來遊戲圈廣泛使用的通訊軟體Discord。</figcaption>
+      </figure>
+      <p>但這都是侷限於特定目的：遊戲。</p>
+      <p>那麼，如果在沒有特定或是共同話題下而去認識朋友，這我還真無法主動踏出這一步，尤其是直接 1 on 1。個人是被動的，要我開話題比起回答問題還困難許多；而這勢必也是有相同使用者的困擾，於是也就促成我實測的動機之一。</p>
+      <p><em class="markup--em markup--p-em">後記：有讀者回饋 Discord 屬於通訊軟體怎麼感覺被寫成交友軟體，這點有些 BUG
+          但某種程度上也算是，畢竟有些人是加入群組後認識更多同好。</em></p>
+      <hr class="solid">
+      <h2>Use</h2>
+      <p>這段開始會簡單寫一下簡單操作流程，以及操作時有遇到的個人經驗。</p>
+      <p>Tinder 基本上只需要使用 Facebook 作為登入帳號即可，這樣簡便的登入方式自然能讓人在使用前就有好的體驗，同時也減少了使用者興趣調查等資料輸入繁雜的手續。</p>
+      <p>當然，你也是可以另行申辦。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*bUWgaV68ZhBMPHvD30tOKA.jpeg"
+          data-width="750" data-height="1334"
+          src="https://cdn-images-1.medium.com/max/800/1*bUWgaV68ZhBMPHvD30tOKA.jpeg">
+        <figcaption class="imageCaption">Tinder 登入頁面</figcaption>
+      </figure>
+      <p>大略設定個人資訊後，進入主頁面就是簡單的教學，利用<strong class="markup--strong markup--p-strong">單手</strong>就能操作的設計，<strong
+          class="markup--strong markup--p-strong">沒有過多的記憶</strong>。左滑不喜歡、右滑喜歡，讓人可以快速篩選；點兩下直接看同一個人下一張照片，不用點進去又省了一道動作；如果想看更多資訊卡片下方點一下就能展開顯示。這樣的設計，讓人愛不釋手也是正常的。
+      </p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*YyThyOuVKYdqAWuj01aDcw.png"
+          data-width="600" data-height="1067"
+          src="https://cdn-images-1.medium.com/max/800/1*YyThyOuVKYdqAWuj01aDcw.png">
+        <figcaption class="imageCaption">Tinder 基本操作教學</figcaption>
+      </figure>
+      <p>照片在 Tinder 是使用者主要的內容，使用者會先被另一位使用者的照片佔滿，而在左下角的資訊便顯得不是那麼重要。如同 Instagram 一樣「發文要附圖」，強烈的視覺感受總是最能吸引人注意的。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*CIJoVU5diNqUH7sr1g7gBQ.png"
+          data-width="600" data-height="1067"
+          src="https://cdn-images-1.medium.com/max/800/1*CIJoVU5diNqUH7sr1g7gBQ.png">
+        <figcaption class="imageCaption">在照片佔滿整張卡片的畫面下，個人簡介看上去不過是輔助罷了。</figcaption>
+      </figure>
+      <hr class="solid">
+      <p>Tinder 的配對方式對於第一次使用的人可能會感到不習慣。</p>
+      <p>過往多數社群軟體交友方式都是：<br>點選「好友申請」→對方收到通知→確認兩者關係。</p>
+      <p>而 Tinder 特別在於使用者雙方不知道是否對彼此都有興趣，因此即便我對 A 往右滑(喜歡)，A 也不知道我對他/她感興趣，必須當 A 也對我往右滑、互相建立關係時才會 Pop up 整頁的通知。這應該是 Tinder
+        巧妙的設計，一個讓使用者在未知情況下去認識新朋友。</p>
+      <p>早期版本的顯示為：上頭會有兩人的頭像，還有一行 <em class="markup--em markup--p-em">“It’s a match!”。</em></p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*H4kiNPN7GecuJBEk2giA1w.jpeg"
+          data-width="1363" data-height="667"
+          src="https://cdn-images-1.medium.com/max/800/1*H4kiNPN7GecuJBEk2giA1w.jpeg">
+        <figcaption class="imageCaption">早期版本大概長得像這樣 (<a
+            href="http://alexanderhold.com/why-microsoft-and-linkedin-are-the-perfect-tinder-match/"
+            data-href="http://alexanderhold.com/why-microsoft-and-linkedin-are-the-perfect-tinder-match/"
+            class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">圖片來源</a>)</figcaption>
+      </figure>
+      <p>較近期版本似乎改掉呈現方式了，新版本只剩下一張佔滿螢幕的對方照片、顯示 <em class="markup--em markup--p-em">“It’s a
+          match!”</em>，然後直接一行傳送訊息的輸入欄位。操作上算是直接了一點，離開這個通知訊息的畫面比重縮小成一行「繼續滑動尋覓對象」，在聊天訊息部分配對對象也會顯示近期配對到的對象訊息。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*njQ1UBXCwBzH-KyFzlCItA.png"
+          data-width="1500" data-height="1334"
+          src="https://cdn-images-1.medium.com/max/800/1*njQ1UBXCwBzH-KyFzlCItA.png">
+        <figcaption class="imageCaption">較近期版本的配對成功示意圖</figcaption>
+      </figure>
+      <hr class="solid">
+      <h2>Study</h2>
+      <h3>使用者體驗設計：</h3>
+      <p>從帳戶登入開始，就提供使用者選擇 Facebook 登入來簡化流程，除了收集使用者資訊外，也省下了過多的使用者喜好填寫，給予使用者快速開始。</p>
+      <p>左右滑動的瀏覽方式大幅簡化使用者體驗的<strong class="markup--strong markup--p-strong">認知負荷(Cognitive
+          load)</strong>，沒有繁雜的操作，幾乎單手單指就能完成內容瀏覽，讓每個人都能學會。</p>
+      <blockquote>“The beauty of the swipe is navigating through the content is done with the minimum amount of motion”
+        by Tinder co-founder &amp; CEO Sean Rad.</blockquote>
+      <pre name="a712" id="a712" class="graf graf--pre graf-after--blockquote">簡單翻譯就是：用最少量的動作來完成內容的瀏覽。</pre>
+      <p>接著是整個體驗過程導入了<strong
+          class="markup--strong markup--p-strong">遊戲化</strong>的要素，讓使用者在每次左右滑的新對象都是未知、隨機的獎勵機制—每次的滑動都能有新的對象給予配對機會，但不一定是使用者想要的對象。
+      </p>
+      <p>另外，Tinder 也導入 Instagram, Spotify 等軟體來讓使用者提供更多資訊讓人認識，但是否有導入至 Tinder 自家的配對演算法中，這就不得而知了。</p>
+      <p>¯\_(ツ)_/¯</p>
+      <hr class="solid">
+      <h3>設計技術：卡片式設計</h3>
+      <p>Tinder 最著名的不外乎是那卡片式設計，而卡片式設計本身的好處就有許多，舉凡：響應兼容性高、優秀簡潔的內容整合、方便瀏覽與點擊、設計較自由等，都是卡片式設計常見的優點。</p>
+      <p>而在 Tinder 中，每位使用者個人資料都是一張卡片，因此當使用者在瀏覽時，只需要單手就能快速的左右滑動。在操作上大幅減少使用者的動作，讓他們能夠更專注地欣賞照片。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*M1P3hFh2wW1goYcEjMuvig.png"
+          data-width="887" data-height="588" src="https://cdn-images-1.medium.com/max/800/1*M1P3hFh2wW1goYcEjMuvig.png">
+        <figcaption class="imageCaption"><a
+            href="https://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php"
+            data-href="https://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php"
+            class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">單手可操作螢幕範圍熱區圖</a></figcaption>
+      </figure>
+      <p>視覺感受的順位總是在第一的。</p>
+      <p>在 Tinder
+        中，每位使用者框限於一張卡片內，每次的瀏覽都是一整張照片映入眼前，可能連對方叫什麼名字、年齡等資訊都還沒注意，就決定這個人你喜不喜歡了；在個人體驗期間中遇到的受訪者，通常都會問到：「甚麼是決定你將我往右滑的動機？」。不外乎都是看了照片、發現有類似相近的興趣等因素下決定的，少數則是因為來自同學校。
+      </p>
+      <p>就如同商品買賣，這無關乎某人多「稀有」或「價值不斐」，每個人都是獨一無二的，而是某人「看起來」多有價值。</p>
+      <hr class="solid">
+      <h3>商業策略：Tinder Plus、Tinder Gold、廣告</h3>
+      <p>Tinder 賺錢的方式個人認知有兩大種：</p>
+      <ul class="postList">
+        <li name="b364" id="b364" class="graf graf--li graf-after--p">進階版會員(Tinder Plus, Tinder Gold)</li>
+        <li name="00a5" id="00a5" class="graf graf--li graf-after--li">廣告</li>
+      </ul>
+      <p>Tinder 雖然主打基本免費使用，相信大家都知道天下絕無免費的使用。免費版本有許多限制，例如受搜尋範圍限制、無法配對範圍外的對象等，因此這時候就是進階版會員的特權了。</p>
+      <p>進階版的功能勢必是要讓付費使用者有更好的體驗，同時增進商業生態系統<strong
+          class="markup--strong markup--p-strong">。</strong>這些付費功能必須提升使用者對產品的黏著度，並讓免費使用者產生落差感，進而激發想要使用進階功能的動機，有效增加最大收益。
+      </p>
+      <p>接下來會稍微介紹進階版會員的內容，並簡單演示個人體驗時的內心戲：</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*oabWKvFkDX4D1FO2KQ4M_g.png"
+          data-width="1058" data-height="941"
+          src="https://cdn-images-1.medium.com/max/800/1*oabWKvFkDX4D1FO2KQ4M_g.png">
+        <figcaption class="imageCaption">進階版會員費用一覽</figcaption>
+      </figure>
+      <ul class="postList">
+        <li name="0d20" id="0d20" class="graf graf--li graf-after--figure"><strong
+            class="markup--strong markup--li-strong">Unlimited Likes
+            無限多按讚次數：<br></strong>免費使用者會有喜歡次數，這樣的限制「或許」某種程度上是在防範濫用，但對於某些使用者因為這個限制而體驗上覺得不方便。</li>
+      </ul>
+      <pre name="e2b7" id="e2b7" class="graf graf--pre graf-after--li">個人使用經驗是一天滑不到10次喜歡。</pre>
+      <ul class="postList">
+        <li name="9462" id="9462" class="graf graf--li graf-after--pre"><strong
+            class="markup--strong markup--li-strong">Rewind
+            倒帶</strong>：<br>我們知道人生不能倒帶，對免費使用者來說滑錯的就像錯過的愛一樣。讓不小心滑左的使用者，可以倒帶重來。有了這功能，使用者就有了 Second chance
+          呢！也不用再失望地唱：「終於看開，愛回不來~」。</li>
+      </ul>
+      <pre name="cb5d" id="cb5d" class="graf graf--pre graf-after--li">個人使用經驗是滑錯的機會小於滑到想訪談的，不過若能有這樣的機制也是個保障。</pre>
+      <ul class="postList">
+        <li name="3eb6" id="3eb6" class="graf graf--li graf-after--pre"><strong
+            class="markup--strong markup--li-strong">5 Super Likes per day </strong>: <br>在 Tinder 裡，使用者是無法看到誰喜歡我。而
+          “Super Like” 的功能，則可以讓使用者在看到對方卡片時，就可以知道這個人「超級喜歡我」，一般使用者限制 1 次/天，而有了進階會員則可提升到 5 次/天。</li>
+      </ul>
+      <pre name="ae7b" id="ae7b" class="graf graf--pre graf-after--li">收到幾次，感覺上就是個特別標註。</pre>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*WaL9G9afDWAlH0eiqWQhMA.png"
+          data-width="1503" data-height="1334"
+          src="https://cdn-images-1.medium.com/max/800/1*WaL9G9afDWAlH0eiqWQhMA.png">
+        <figcaption class="imageCaption">對象卡片會有藍色漸層，並在年齡旁邊加上一顆藍色星星。</figcaption>
+      </figure>
+      <ul class="postList">
+        <li name="97d8" id="97d8" class="graf graf--li graf-after--figure"><strong
+            class="markup--strong markup--li-strong">Passport
+            護照</strong>：<br>這個功能大概對許多使用者會夢寐以求的，可以自己定位地理位置，隨時隨地到各國交友，然而免費使用者是受限於系統內定位，因此想要跳脫空間地域的限制就需要這功能了。</li>
+      </ul>
+      <pre name="667d" id="667d" class="graf graf--pre graf-after--li">想要認識異國朋友、來場異國戀情嗎？那這就是你需要的！</pre>
+      <ul class="postList">
+        <li name="fdaf" id="fdaf" class="graf graf--li graf-after--pre"><strong
+            class="markup--strong markup--li-strong">1 Boost each
+            month</strong> : <br>使用者一定會有期望能被更多人看到的慾望。想要讓更多人認識你？提高個人檔案的曝光度？Tinder 提供這個功能給有需要展現自我的你。</li>
+      </ul>
+      <pre name="44f9" id="44f9" class="graf graf--pre graf-after--li">對我個人來說意義不明的功能。</pre>
+      <ul class="postList">
+        <li name="b87e" id="b87e" class="graf graf--li graf-after--pre"><strong
+            class="markup--strong markup--li-strong">Turn Off Ads 關閉廣告。<br></strong>不用多說，許多人都會想要關閉惱人的廣告。</li>
+      </ul>
+      <pre name="caf7" id="caf7" class="graf graf--pre graf-after--li">個人使用經驗是實際上滑到廣告的機率不算頻繁，以我個人還能接受廣告的出現。</pre>
+      <p>Tinder Gold 與 Plus 版本的差異在於 Gold 多了兩項功能，分別是：知道誰對你感興趣，以及對 Tinder 每日幫你「精選」的所有對象按讚。</p>
+      <p>除了一整套的進階版會員外，Tinder也提供部分功能單次購買的機制。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*u03UBCww-9msleq3Yf2Hig.png"
+          data-width="1082" data-height="641"
+          src="https://cdn-images-1.medium.com/max/800/1*u03UBCww-9msleq3Yf2Hig.png">
+        <figcaption class="imageCaption">拆開單賣的進階版功能價目表</figcaption>
+      </figure>
+      <p>從上面一連串額外付的功能看下來，Tinder 在金額上巧妙的利用了 UX 設計中認知偏差上的<strong class="markup--strong markup--p-strong">誘餌效應</strong>。
+      </p>
+      <hr class="solid">
+      <h3>質問與挑戰：</h3>
+      <p>Tinder 因為有著「以照片為主」的設計，多數使用者一定是看照片決定對象、以長相評斷一個人的成分比較大，所以照片自然就變得很重要。雖然說這樣設計上確實很好，然而這樣也因此有「照騙」的問題，進而衍伸出約炮軟體的壞名聲。至於
+        Tinder 官方該如何面對這問題處理，就讓我們靜觀其變吧。</p>
+      <hr class="solid">
+      <h2>Total</h2>
+      <p>從使用者體驗設計、設計技術及商業策略三者分析：</p>
+      <ul class="postList">
+        <li name="ba95" id="ba95" class="graf graf--li graf-after--p">簡化的流程，大幅降低使用者的學習門檻、提升使用者的愉悅感。</li>
+        <li name="5e79" id="5e79" class="graf graf--li graf-after--li">卡片式設計與遊戲化的體驗，讓使用者有無法預期的期待感，並且無形之中瀏覽上癮。</li>
+        <li name="eed8" id="eed8" class="graf graf--li graf-after--li">商業策略上，進階版的權限則帶給付費使用者更進階的體驗。</li>
+      </ul>
+      <p>Tinder 的成功除了帶動同類型交友 app 的突破外，也帶來了一股「Tinder-like」的設計風潮。整個產品的設計上可以看出對於 UX 上的用心，瞭解目標族群的需求，並帶給使用者優質的體驗。</p>
+      <p>至於近年來越來越多相仿者後繼登場，加上網路詐騙以及約跑軟體等負面問題，Tinder 如何保持下去，就期待他們後續的發展。</p>
+      <p>最後聊一下交友 app 的部分。</p>
+      <p>許多人認為交友 app 上多數是想約炮的，認為「使用者比較多不是想要認真的關係。」，個人也曾多次被許多來者單刀直入地約炮過。使用期間多數配對到的是聊了一段時間才知道來意，少數則是遇過一些使用者是真的想來尋找另一半。</p>
+      <p>總之，現實有著變態網路也不會少，人們只是藉由網路的便利性多了一個認識彼此的管道，其更有效率且不受限制。因此無論在何處交友上一定都有優質和劣質的人，如何判斷與迴避就取決於個人了。</p>
+      <p>這是小弟我個人的第一篇草率 UX 研究心得，網路上已經有許多專業分析 Tinder 的心得，但總是想嘗試寫看看，因此如有任何建議都歡迎給予指教。</p>
+      <hr class="solid">
+      <h2>Reference</h2>
+      <p><a
+          href="https://medium.com/uxeastmeetswest/%E7%94%A2%E5%93%81%E5%88%86%E6%9E%90-tinder-%E7%BE%8E%E5%9C%8B%E6%9C%80%E5%8F%97%E6%AD%A1%E8%BF%8E-%E5%82%99%E5%8F%97%E7%88%AD%E8%AD%B0%E7%9A%84%E6%89%8B%E6%A9%9F%E4%BA%A4%E5%8F%8B%E8%BB%9F%E9%AB%94-6e6ece6d9834"
+          data-href="https://medium.com/uxeastmeetswest/%E7%94%A2%E5%93%81%E5%88%86%E6%9E%90-tinder-%E7%BE%8E%E5%9C%8B%E6%9C%80%E5%8F%97%E6%AD%A1%E8%BF%8E-%E5%82%99%E5%8F%97%E7%88%AD%E8%AD%B0%E7%9A%84%E6%89%8B%E6%A9%9F%E4%BA%A4%E5%8F%8B%E8%BB%9F%E9%AB%94-6e6ece6d9834"
+          class="markup--anchor markup--p-anchor" target="_blank">【產品分析】Tinder — 美國最受歡迎、備受爭議的手機交友軟體</a></p>
+      <p><a href="https://vide.tw/4689" data-href="https://vide.tw/4689" class="markup--anchor markup--p-anchor"
+          rel="noopener" target="_blank">「Tinder-like」卡片設計 方便你用拇指下決定</a></p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

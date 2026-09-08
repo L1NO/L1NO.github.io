@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- HTML Meta Tags -->
+  <title>Ossian Lin | Product Designer & UX Researcher</title>
+  <meta name="description"
+    content="Ossian Lin is a Product Designer and UX Researcher based in Taiwan specializing in user research, design systems, and digital product experience." />
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:url" content="https://ossianlin.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ossian Lin | Product Designer & UX Researcher" />
+  <meta property="og:description" content="A diligent Product Designer and UX Researcher in Taiwan." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/L1NO/L1NO.github.io/main/img/Portrait.png" />
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com" />
+  <meta name="twitter:title" content="Ossian Lin | Product Designer & UX Researcher" />
+  <meta name="twitter:description" content="A diligent Product Designer and UX Researcher in Taiwan." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/L1NO/L1NO.github.io/main/img/Portrait.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="articles-data.js" defer></script>
+  <script src="articles-render.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <main id="about">
+    <section class="hero">
+      <div class="hero-pic-container">
+        <div class="hero-orbit"></div>
+        <div class="hero-pic">
+          <img src="img/Lino.png" alt="Ossian Lin" />
+        </div>
+      </div>
+      <div class="hero-info">
+        <h1>Ossian Lin</h1>
+        <h2>Product Designer & UX Researcher</h2>
+        <div class="logo-container">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer"
+            title="LinkedIn">
+            <img src="img/Linkedin.png" alt="LinkedIn profile" />
+          </a>
+          <a href="https://www.instagram.com/l1n0_tw/" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <img src="img/Instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <img src="img/Github.png" alt="GitHub profile" />
+          </a>
+          <a href="https://medium.com/sekkei-tori-seikatsu" target="_blank" rel="noopener noreferrer" title="Medium">
+            <img src="img/Medium.png" alt="Medium publication" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com" title="Email">
+            <img src="img/email.png" alt="Send Email" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Actions / CTA -->
+    <section class="cta">
+      <a href="asset/2025_Resume_Ossian Lin.pdf" target="_blank">
+        <button class="btn download-btn">
+          <span>Resume</span>
+        </button>
+      </a>
+      <div>
+        <button class="btn btn-color-1" onclick="openPop()">Share</button>
+        <div id="popupDialog" style="display: none">
+          <img src="img/qr-code.png" alt="QR code" />
+          <button class="btn btn-color-1" onclick="openPop()">Close</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio Intro -->
+    <section class="experience">
+      <div class="introduction">
+        A diligent Product Designer with experience across industry and
+        government. Specializing in user research, design systems, and digital
+        products tailored for Taiwanese citizens and global audiences.
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="Projects" id="projects">
+      <div class="section-title-container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">
+          A showcase of digital products, design platforms, and publications.
+        </p>
+      </div>
+
+      <div class="project-carousel-wrapper">
+        <button class="carousel-btn prev-btn" id="projectPrevBtn" aria-label="Previous Project">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="carousel-viewport" id="carouselViewport" tabindex="0" aria-label="Selected Projects Carousel">
+          <div class="carousel-track" id="projectsTrack">
+            <!-- Project 1 -->
+            <div class="project-slide">
+              <a href="asset/project-STEMUP.pdf" target="_blank" class="project-card-link">
+                <img src="img/project-STEMUP.png" alt="STEM UP" />
+                <div class="project-overlay">
+                  <h3 class="project-title">STEM UP</h3>
+                  <p class="project-description">
+                    An AR English learning platform designed for immersive interactive education.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-slide">
+              <a href="projects/project-childmind.html" class="project-card-link">
+                <img src="img/project-Child.png" alt="Childmind UX Research" />
+                <div class="project-overlay">
+                  <h3 class="project-title">Children Mind Growth</h3>
+                  <p class="project-description">
+                    UX research & product design for 6-8 year olds emotional learning platform.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-slide">
+              <a href="https://medium.com/sekkei-tori-seikatsu" target="_blank" rel="noopener noreferrer"
+                class="project-card-link">
+                <img src="img/project-Medium.png" alt="Medium Publication" />
+                <div class="project-overlay">
+                  <h3 class="project-title">Medium Publication</h3>
+                  <p class="project-description">
+                    Curated publication exploring the intersection of design, technology, and life.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-slide">
+              <a href="#" class="project-card-link">
+                <img src="img/comingSoon.png" alt="Coming Soon Project" />
+                <div class="project-overlay">
+                  <h3 class="project-title">Design Systems Hub</h3>
+                  <p class="project-description">
+                    Next-generation component library & design token workflow. Coming soon.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn next-btn" id="projectNextBtn" aria-label="Next Project">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- View All Projects Button -->
+      <div class="view-all-container">
+        <a href="projects.html" class="view-all-btn" id="viewAllProjectsBtn">
+          <span>View All Projects</span>
+          <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Writing & Articles Section -->
+    <section class="articles-section" id="writing">
+      <div class="section-title-container">
+        <h2 class="section-title">Writing</h2>
+        <p class="section-subtitle">
+          Essays, case study write-ups, and frameworks on UX research, design systems, and product strategy.
+        </p>
+      </div>
+
+      <div class="articles-grid" id="homeArticlesGrid">
+        <!-- Dynamically rendered from articles-data.js -->
+      </div>
+
+      <div class="view-all-container">
+        <a href="articles.html" class="view-all-btn" id="viewAllBtn">
+          <span>View All Articles</span>
+          <span>→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

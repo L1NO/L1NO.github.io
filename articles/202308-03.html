@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>¡Apagando las luces! 當全台斷網之時 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="The Design We Open Workshop — 網路中斷黑客松工作坊課後心得" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202308-03.html" />
+  <meta property="og:title" content="¡Apagando las luces! 當全台斷網之時 | Ossian Lin" />
+  <meta property="og:description" content="The Design We Open Workshop — 網路中斷黑客松工作坊課後心得" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*ehj9cJGH0md-hhCocSccmg.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202308-03.html" />
+  <meta name="twitter:title" content="¡Apagando las luces! 當全台斷網之時 | Ossian Lin" />
+  <meta name="twitter:description" content="The Design We Open Workshop — 網路中斷黑客松工作坊課後心得" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*ehj9cJGH0md-hhCocSccmg.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        ¡Apagando las luces! 當全台斷網之時
+      </h1>
+
+      <p class="article-main-subtitle">
+        The Design We Open Workshop — 網路中斷黑客松工作坊課後心得
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Aug 2023
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*ehj9cJGH0md-hhCocSccmg.png" data-width="1440" data-height="804" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*ehj9cJGH0md-hhCocSccmg.png"></figure><h2>前言</h2><p>網路對於現今社會已經是基本的生活必需品，連上網路後任何資訊隨手可得、甚至打破空間限制讓我們能與任何地區的人們交流。以上這段相信讀者們早已感同身受，對於便捷的網路生活不以為意。回想在兵營 12 天的「夏令營」生活，每天只有就寢前 10 分鐘給予行動電話連絡家人用，對於網路成癮症如我的同袍，可說是十分煎熬。畢竟習慣每天隨手可得各式文章資訊，突然沒能跟上世界腳步的落差感，是相當可怕的。</p><p>本次很榮幸能參加由 COSCUP、IxDA Taiwan 和來自英國的 NGO 團體 <a href="https://simplysecure.org/what-we-do/" data-href="https://simplysecure.org/what-we-do/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Superbloom</a> 所舉辦「The Design We Open — 網路中斷黑客松」，這是一場以<strong class="markup--strong markup--p-strong">英文進行</strong>、配合中文翻譯的工作坊，同時題目不單是針對程式工程師面向，還開放給對大規模網路斷訊設計防護演練有興趣的設計師、專案管理師等不同領域者參與。藉由這樣新鮮的工作坊讓參與者一起發想「當全台網路斷掉時該怎麼辦」，並提出在各種不同的斷網情境下，如何讓人們能保持聯繫、甚至基於人權隱私等問題，設計出適合的解決方法。</p><p>接下來就讓我們快速回顧一下當天工作坊活動心得，看看工程師與設計師們在這場活動中能激發什麼樣的 idea~</p><figure class="article-figure"><img class="graf-image" data-image-id="1*eUH_H7OunFwtDDuI-p7oQw.png" data-width="3024" data-height="2940" src="https://cdn-images-1.medium.com/max/800/1*eUH_H7OunFwtDDuI-p7oQw.png"><figcaption class="imageCaption">Let’s GO!</figcaption></figure><hr class="solid"><h2>更廣闊的斷網情境</h2><p>起初對於「斷網」的情境大概只想到各種天災導致，尤其多數人應該都歷經過 921 大地震，颱風雖然年年有但鮮少嚴重到當年 921 大地震的情況。不過「斷網」的情境不限於天災所造成，講師介紹自己組織工作內容及利用開源工具等方式，協助過例如因戰爭、政治或輿論等因素被迫逃亡或無法正常使用我們所習慣的網路資源如何維持聯繫，讓「斷網」的概念以更廣闊的視野讓參與者能有更多發想空間。</p><p>講師介紹了幾個<strong class="markup--strong markup--p-strong">開源軟體(Open Source Software, OSS)工具</strong>，都是平時我們不太會接觸到的開源軟體，例如開源軟體 Destiny (<a href="https://leastauthority.com/community-matters/destiny/" data-href="https://leastauthority.com/community-matters/destiny/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">官方網站</a>)就是一個以<strong class="markup--strong markup--p-strong">對等式網路(Peer-to-peer, P2P)</strong>的加密文件傳輸應用程式，讓使用者可以在免註冊狀況下進行傳輸檔案；Briar (<a href="https://briarproject.org/" data-href="https://briarproject.org/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">官方網站</a>)則是一款透過藍牙或 Wi-Fi 進行同步的通訊軟體，不需要依賴中央伺服器，使用者即可以設備間直接同步傳輸訊息。這些工具跟我們平時使用的通訊軟體相比，不論在傳輸文字訊息或檔案一點都不遜色！在特殊狀況下利用如 P2P、藍芽等技術，可以有效地傳遞資訊又避開被監測的可能性。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*w4pEzbpHY80dLFTsJ8sGDg.png" data-width="675" data-height="243" src="https://cdn-images-1.medium.com/max/800/1*w4pEzbpHY80dLFTsJ8sGDg.png"><figcaption class="imageCaption">Briar 訊息傳輸的方式能夠在沒有中央伺服器管控環節下直接傳輸。(圖源：<a href="https://briarproject.org/how-it-works/" data-href="https://briarproject.org/how-it-works/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">官方網站</a>)</figcaption></figure><p>然而，這些開源工具誠如講師提到跟多數軟體一樣，通常是有著程式技術的工程師先行開發完成，而存在著許多使用者易用性問題，即便介面已經很新穎簡潔，但仍有提示寫滿程式語言般的狀況需要設計師協助，因此本次開放給不同領域的朋友一起來對於開源軟體進行設計。有趣的是，在活動過程中打聽為什麼想來跟期待能有甚麼收穫時，多數都以為這是場有實作 coding 環節的工作坊，很明顯看得出來有許多工程師有著不錯的 idea 打算今天表現一番，但其實短短半天活動要能做出東西時間上是不夠的。</p><hr class="solid"><h2>發散使用者旅程探索斷網情境</h2><p>介紹完相關背景知識後，緊接著就讓各組挑選三份現成的<strong class="markup--strong markup--p-strong">人物誌(Persona)</strong>讓大家挑選，當然也保留自行修改設計的空間，而三組人物誌也挺特別少見的：有挖掘真相新聞的記者、受政治迫害的大學資工教授，還有性別權力推廣活動的召集者，三組都是挺新鮮但也確實很可能出現於本次活動情境的人物。很妙的是大家最後都沒人選性別議題，我想可能是相較於前兩者以政治氛圍較重的台灣環境較容易發揮，或是這種議題較新穎而不易探索。</p><p>我們小組挑了較貼近組員們背景的大學資工教授，不過對於預設的人物誌也做了些調整，畢竟身為資工教授不熟悉資安有些說不過去，因此我們將對象轉為他的家人，進而衍生成討論這一家人逃亡的情境題。整個情境流程大概是：開始有抗議風聲→人民抗爭發生→開始攜家帶眷逃亡他國→因身分問題遭拒→繞道偷渡，最後安身他國開始新生活。我們將使用者發生情境以時間線排序後，探討他當下感受、想法，以及會參與的人有哪些來完整流程，例如剛開始聽到風聲可能還不以為意，到爆發抗爭後的網路斷訊如何與外界聯繫，甚至到了他國該如何與仍在逃亡的親朋好友聯絡，完整呈現一個可能逃亡過程的情境。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*4esuIfNpsM-XVXKbadz76A.jpeg" data-width="4032" data-height="2389" src="https://cdn-images-1.medium.com/max/800/1*4esuIfNpsM-XVXKbadz76A.jpeg"><figcaption class="imageCaption">針對人民抗爭逃難到異鄉尋求安置的情境流程以完整的時間軸走過。</figcaption></figure><p>討論過程中對於使用者心境跟想法這塊以這次練習來說比較粗略，可能是因為大家都受於人物誌而限縮可能性，當然有些突發奇想的情境為整個流程帶來趣味性，例如成員中年紀最輕的大學生就提出可能「因為跋山涉水造成的疲勞、使得逃亡者選擇拋下妻小」，雖然可能存在這議題但有些極端，因此大家討論後轉化為比較柔和的「安置在某個安全區，之後再回來迎接」。經過各種情境發想排序後，上半場最後請各組進行分享，講師也在發表後給予回饋，結束發散的思考環節。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*KzMWiuEypSEizJw_gtMY_Q.jpeg" data-width="4032" data-height="3024" src="https://cdn-images-1.medium.com/max/800/1*KzMWiuEypSEizJw_gtMY_Q.jpeg"><figcaption class="imageCaption">講師對本組的評價個人覺得其中 &quot;Peace geeks&quot; 這個挺具有意義的、很能反映本組氣氛。</figcaption></figure><hr class="solid"><h2>收斂使用者重點設計解決方案</h2><p>下半場我們直接來到收斂的階段，講師要求各組從上半場的情境中找出 2~3 項組員們認為整個流程最為嚴重的痛點，並依據這些痛點進行討論、找出解決方法。我們主要根據三項情境提出解決方案：抗爭發生時被切斷網路如何聯絡、難民身分無法被認同時如何尋求幫助，以及安身立命後如何聯絡仍在受難的親朋好友。</p><p>關於抗爭發生時被切斷網路的狀況可能有很多種，基本上都是突發性一瞬間即切斷，但有些傳統通訊方式通常還是可以使用，例如有線電話撥號連線，善用這些傳統方式讓我們仍有聯絡方式；對於逃難身分的狀況有很多可能，畢竟從未接觸過這類情境，但如果是難民越境有可能因為局勢因素而護照無法使用，這種情況下則需要另尋幫助，例如難民使用離線、點對點方式更新人道救援組織提供的避難所，待專業人員協助安置新家園；最後聯繫逃難中的親戚朋友，則是可以用類似暗碼密語的方式，藉由人與人之間的傳遞方式將訊息協助傳接下去至知道解密的人，來達到保密安全的資訊傳遞。</p><p>針對這些解決方法我們採以 Storyboard 形式呈現，以簡單的圖例將情境畫面呈現，不但能快速製作減少製作成本、讓他人容易理解。很棒的是在鼓勵組員勇於動手繪圖後，大家都挺投入繪製 Storyboard、享受自由發揮的樂趣，並且樂於發表親手繪製的解決方案，這是整場活動感觸最深的，畢竟要工程師繪圖可能許多人會因為畫得不好而放棄，但當設計師也畫的一蹋糊塗、組員卻有人樂在其中，整個氛圍就會熱鬧起來。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*5ECVuHooB8y5H_64Fz3nxQ.jpeg" data-width="4032" data-height="3024" src="https://cdn-images-1.medium.com/max/800/1*5ECVuHooB8y5H_64Fz3nxQ.jpeg"><figcaption class="imageCaption">Storyboard 對於簡單的討論結果會比直接畫 UI 來得有幫助。</figcaption></figure><hr class="solid"><h2>後記</h2><p>這次會挑選這場工作坊主要是題目跟活動夠特別，在滿滿的程式工程師活動中舉辦非常軟性的設計工作坊，題目卻是嚴肅認真的探討廣闊的斷網情境。同時今年 COSCUP 廣邀不同國家的講者，讓這場工作訪除了講者全程英文，也有些小組是配到非中文語系的成員，因此整場活動以英文溝通，對，我這組就是。秉持著開源的精神，整場活動並沒有發生任何爭論，大家都以理性、友善、公開的討論，即便涉及到不少有關政治局勢議題，都還是單就活動內容繼續工作坊。</p><p>其實在這次挑選案例上，聽了組員分享本次選用的人物誌貼近「編程隨想」事件後更能理解這個使用者的背景，因此就算是組員間全程英文討論、又各自背景不同下，在情境設計時大家有原型可做參考而更容易發想。組員間雖然工程領域為重，但從情境規劃到收斂解決方法都沒有生硬的討論，鮮少有先加入實際技術應用討論，大家都勇於發表想法、尤其動手繪圖，讓整場活動小組互動上非常舒服。</p><p>不過回到現實面上，對於這些技術的應用其實還是抱持著疑慮，尤其是應用程式的安裝，在毫無網路下如何取得是個大問題，另外點對點的傳輸如果依賴著同樣軟體、而這些開源軟體未被廣泛安裝時，能否有效運作就又是另一個問題了。另外，對於戰爭或政權等壓力下帶來的「斷網」情境以身處安逸的我們確實難以想像，但回顧<em class="markup--em markup--p-em">這是我的戰爭(This War Of Mine)</em>、<em class="markup--em markup--p-em">九十六號公路(Road 96)</em>這兩款遊戲，多少都能有些同理或情境應用，只能說本次工作坊時間上太少，不然這類型的議題導入技術確實是非常有趣。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*gBOKHWk_wlutUS5CnBq8Zg.jpeg" data-width="2364" data-height="1773" src="https://cdn-images-1.medium.com/max/800/1*gBOKHWk_wlutUS5CnBq8Zg.jpeg"></figure><p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

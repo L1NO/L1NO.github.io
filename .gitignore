@@ -1,0 +1,11 @@
+# Ignore local tools, draft posts, and raw Medium exports
+tools/
+medium_posts/
+posts/
+
+# Ignore scratch files and Python cache
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>建構設計師與工程師的溝通橋梁 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="《Design System 的設計心法 — 建立、彈性到加速成長》講座心得" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202204.html" />
+  <meta property="og:title" content="建構設計師與工程師的溝通橋梁 | Ossian Lin" />
+  <meta property="og:description" content="《Design System 的設計心法 — 建立、彈性到加速成長》講座心得" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*ffZ1DOdcWRA3FuMDs1cenA.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202204.html" />
+  <meta name="twitter:title" content="建構設計師與工程師的溝通橋梁 | Ossian Lin" />
+  <meta name="twitter:description" content="《Design System 的設計心法 — 建立、彈性到加速成長》講座心得" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*ffZ1DOdcWRA3FuMDs1cenA.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">Design Systems</span>
+      </div>
+
+      <h1 class="article-main-title">
+        建構設計師與工程師的溝通橋梁
+      </h1>
+
+      <p class="article-main-subtitle">
+        《Design System 的設計心法 — 建立、彈性到加速成長》講座心得
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Apr 2022
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*ffZ1DOdcWRA3FuMDs1cenA.png" data-width="1440" data-height="804" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*ffZ1DOdcWRA3FuMDs1cenA.png"></figure><h2>前言</h2><p>對於 Design system 應該很多設計師都不陌生這個詞，也可能很多團隊也有引入使用，但對於工程師可能就沒甚麼概念了。本次參與了 IxDA 所舉辦的第二十小節互動快板，請來 awwrated 的創辦人 Harry Chuang 分享為他們公司設計到開發設計系統的心路歷程，以及對於如何建構能讓設計師跟工程師都通用、更能討論的 UI 元件庫平台。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*aFvrL7lR3_CslSH2bZu5Jg.jpeg" data-width="4031" data-height="1814" src="https://cdn-images-1.medium.com/max/800/1*aFvrL7lR3_CslSH2bZu5Jg.jpeg"></figure><hr class="solid"><h2>關於 Design System 這件事</h2><p>設計系統 Design system，從字面上來看就是為產品定義一套設計原則規範，裡面包含字型選用、字體大小、UI 元件等細節，最為知名的如 <a href="https://m3.material.io/" data-href="https://m3.material.io/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Google Material Design</a> 以及 <a href="https://developer.apple.com/design/human-interface-guidelines/" data-href="https://developer.apple.com/design/human-interface-guidelines/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Human Interface Guidelines</a>。設計師可以根據這個系統或是準則進行應用於這些作業系統上的對應設計，當然每家公司也都有著不同產品的設計系統，來讓自家產品達到一致性、建立和諧的使用者體驗，同時達到團隊需多人或跨部門協作。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*fRje4o7zaSD8d89ht3T2iA.png" data-width="530" data-height="220" src="https://cdn-images-1.medium.com/max/800/1*fRje4o7zaSD8d89ht3T2iA.png"><figcaption class="imageCaption">Apple 對於 iOS 系統按鈕的規範。(<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/buttons/" data-href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/buttons/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">官方連結</a>)</figcaption></figure><p>根據講者的分享其實就是一個「收斂」，例如團隊將字體大小 14 定義為預設，正是給予 14 作為整個產品字體的預設值，也是讓數字有了意義。藉由將產品拆解的過程中找到重複利用的元件，進而拼湊成一個屬於產品的設計系統，來達到為團隊在討論開發上的一個「收斂」。</p><hr class="solid"><h2>建構強大的 UI 元件庫</h2><p>在過去學習無論是 Adobe Xd 還是 Figma 這類設計工具，相信多少都會用到「元件 Component」這個功能，就是個讓你在<strong class="markup--strong markup--p-strong">設計上可重複利用設計好的資料庫概念</strong>，跟大家常用的 copy-paste 不同在於使用元件可以<strong class="markup--strong markup--p-strong">不改動原始設計好的物件</strong>下廣泛利用於整個專案中<strong class="markup--strong markup--p-strong">需要重複出現、利用</strong>的地方。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*5aIgLTt1Po8jinE1pa4ZAQ.png" data-width="1440" data-height="1024" src="https://cdn-images-1.medium.com/max/800/1*5aIgLTt1Po8jinE1pa4ZAQ.png"><figcaption class="imageCaption">根據不同狀態按鈕呈現方式不同設計的元件庫，能方便在設計時切換狀態呈現。(by L1N0)</figcaption></figure><p>對於設計師來說在設計上真的輕鬆許多，例如 Figma 的元件庫就能在同樣頁面下切換按鈕狀態，而不是額外製作一個新的狀態按鈕。這對負責程式開發的工程師來說這些 UI 元件能幫上甚麼忙？其實就如同設計師使用方式類似，只不過工程師在這上面是為了能用圖像化的方式更容易理解設計師所想要呈現的結果，有點像是在寫網頁前端時會去 Bootstrap 等官方網站找文件來看，裡面規範各元件的呈現方式及程式語法那樣。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*DjM3tL0GSen-Cy2O5tzbLA.png" data-width="1292" data-height="927" src="https://cdn-images-1.medium.com/max/800/1*DjM3tL0GSen-Cy2O5tzbLA.png"><figcaption class="imageCaption">Bootstrap 5.0 按鈕元件使用方式。(<a href="https://getbootstrap.com/docs/5.0/components/buttons/" data-href="https://getbootstrap.com/docs/5.0/components/buttons/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">官方連結</a>)</figcaption></figure><p>本次講者提到的 Storybook 正是一個理想的建構 UI 元件庫平台，裡面除了可以定義設計師常用的規範外，還能加入程式碼讓工程師除了看懂圖像化外、同時也了解背後的程式碼，成為產品團隊的共通字典。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*YA-HiCKIo-kDpel8zmYlHw.jpeg" data-width="4032" data-height="3024" src="https://cdn-images-1.medium.com/max/800/1*YA-HiCKIo-kDpel8zmYlHw.jpeg"><figcaption class="imageCaption">UI 元件庫平台在設計師及工程師兩者間的運作關係。</figcaption></figure><hr class="solid"><h2>那麼，該如何起手呢？</h2><p>從前面我們可以瞭解到設計系統對於設計師及工程師的實用性，以及建構一個讓雙方能用以溝通的平台是多麼有幫助又重要後，如何開始建構想必才是最根本的問題。畢竟如果不是公司指派下要額外去負責看上去挺龐大的平台，即便自願跳下來做也要讓團隊成員願意使用。</p><p>講者分享到當初在開始建構時花了不少時間「說服」所有人來達成團隊的「共識」，當大家都能理解平台的益處後才招募設計跟工程領域的成員開始著手建構。對於團隊第一次做設計系統沒有頭緒方向下可以<strong class="markup--strong markup--p-strong">選擇參考其他公司的設計系統</strong>，像是講者就很推薦從 <a href="https://ant.design/" data-href="https://ant.design/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Ant design</a> 做參考，<strong class="markup--strong markup--p-strong">初期先不要複雜化、專注目前專案常用的元件</strong>，洞察可共用的元件及元素，並系統化命名、給予基本的定義規劃。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*ftbhmihopJw1zm5Nhbu6Fg.jpeg" data-width="3024" data-height="3039" src="https://cdn-images-1.medium.com/max/800/1*ftbhmihopJw1zm5Nhbu6Fg.jpeg"><figcaption class="imageCaption">命名上講者建議不用太絕對，保留適當的空間讓定義不會受限。</figcaption></figure><p>當然團隊的設計系統也不太可能一成不變，可能會隨著產品的改版等作調整，保持元件結構化及彈性化能當結構越清楚時可演變出更豐富得運用，例如用於不同裝置端，搭配平台可以直接做測試及確認，來提升團隊協調通。因此<strong class="markup--strong markup--p-strong">沒有絕對的設計系統</strong>，讓平台保持彈性、學習曲線不要太高，來避免導致只有部分人使用的窘境。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*0I3wL1ykNy4hqPZG-WyKig.jpeg" data-width="3909" data-height="2455" src="https://cdn-images-1.medium.com/max/800/1*0I3wL1ykNy4hqPZG-WyKig.jpeg"><figcaption class="imageCaption">平台的目的是讓團隊協調溝通所建，記得保持彈性讓成員都能使用。</figcaption></figure><hr class="solid"><h2>後記</h2><p>過去在開發產品的經驗中，不論是設計師還是工程師都沒甚麼在管設計系統或是版號，當天聽了 Q&amp;A 後覺得當時來說是算正常的，畢竟人力跟時間上都是個問題，一般來說都還是會先專注於現行產品的開發完，之後才回頭想這些。</p><p>藉由這次的講座，更瞭解到設計系統能如何在設計師跟工程師兩者間運作，尤其是能夠建構出一套 UI 元件庫平台讓整個產品團隊有效溝通，這項雖然是個大工程但對於產品團隊其實都是必經之路，否則當未來產品線龐大時在設計上很難有一套規則外，對於現行開發上要在各裝置平台轉換也都需要設計系統來維持產品的一致性呢！</p><p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

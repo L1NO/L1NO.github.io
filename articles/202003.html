@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>關於評價這件事 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="5等分的評價，還是按讚？" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202003.html" />
+  <meta property="og:title" content="關於評價這件事 | Ossian Lin" />
+  <meta property="og:description" content="5等分的評價，還是按讚？" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/2560/1*ULXegyGqyAwYgnlOCiO6vA.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202003.html" />
+  <meta name="twitter:title" content="關於評價這件事 | Ossian Lin" />
+  <meta name="twitter:description" content="5等分的評價，還是按讚？" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/2560/1*ULXegyGqyAwYgnlOCiO6vA.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        關於評價這件事
+      </h1>
+
+      <p class="article-main-subtitle">
+        5等分的評價，還是按讚？
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Mar 2020
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*ULXegyGqyAwYgnlOCiO6vA.png"
+          data-width="1920" data-height="1080" data-is-featured="true"
+          src="https://cdn-images-1.medium.com/max/2560/1*ULXegyGqyAwYgnlOCiO6vA.png"></figure>
+      <h2>前言</h2>
+      <p>
+        評價這件事情對各位應該已經習以為常，不論是商品、食物、服務品質，甚至對一個人都可以給予評價，藉由使用者的評價來得到回饋，並分析來得到使用者的喜好、產品營運方向等更深入的議題以及修正，然後改善、調整、推出，再收回饋。LOOP~
+      </p>
+      <p>簡單舉例：</p>
+      <ul class="postList">
+        <li name="8df6" id="8df6" class="graf graf--li graf-after--p">Netflix 藉由使用者觀看、評價等資料分析並推薦給使用者相近的影片。</li>
+        <li name="1277" id="1277" class="graf graf--li graf-after--li">Amazon 顯示該商品評價幾顆星、是否與你相近的推薦品，來讓使用者能更快速做抉擇。</li>
+      </ul>
+      <p>接下來我們就簡單探討目前常見評價方式，這邊指挑了兩種較為廣泛使用的，同時也不會談太過深入的部分。</p>
+      <p>當然各方高手輩出，若有不及之處，或是有誤都歡迎給予賜正。</p>
+      <hr class="solid">
+      <h2>Like/Dislike a.k.a. Thumbs up/down ratings</h2>
+      <p>為最單純直白的評分方式：喜歡、不喜歡，一目瞭然。</p>
+      <p>不同於 Star rating 為使用者提供許多的評分選項，使用者直接做出評價不僅可以減輕使用者所需要付出的精力，也減輕了認知負荷。同時也能更快速收集更大的 database，這讓產品能變得更即時且更加個人化。</p>
+      <p>最常見的應該就是 Youtube 對於一部影片給予評價。</p>
+      <p>Youtube 據說<a href="https://youtube.googleblog.com/2009/09/five-stars-dominate-ratings.html"
+          data-href="https://youtube.googleblog.com/2009/09/five-stars-dominate-ratings.html"
+          class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">早期是使用 5-stars
+          rating</a>，然而他們發現評價結果使用者多數會去評價他們喜愛的影片並給予 5 顆星、並少數會去對於不喜歡的影片給予 1 顆星，這樣的結果明顯可見中間的評價並沒有發揮甚麼功用。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*-fkZFNEl0mde6XRQo7AwrA.png"
+          data-width="640" data-height="224" src="https://cdn-images-1.medium.com/max/800/1*-fkZFNEl0mde6XRQo7AwrA.png">
+        <figcaption class="imageCaption">多數人評價 5 顆星，而少數人評價 1 顆星，呈現極端的差異。</figcaption>
+      </figure>
+      <p>對於這樣的分析結果，Youtube 最後改成了現在的大家所見的「拇指 icon」來評價喜歡或是不喜歡該影片。當然，不只是 Youtube，<a
+          href="https://media.netflix.com/en/company-blog/goodbye-stars-hello-thumbs"
+          data-href="https://media.netflix.com/en/company-blog/goodbye-stars-hello-thumbs"
+          class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Netflix 也在 2017 做出了類似的改動。</a></p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*G7fQSIN7NsHWDHIeRT0pSQ.png"
+          data-width="815" data-height="552" src="https://cdn-images-1.medium.com/max/800/1*G7fQSIN7NsHWDHIeRT0pSQ.png">
+        <figcaption class="imageCaption">藉由 &quot;讚&quot; 與 &quot;倒讚&quot; 的圖案呈現該影片的評價。</figcaption>
+      </figure>
+      <p>若對於評價結果顯示使用者只會給予最高以及最低分數，其實這樣的改動是好的；使用者也不必過多的選項、考量，而能夠直接給予評價。</p>
+      <p>但這樣衍伸的問題在於：只取了兩端點的結果，沒有細分每個人評價數值化這件事。這種評價方式可以很好地處理抽象、一般性問題，但如果評價的事情項目不同，<a
+          href="https://www.reddit.com/r/youtube/comments/50379h/why_did_youtube_remove_the_5stars_rating_system/"
+          data-href="https://www.reddit.com/r/youtube/comments/50379h/why_did_youtube_remove_the_5stars_rating_system/"
+          class="markup--anchor markup--p-anchor" rel="noopener"
+          target="_blank">例如「這部影片看上去不算差」vs「這部影片其實挺棒的」</a>，則沒有建立標準來精確確定這之間的數字。</p>
+      <hr class="solid">
+      <h2>Stars rating</h2>
+      <p>其實也不是只有 5 顆星限定，有些會是 7 顆星、10 顆，甚至再少一點也可以單純 3 顆，例如許多遊戲結算給你的評價。至於選擇奇數、偶數作為設計這又是另一回事了。</p>
+      <p>
+        目前最廣為使用的評價方式，多數會用於電商；買家、賣家的回饋成為使用者對線上消費感到放心的機制。對於知名品牌的產品我們通常會較放心的使用，因為「品牌」打造了信任感；當我們對於新事物感興趣時，我們反而向這些不認識、曾經使用過的使用者得到回饋，而獲得信任感。
+      </p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*Ca7yt9S5Jp3nvaCA4CtpaQ.png"
+          data-width="1788" data-height="927"
+          src="https://cdn-images-1.medium.com/max/800/1*Ca7yt9S5Jp3nvaCA4CtpaQ.png">
+        <figcaption class="imageCaption">Booking 訂房時即便不是有名飯店，也可以搭配其他使用者的體驗評價做為參考。</figcaption>
+      </figure>
+      <p>這種評價方式可幫助使用者做出複雜的決定：藉由系統計算、讓使用者有一個平均值的認知，使用者對自己的決定更有信心；另外，通常還會設計伴隨著其他使用者給予的評價，或是一些開箱文等佐料，這進一步有助於使用者更深層次的考慮。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*wj4B5KCKrEPPhTXjbRfQBA.png"
+          data-width="707" data-height="454" src="https://cdn-images-1.medium.com/max/800/1*wj4B5KCKrEPPhTXjbRfQBA.png">
+        <figcaption class="imageCaption">原來已經有支援「腎臟支付」的功能了啊！</figcaption>
+      </figure>
+      <hr class="solid">
+      <p>或許現在的我們可能已經對於各個星等的意義已經有概念，5 顆星代表好棒棒、1 顆星代表不太優，但對於有些使用者或許會剛好呈現相反狀況。</p>
+      <p>另外，使用者對於星等的閱讀上也可能不同。</p>
+      <p><a href="http://www.evanhamilton.com/star-rating-systems-j-curve/"
+          data-href="http://www.evanhamilton.com/star-rating-systems-j-curve/" class="markup--anchor markup--p-anchor"
+          rel="noopener" target="_blank">通常使用者的眼睛會「自動」選擇了評價最好、星等最高的為優先，對於低星等的直接刪除。</a>當高評價的已經沒得選擇時，使用者會開始往 4~4.5
+        顆星的做選擇，最後逐步往低分區域瀏覽。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*oxLs-Fl3sknRrmOAeqJO1Q.png"
+          data-width="598" data-height="621" src="https://cdn-images-1.medium.com/max/800/1*oxLs-Fl3sknRrmOAeqJO1Q.png">
+        <figcaption class="imageCaption">對於使用者而言，1~3.5 顆星，甚至 4 顆星都是次要選擇。(<a
+            href="https://imgs.xkcd.com/comics/star_ratings.png"
+            data-href="https://imgs.xkcd.com/comics/star_ratings.png" class="markup--anchor markup--figure-anchor"
+            rel="noopener" target="_blank">來源</a>)</figcaption>
+      </figure>
+      <hr class="solid">
+      <p>在 Stars rating 中，使用者能夠對於該商品有一個平均值的認知，然而沒有細分項目的評價則會造成每個人對該商品的總體評價有所落差。</p>
+      <p>這種狀況大概就像是你跟朋友討論電影時，你覺得劇情的安排太爛了所以只給出 2 顆星，但你朋友卻覺得女主角太正了而給 5 顆星這樣。嗯，我相信這樣舉例大家都能感同身受了~</p>
+      <p>¯\_(ツ)_/¯</p>
+      <p>因此有些評價設計上會細分項目來讓使用者評價，例如 Amazon 部分商品會再細分項目讓使用者評價、有些則無，畢竟總不能對一本書評價重量吧！針對這些項目評價，Amazon
+        並沒有將這些細項顯示出來做為使用者在觀看評價時的過濾器，而是用在 Amazon 的後台分析。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*bjXbAPrCDR0GncKhtcI8JQ.png"
+          data-width="901" data-height="808" src="https://cdn-images-1.medium.com/max/800/1*bjXbAPrCDR0GncKhtcI8JQ.png">
+        <figcaption class="imageCaption">Amazon 除了對商品整體評價外，還有其他項目讓使用者給予評分。</figcaption>
+      </figure>
+      <p>Stars rating 搭配優秀良好的回饋機制能增加使用者在整個操作上的參與時間，但可能會延遲最關鍵的行動—例如「購買」這件事。大概就是顧客來到店裡很認真的打量了一項商品，最後卻甚麼都沒買的又離開這樣。</p>
+      <p>喔，只差沒有人會不爽你進來卻甚麼都沒有買。大概吧。</p>
+      <p>另外，參考其他使用者評價、促進使用者給予評價這些事情是好的。有些使用者可是會非常有熱誠的給予評論，當然有些時候總是會有些「特別」熱誠的...。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*ic_x4jb5daye1OqWljxsQg.png"
+          data-width="775" data-height="640" src="https://cdn-images-1.medium.com/max/800/1*ic_x4jb5daye1OqWljxsQg.png">
+        <figcaption class="imageCaption">有些評論真的可以感受到使用者非常用心、文思泉湧的寫。</figcaption>
+      </figure>
+      <hr class="solid">
+      <h2>總結</h2>
+      <p>
+        評價有助於了解使用者群體、個人喜好，並提供更個人化的使用者體驗；有些則具有提供使用者資訊，讓他們好做抉擇的功能。但最重要的莫過於藉此收取使用者回饋，來了解產品的成果，並隨著時間推移來改善，不論它是否背後有著複雜的運算機制在運作。
+      </p>
+      <p>兩種評價方式並沒有說誰優誰劣，畢竟使用方式的不同、不同的使用者體驗，最後得到不同的分析結果；兩種評價方式最原本的概念比較像是個範本，而隨著所需條件的不同，設計上也就衍伸出更多樣的評價方式，但目的上還是不變。</p>
+      <p>另外，有些評價巧妙的設計沒有 “dislike” 這個選項，除了用於消除負面評價某些事物外(例如對於一個人的評價)，也有達到讓使用者群眾「對於某一事物的高度集中或關注」。</p>
+      <p>衍伸出更多細項的同時，使用者評價的越細項對於商品的分析自然是越有幫助，但相對的也可能讓人失去方向而導致主要目的丟失。如何設計好評價方式來得到回饋，在設計上也需要有完整的架構才可。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*1FTklDduLzKDxm1IY01Qjg@2x.jpeg"
+          data-width="2436" data-height="1125"
+          src="https://cdn-images-1.medium.com/max/800/1*1FTklDduLzKDxm1IY01Qjg@2x.jpeg">
+        <figcaption class="imageCaption">遊戲結算時給予的評價也是評價喔！</figcaption>
+      </figure>
+      <p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

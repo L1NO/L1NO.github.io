@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>新手產品設計與開發實作經驗談 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="以技術法人單位閒聊第一次實際做產品真實面" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202203.html" />
+  <meta property="og:title" content="新手產品設計與開發實作經驗談 | Ossian Lin" />
+  <meta property="og:description" content="以技術法人單位閒聊第一次實際做產品真實面" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*rB78uMTbSyaJAwDaZJ4Ycw.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202203.html" />
+  <meta name="twitter:title" content="新手產品設計與開發實作經驗談 | Ossian Lin" />
+  <meta name="twitter:description" content="以技術法人單位閒聊第一次實際做產品真實面" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*rB78uMTbSyaJAwDaZJ4Ycw.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        新手產品設計與開發實作經驗談
+      </h1>
+
+      <p class="article-main-subtitle">
+        以技術法人單位閒聊第一次實際做產品真實面
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Mar 2022
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*rB78uMTbSyaJAwDaZJ4Ycw.png" data-width="1400" data-height="787" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*rB78uMTbSyaJAwDaZJ4Ycw.png"></figure><h2>前言</h2><p>看了這麼多書籍、文章，甚至案例分享等都是他人的經驗，不論是已經有背景初戰的學生，還是剛轉職入行的新手，亦或是跟我一樣誤打誤撞開始職涯的夥伴，大概都會對於「真的要實作一件案子怎麼跑」感到疑惑。</p><p>本篇文章藉著整理過去案例的同時，也同步分享過去閱讀幾本書籍的心得，整合成一篇<em class="markup--em markup--p-em">稍有參考價值</em>的實作經驗談文章，畢竟以下是技術法人為出發，因此實際上還是要<strong class="markup--strong markup--p-strong">參照讀者當下公司團隊的執行模式</strong>去調整適應，但至少可以作為不同組織的作業方式參考。</p><p>本次分享過去案例為「使用擴增實境技術降低環境建置花費及提升學習效益」，團隊當時以擴增實境(Augmented Reality, AR)方式去減少偏鄉國小在建置英語村翻新的費用及時間外，同時提升學生學習的效益，以及減輕老師備課至授課時的痛點。詳細資料可參閱 Bēhance 案例分享。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*QKNrwxlcKTKywsgeRDV13A.png" data-width="2915" data-height="989" src="https://cdn-images-1.medium.com/max/800/1*QKNrwxlcKTKywsgeRDV13A.png"><figcaption class="imageCaption">案例分享 AR 英語學習軟體。(連結：<a href="https://www.behance.net/gallery/126976809/Case-study_STEM-UP-an-English-AR-learning-app" data-href="https://www.behance.net/gallery/126976809/Case-study_STEM-UP-an-English-AR-learning-app" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Bēhance</a>)</figcaption></figure><p>事不宜遲，就讓我們開始吧！</p><hr class="solid"><h2>新案開場</h2><p>一個新的案子到手方式很多種，基本上不外乎都是上面丟了一個題目直接去做，而這有兩種可能：上頭只開題目你就是想辦法生出來、上頭並不確定想要的實際產物。前者看上去個人覺得是比較簡單，反正迎合這位甲方就好了呢(诶？)，當然還是後者居多，而且會是兩者合一的狀況。因此對於開場應該多數人都是「先丟 Google」，這算是現代人起手式了吧？而在學了點推測設計(Speculative design)後，比較能理解如何從更宏觀的角度去看整個問題點，再從中找出真正可行的目標。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*dfV-1OHa70z5DHV2uX0fhQ.png" data-width="821" data-height="762" src="https://cdn-images-1.medium.com/max/800/1*dfV-1OHa70z5DHV2uX0fhQ.png"><figcaption class="imageCaption"><em class="markup--em markup--figure-em">推測設計的 PPPP 理論。(截自：</em><a href="https://zh.soundoflife.com/blogs/people/speculative-design-chao-wei-ho-interview" data-href="https://zh.soundoflife.com/blogs/people/speculative-design-chao-wei-ho-interview" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">SOUNDofLIFE 專訪</a>)</figcaption></figure><p>以本次案例也是「因OO計畫下而需要達成XX KPI」這形式下開始的，更不用說當時還是先跑一年了，第二年照理來說要有個產品出現，但評估下還是無法即時完成。因此藉著剩下的時間跟團隊多涉略二手資料和相關產品，並進行多次學校拜訪，來為前期打好基礎建設。</p><p>回想該案想要先做推測設計這步驟似乎有點難行，畢竟有時間壓力下多做一步對於專案整體進展上都會有所拖延，因此採取二手資料做前期研究跟多摸索相關產品，對於當時來說確實是比較可行的。倘若貴團隊時間充裕，以推測設計方式對於發想上能有更多可能性，但也要將團隊拉回現實、找出可行性的部分。</p><hr class="solid"><h2>無限摸索及回顧檢視</h2><p>拿到專案、有了前期研究認識後，自然就是跟團隊去發想產品各種可能性，並收斂相對的可行性。除了團隊內部的討論外，還要拉攏使用者以及利害關係人一同討論，這也就會有實地訪查或脈絡訪查、使用者訪談等方法論的出現；對於新手或是方法論不熟的人來說，當下可能做了也是矇矇懂懂得，要到之後回顧才知道「原來這方法是甚麼」。</p><p>所以到這個階段會建議每日工作結束後，個人都會去回想今天的工作內容屬於甚麼、去尋找資料，然後從中學習調整尚缺的部分；倘若可能無法如方法論預期進行，那就要預先想應對措施，當然不可能 100% 完美對應，但至少要讓團隊的心力得到回饋，即便是負面回饋~</p><figure class="article-figure"><img class="graf-image" data-image-id="1*-LWN4UCW9gML82n8thN_WA.jpeg" data-width="655" data-height="609" src="https://cdn-images-1.medium.com/max/800/1*-LWN4UCW9gML82n8thN_WA.jpeg"><figcaption class="imageCaption">市面上有不少可以快速查詢方法論的工具書值得參閱。(截自：<a href="https://www.books.com.tw/products/0010562905" data-href="https://www.books.com.tw/products/0010562905" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">博客來</a>)</figcaption></figure><hr class="solid"><h2>接下來，動手實作很有用</h2><p>有了討論結果跟方向，接著就是著手進行實作。這個階段以個人過去經驗是設計師負責 UI 部分、工程師負責 coding，而我則是會在這階段同步、甚至及早產出高擬真原型；工程師開發的同時身為設計師的我們，正適合藉由原型來進行使用者測試，讓工程師在開發上能穩定產出，也可以再次審查團隊的設計方向沒有出錯。</p><p>如果貴公司經費充裕當然能做出不同等級的使用者測試，那如果沒這預算的則可以採取一些簡易的測試來進行，例如用「任務導向」方式測試使用者是否能順利完成一項任務、步驟，或是「A/B 測試」來對兩種(介面)版本測試使用者能否順利完成任務。這些方式雖然不正規，但正是上段提到的應對措施，至少確保這產品還能穩定開發完啊！</p><figure class="article-figure"><img class="graf-image" data-image-id="1*YAcmVL0m1PZj2Xu4XDlYkQ.gif" data-width="320" data-height="240" src="https://cdn-images-1.medium.com/max/800/1*YAcmVL0m1PZj2Xu4XDlYkQ.gif"><figcaption class="imageCaption">OK 啦~我們的產品會動诶！</figcaption></figure><hr class="solid"><h2>做完了然後呢？</h2><p>推行產品上架前應該是都還有時間可以做檢查，但通常時間上不是很充裕就是，這時候就建議針對主要功能再做一次測試，但用開發完的產品實戰。以行動裝置 App 推行上架 Google 或 Apple 平台都會有段審核時間，不如就此準備發行後的小型 patch (或是 Day 1 patch)，能在短時間內補齊發現的錯誤。</p><p>如果真的沒時間進行測試的話，則可以根據過去開發日誌等資料先行確認已知待改善部分，並等待上架使用後及早收取回饋分析。以本案例來談我們是過了一陣子才開始有做改版動作，但由於人員異動下導致專案延宕，自然更新上就沒這麼的頻繁，會需要到上述這麼理想的規劃。</p><hr class="solid"><h2>後記</h2><p>回顧了過去作專案的經驗後，除了對自己的專案能更多瞭解外，也從中認知到過去的不足，慶幸的是該有的檔案都有備存，甚至及早轉移到其他工具上(對，就是在說你 Adobe Xd)。每次的各項大小工作內容都建議要做好留存，可以不是為了公司工作備份，而是讓自己未來整理上有跡可循。</p><p>雖然這篇提到的細節可能不多，對於各開發階段會碰到的狀況大概給點經驗分享，尤其是技術法人單位下開發產品，多少都是會面對相同的問題可做參考。</p><p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

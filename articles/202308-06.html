@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>📝Soking 老師週報心得(2023/08/07) | Ossian Lin - Product Designer</title>
+  <meta name="description" content="本週主題：從 DDD 領域驅動設計偷來資訊架構分析手法" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202308-06.html" />
+  <meta property="og:title" content="📝Soking 老師週報心得(2023/08/07) | Ossian Lin" />
+  <meta property="og:description" content="本週主題：從 DDD 領域驅動設計偷來資訊架構分析手法" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*eUXpWW59MmYf2sYPeDEyGg.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202308-06.html" />
+  <meta name="twitter:title" content="📝Soking 老師週報心得(2023/08/07) | Ossian Lin" />
+  <meta name="twitter:description" content="本週主題：從 DDD 領域驅動設計偷來資訊架構分析手法" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*eUXpWW59MmYf2sYPeDEyGg.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">Others</span>
+      </div>
+
+      <h1 class="article-main-title">
+        📝Soking 老師週報心得(2023/08/07)
+      </h1>
+
+      <p class="article-main-subtitle">
+        本週主題：從 DDD 領域驅動設計偷來資訊架構分析手法
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Aug 2023
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*eUXpWW59MmYf2sYPeDEyGg.png" data-width="1440" data-height="804" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*eUXpWW59MmYf2sYPeDEyGg.png"></figure><h2>前言</h2><p>2023 年 8 月第一週週報，學生們的暑假快結束了喔！</p><p>Soking 老師分享自己讀過 Eric Evans 的某個情境討論，講述程式設計師在討論過程中逐步紀錄印刷電路板專家描述的資訊運作等行為，最後將本來抽象的專家知識繪製成簡化的分析圖，不但串連被定義好的專有名詞，以及資料是如何在這些被定義好的物件之間流動。這樣的情境吸引老師對於 DDD 這個技術流派深感興趣，進而深入瞭解能如何應用於平時與客戶訪談。</p><p>接下來就跟著 Soking 老師本週週報，一起初步認識為什麼是 DDD？以及資訊架構的分析手法。</p><hr class="solid"><h2>A Side</h2><p>Soking 老師提到當軟體產品開始涉足各行各業，最困難的事情就在於釐清需求，以及背後涉及的專業用語和業務邏輯。讀者應該多少都有過被要求做某個不熟悉的領域或專業，不論是求學階段的讀書心得還是工作上的產品開發，有些人會認為是挑戰、有些則認為壓力山大，個人通常是前者畢竟可以多接觸新知。然而學術有專攻，就算是通才也不可能看個書、吃個光碟就能學會新技能，何況身為 PM 或產品設計師常要幫各領域專家搞定困難工作。</p><p>普遍解法通常是要 PM 或產品設計師去取經、學習專業知識及業務邏輯，但這光聽就覺得相當耗成本、甚至不實際；另一種則是找來某專家當 PM，直接負責接手這事情，有趣的是為了解一時之急而找了寶刀，殊不知這刀能否切的好一塊肉是個問題、事成後這刀該如何續用也是個問題。</p><p>呃，所以身為 PM 或產品設計師既不需要是該領域專家、也不用找該領域專家，但總不是隨便找個菜鳥就能處理的吧？因此 Soking 老師提到以一套方法論將專家們的知識萃取出來，並且可以符合軟體產品運作規則的需求探索，而最接近的概念則是熟悉又陌生的資訊架構。</p><p>對於資訊架構多數認知是「軟體的資訊架構」， 實際上 Soking 老師舉例如果這世界上從來沒有人定義過「書」的概念，要建構一個「書店」或「圖書館」的系統時，如何從無到有的觀察與探索這些領域中的概念，並且將其建立起明確的運作規則，以符合實際的用途。​因此老師發現了 DDD 有這種有趣的萃取專家知識的手法後，便嘗試運用在各個不同產業的客戶上，在進行需求訪談以及資訊架構規劃的過程，成了需求訪談的重要方法論工具。</p><hr class="solid"><h2>B Side</h2><p>Soking 老師提到​「當軟體產品開始涉足各行各業」這個並不需要是「摸過不同產業領域」，如果是有點工作經驗的讀者應該可以聯想，「自家的產品服務開始拓展、然後越做越廣甚麼都接」其實這種情況也是「涉足各行各業」，畢竟每次進來的新需求可能都超乎想像，加上創新這件事鮮少「真的」發生，當個規則破壞者、不如當個市場追隨者比較輕鬆。</p><p>那麼，身為公司小螺絲的我們，到頭來也是只能乖乖去執行，或是該怎麼勝認這份工作？如果是沒資源不用說當然是乖乖自己找資料、好一點的身旁可能有相關知識的朋友可以求救，有資源的則可以進行專家訪談等方式來快速進入狀況。不論哪種情況我們都還是會從中學習，隨著對領域理解的加深，我們也會慢慢地能以專家們對概念或模型，在需求所要的解決方案中如何作用有更深的理解，並不斷發展下去。</p><p>當我們能有類似專家的頻率時，每次的討論自然就能越帶有互動性，專家可以感受到討論的「對頻」、需求方可以看到逐漸清晰的「概念」，最後反映到產品服務開發上，當某個同領域的專家提出新的功能需求時，我們就能快速地帶他們演練物件互動的場景；當模型物件無法清楚表達某個重要的場景時，這時候則可以透過腦力激盪建立新的物件模型，或針對原有的模型物件進行修改。</p><hr class="solid"><h2>後記</h2><p>本週 Soking 老師初步介紹架構分析如何應用於探索未知領域，並沒有太多艱澀的知識給予各位讀者，但卻充滿著許多需要深思的內容。在工作上一定會接觸到不同領域、或是偶有新的產業知識串接，如果能維持自家產品服務、又同時接收新知提供使用者更便捷的體驗，當然是最理想的產品發展。然而，有許多時候礙於高層的決策迫使強行發展某個專業領域，甚至遇到組織不協調的分工下，會讓整個團隊花費許多心力去執行。</p><p>因此，如何善用一套適合的資訊架構作為生存手段，就成了各位的新課題。這不單是人與人之間的交際議題，也是回歸務實面去處理解決問題的議題，Soking 老師分享的方式為其一選項，每個人的環境背景不同下，都應該各自發展出獨特的方法，來面對需求方給予的難題。</p><pre data-code-block-mode="0" spellcheck="false" name="4fcd" id="4fcd" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">Take away:<br>1. 資訊架構不單指軟體的架構，對於事物給予定義才能產生合理的架構。<br>2. 深入瞭解不同領域專業知識後所構成的概念模型，能為我們在日後的討論帶來許多益處。</span></pre><p>以上，我們下週見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

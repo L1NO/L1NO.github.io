@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>運用 AI 代理重塑行動端發佈流程：Mercari 的 AI 轉型實踐紀錄 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="Tokyo iOS Meetup — Hosted by Mercari 講座心得" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202604.html" />
+  <meta property="og:title" content="運用 AI 代理重塑行動端發佈流程：Mercari 的 AI 轉型實踐紀錄 | Ossian Lin" />
+  <meta property="og:description" content="Tokyo iOS Meetup — Hosted by Mercari 講座心得" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*Lys0-FkgvihjLKHNlDcphA.jpeg" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202604.html" />
+  <meta name="twitter:title" content="運用 AI 代理重塑行動端發佈流程：Mercari 的 AI 轉型實踐紀錄 | Ossian Lin" />
+  <meta name="twitter:description" content="Tokyo iOS Meetup — Hosted by Mercari 講座心得" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*Lys0-FkgvihjLKHNlDcphA.jpeg" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        運用 AI 代理重塑行動端發佈流程：Mercari 的 AI 轉型實踐紀錄
+      </h1>
+
+      <p class="article-main-subtitle">
+        Tokyo iOS Meetup — Hosted by Mercari 講座心得
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Apr 2026
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*Lys0-FkgvihjLKHNlDcphA.jpeg" data-width="5712" data-height="4284" src="https://cdn-images-1.medium.com/max/800/1*Lys0-FkgvihjLKHNlDcphA.jpeg"><figcaption class="imageCaption">Mercari 日本總公司的大廳</figcaption></figure><h2>前言</h2><p>在 App 更新或改版後，最後都會需要至 Apple Store 提交審核，當 Apple 審核通過後才算是完成上版，後續則需要再做實際環境測試驗收等動作。理論上，整個 App 更新或改版流程只有四步：編譯、測試、提交、審核。然而在現實規模化運作下，即便對程式碼、提交文件等都準備就緒且充滿信心，其實仍會有些許變數而讓人不免感到焦慮。為什麼這看似標準的操作，但卻讓發佈行動 App 總是充滿變數？</p><p>本次參與由 Mercari 主辦、Tokyo iOS Meetup community 協辦的 Tokyo iOS Meetup 活動。前半場由 Mercari 的工程經理 Francesco 與 Zoe 主講，分享這家日本最大二手交易平台如何管理其龐大的 iOS 應用程式發佈流程，後半由在亞太地區及全球擁有超過 15 年擴展工程組織豐富經驗的 Sergi 來分享如何用 AI 協助順利上版。藉由兩段講座內容，不僅能看到 Mercari 如何透過建立專屬發佈團隊與輪替制度，將混亂的開發痛點轉化為高度透明的自動化流程；更能進一步瞭解如何跳脫傳統 AI 聊天框的個人生產力限制，透過構建系統級的 AI 代理來重塑整體的發佈體系，實現自動化的跨越式轉型。</p><p>接下來，就讓我們一同回顧當天的活動內容，並分享一些個人簡易心得吧！</p><hr class="solid"><h2>快速迭代與上版壓力的衝擊</h2><p>Mercari 在日本擁有極大的用戶量，其 iOS 開發團隊規模超過 60 名工程師，分布在多個不同團隊與部門。為了保持產品競爭力，每週這 60 幾個人的程式碼、行銷團隊的年度活動、廣告商的急件等，全部都要匯聚到同一個點：應用程式發佈，因此任何環節的延遲都會影響到整個公司的營運。儘管發佈動作看似簡單，但 Francesco 指出現實情況充滿了<strong class="markup--strong markup--p-strong">非確定性 (Non-deterministic) </strong>的挑戰，包含：</p><ul class="postList"><li name="6753" id="6753" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">人為因素與溝通成本</strong>：最後一刻發現 Bug、不同部門（如行銷與工程）的截止日期不一致，以及因溝通不暢導致的特殊發佈請求。</li><li name="ed5c" id="ed5c" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">工具的不穩定性</strong>：CI/CD 系統當機、GitHub 延遲或合併時間過長，都可能讓開發者錯過分支截稿時間。</li><li name="de87" id="de87" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Apple 審核的不可控性</strong>：Apple 的審核時間從一小時到一週不等，且常因不明原因或政策調整而遭到拒絕。特別是在日本，涉及金融數據與合規性的本地功能，常讓海外審核人員感到困惑而導致拒絕。</li></ul><figure class="article-figure"><img class="graf-image" data-image-id="1*kOf8IGu7ZtXPa-T99N_MHg.png" data-width="960" data-height="540" src="https://cdn-images-1.medium.com/max/800/1*kOf8IGu7ZtXPa-T99N_MHg.png"><figcaption class="imageCaption">果然凡事困難的部分最終都歸屬到「人」的問題。</figcaption></figure><p>另外像是過去存在文檔缺失、數百條 Slack 訊息淹沒關鍵資訊造成溝通混亂，以及手動提交的瓶頸（例如發佈負責人週五必須坐在電腦前等待 QA 完成測試後手動點擊提交），也都是造成發佈受影響的因素。為了應對這些挑戰，Mercari 實施了一系列流程變革與自動化手段，透過以下三個面向來管理發佈的複雜性。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*Wse2cPgdmOTwscel2QuXVg.png" data-width="960" data-height="540" src="https://cdn-images-1.medium.com/max/800/1*Wse2cPgdmOTwscel2QuXVg.png"><figcaption class="imageCaption">Mercari 從「團隊」「工具」「流程」三大面向進行政策改變。</figcaption></figure><hr class="solid"><h3>專屬發佈團隊 (Dedicated Release Teams)</h3><p>Mercari 並非由固定的人員永久負責發佈，而是採取輪替制度來分散壓力並提升整體團隊能力：</p><ul class="postList"><li name="660d" id="660d" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">跨團隊組成：</strong>發佈團隊由來自不同功能團隊的行動裝置工程師與 QA 工程師組成。</li><li name="8260" id="8260" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">每週輪替：</strong>團隊成員每週輪流擔任「發佈負責人」或「發佈促進者」。</li><li name="342e" id="342e" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">持續改進：</strong>這些成員不僅負責當週的發佈，還會專門投入時間改進流程、探索新工具以及優化自動化腳本，並收集反饋進行迭代。</li></ul><figure class="article-figure"><img class="graf-image" data-image-id="1*GlewnClle7-1wMjGbdcwfQ.png" data-width="960" data-height="540" src="https://cdn-images-1.medium.com/max/800/1*GlewnClle7-1wMjGbdcwfQ.png"><figcaption class="imageCaption">藉由跨部門組成一支小隊執行單項任務能集中人力。</figcaption></figure><hr class="solid"><h3>專屬發佈工具 (Dedicated Release Tools)</h3><p>為了消除溝通混亂並實現自動化，Mercari 引入了整合性的工具體系：</p><ul class="postList"><li name="2bbd" id="2bbd" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Runway 作為核心編排工具：</strong>Mercari 使用 Runway 作為跨平台的發佈管理中心，將 Slack、App Store、Google Play 和測試工具整合在單一看板中，讓所有人都能即時掌握進度。</li><li name="552c" id="552c" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">零接觸提交：</strong>透過工具集成，一旦 QA 完成測試簽核，系統便會自動部署並提交審核，不再需要工程師守在電腦前手動點擊。</li><li name="431b" id="431b" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">內部輔助工具：</strong>除了第三方工具，發佈團隊也會開發內部腳本來填補特定流程中的自動化空白。</li></ul><figure class="article-figure"><img class="graf-image" data-image-id="1*WrO-ywL6SiNfTizUd9EUug.png" data-width="960" data-height="540" src="https://cdn-images-1.medium.com/max/800/1*WrO-ywL6SiNfTizUd9EUug.png"><figcaption class="imageCaption">Francesco 還特別提雖然 Mercari 導入 Runway 但本場活動並沒有要打廣告。</figcaption></figure><hr class="solid"><h3><strong class="markup--strong markup--h4-strong">定義明確的發佈流程 (Defined Release Process)</strong></h3><p>Mercari 將過去冗長的人工作業轉化為標準化的政策，涵蓋了各種可能發生的情境：</p><ul class="postList"><li name="63a0" id="63a0" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">涵蓋所有路徑：</strong>發佈手冊詳細定義了正常發佈流程，以及熱修復、錯過分支截稿時間或跳過發佈等異常情況的處理標準。</li><li name="b33e" id="b33e" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">邊緣案例治理：</strong>建立明確的決策標準。例如，若 Apple 的審核延遲或遭到拒絕超過 3 天，團隊會直接採取跳過該版本的行動，以確保發佈列車能持續運作，避免影響下一週的進度。</li><li name="eaa5" id="eaa5" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">明確的呈報與責任歸屬：</strong>流程中定義了在各個階段誰擁有決策權以及應向誰呈報，減少了因突發狀況而產生的冗長討論與溝通成本。</li></ul><figure class="article-figure"><img class="graf-image" data-image-id="1*tL77HUrk1l9Zg_4uFlr8kQ.png" data-width="960" data-height="540" src="https://cdn-images-1.medium.com/max/800/1*tL77HUrk1l9Zg_4uFlr8kQ.png"><figcaption class="imageCaption">建立良好的流程對許多公司來說其實才是最重要的基礎。</figcaption></figure><hr class="solid"><p>在 Francesco 的分享中，他首先剖析了大型團隊在版本更新時所面臨的現實挑戰。Zoe 則以此為基礎，深入展示流程轉型的具體細節，並透過核心投影片精準對標了「舊有流程困境 (Legacy Challenges)」與「自動化發佈體系 (Process Transformation)」的差異。Zoe 清晰地勾勒出團隊轉型的路徑，將團隊從過往依賴人力、高溝通成本的被動應對，成功提升至依賴系統的主動治理。透過引入 Runway 看板與零接觸提交等機制，Mercari 建立起單一事實來源並落實自動化治理，直觀地展現了從混亂舊體制邁向高效發佈時代的實踐成果。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*benaOYBDUAvVEgRE_Eg9cA.jpeg" data-width="768" data-height="482" src="https://cdn-images-1.medium.com/max/800/1*benaOYBDUAvVEgRE_Eg9cA.jpeg"><figcaption class="imageCaption">回家整理才發現少拍到一張 Legacy Challenges…</figcaption></figure><p>綜觀下來，Mercari 所遇到的問題在每間公司和團隊都會發生，尤其在平台方審核經常是充滿未知。以前也常遇到工程團隊如此反應，因此在發布新版的時程都會提前，保留被退件等緩衝時間。我相信各間公司或團隊也已經有經驗和應付方式，不論是 Mercari 本次分享或者其他佈版流程，能夠順利完成我想才是最重要的。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*kNvlDeQuGM74QPC8hL2kvA.png" data-width="890" data-height="540" src="https://cdn-images-1.medium.com/max/800/1*kNvlDeQuGM74QPC8hL2kvA.png"><figcaption class="imageCaption">這張 Takeaways 正是每個團隊都會遇到的問題，如何解決則因人而異。</figcaption></figure><hr class="solid"><h2>將 10% 的個人生產力轉化為 70% 的企業價值</h2><p>在 Mercari 的兩位講者分享完他們如何透過團隊輪替與 Runway 工具建立起穩健的發佈體系後，接著由 Sergi 為我們帶來了更具前瞻性的議題：在自動化流程之上，AI 究竟該扮演什麼樣的角色？</p><p>Sergi 在亞太地區及全球擁有超過 15 年擴展工程組織的豐富經驗，長期深耕於交付流程、平台建設與領導力培訓。雖然現在 AI 熱潮席捲全球，但許多工程師與企業仍停留在將 AI 視為「打字加速器」的階段。然而，單純依賴 Copilot 或 ChatGPT 等聊天介面來提升個人產力，正逐漸面臨成長天花板。</p><p>在 Sergi 的分享中，他介紹了兩個靈感源自電影《星際效應》(Interstellar) 的新穎名詞：TARS 與 CASE。這兩套系統的核心在於將發佈流程轉化為「自動駕駛」模式，讓 AI 承擔起最耗費人力且風險最高的驗證與分析工作。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*cZDaJgunM_IFj_gwqUEDeA.png" data-width="960" data-height="540" src="https://cdn-images-1.medium.com/max/800/1*cZDaJgunM_IFj_gwqUEDeA.png"><figcaption class="imageCaption">回頭聽音檔才知道原來是取自電影《星際效應》。</figcaption></figure><h3><strong class="markup--strong markup--h4-strong">TARS：不再依賴靜態腳本的動態 QA 助手</strong></h3><p>TARS 是一款專門最佳化發佈流程的動態 QA 助手，它的出現挑戰了傳統依賴脆弱靜態測試腳本的思維。作為具備上下文感知能力的代理，TARS 專注於驗證「關鍵用戶旅程」，即便底層 UI 標籤發生更動，只要業務流程邏輯正確，它就能自動適應並完成測試。在應用上，TARS 不再給出傳統二分法的「通過或失敗」，而是針對每一筆代碼變更產出深度的「風險評估」，幫助團隊在發佈前精準判斷對用戶體驗的潛在威脅。</p><h3>CASE：實現自動化修復的發佈分析師</h3><p>CASE 則扮演發佈後的「即時偵察兵」，是一款專門處理事故並實現自動化修復的分析系統。它會持續監聽系統的可觀測性信號，一旦發現 SLA 指標受損，便會主動檢索 GitHub、Jira 與發佈資料庫，迅速定位事故根源。在實際運作中，CASE 與 Feature Flags（功能開關）聯動，能在數分鐘內自動關閉出問題的功能，達成無須重新部署代碼即可恢復系統的目標，將平均恢復時間 (Mean Time To Repair/Recovery, MTTR) 從原本的數天大幅縮短至數小時。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*KXhi2QvEyGAxDZ61bfrMjg.png" data-width="960" data-height="540" src="https://cdn-images-1.medium.com/max/800/1*KXhi2QvEyGAxDZ61bfrMjg.png"><figcaption class="imageCaption">Sergi 以墨菲定律提出「與其追求不可能的完美預防，不如建立一套能快速偵測、響應並從錯誤中學習的「自動駕駛」恢復機制」。</figcaption></figure><p>總結 Sergi 的分享，核心概念其實很直球：AI 的價值從來就不在於它幫我們多寫了幾行程式碼，而在於它能否幫系統扛下多少風險。當我們放下「絕對不能出錯」的包袱，改用像 TARS 或 CASE 這種代理工具來建立「恢復力」時，帶來的回報會是相當可觀的。除此之外，隨著交付週期的縮短，工程團隊也能從瑣碎的監控與重複測試中解脫，將精力專注在真正需要創造力的開發工作。</p><hr class="solid"><h2>後記</h2><p>本次很榮幸能前往 Mercari 日本總部參加社群活動，聆聽到第一手最前線的內部發佈經驗，同時從 Sergi 的分享中認識到可以如何善用 AI 代理工具協助上版動作，減少人力投入以及處理上版失敗的時間。本次講座內容並未涉及艱澀的程式碼，取而代之的是易懂且實用的經驗談與架構概念；對於非工程開發背景的夥伴來說非常友善，尤其是對曾接觸過開發團隊發佈流程的人而言，感觸特別深刻。</p><p>在 Mercari 兩位講者的分享中，我們可以一窺大型企業在面對複雜發佈流程時的應對之道。許多企業常將 AI 視為單點的輔助工具，誤以為只要導入工具即可見效；然而 Mercari 的實踐證明，除了引進自動化工具來改善協作外，更必須同步最佳化內部過往繁瑣的基礎流程，才能從根本上提升風險控管與工程協作的效率。而 Sergi 的分享則跳脫了傳統「對話框」式的 AI 使用框架，探討目前熱門的 AI 代理應用。透過將 AI 深度整合進工作流，AI 代理能主動協助處理流程中的各項瑣事，在降低出錯率的同時，也為團隊釋放出更有價值的生產力。</p><p>除了技術上的收穫，跨國交流也是這類活動的一大亮點。在會後的 Networking 時段，我與許多聽眾交換了心得，來場者雖多為歐美人士，但也有巧遇來自台灣的工程師以及曾在慶應義塾大學就讀的工程師，大家分別針對日本市場的現況與未來拓展性交換了看法。比較可惜的是，由於初到日本，重心尚在安頓生活，當時並未有太多心思接洽新案子，因此沒能主動釋出「Open to Work」的訊息。希望在未來的活動中，我能更主動地向外傳遞資訊，藉此進一步拓展在日本的專業人脈圈。</p><p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

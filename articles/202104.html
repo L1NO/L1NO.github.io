@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>產品設計於 IoT 開發的大小事 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="UX 產品設計的運作秘辛 - 以 IoT 產品為例，設計流程大揭秘聽講心得" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202104.html" />
+  <meta property="og:title" content="產品設計於 IoT 開發的大小事 | Ossian Lin" />
+  <meta property="og:description" content="UX 產品設計的運作秘辛 - 以 IoT 產品為例，設計流程大揭秘聽講心得" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*_QeXOzCozLIqzzuBy0V3Kg.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202104.html" />
+  <meta name="twitter:title" content="產品設計於 IoT 開發的大小事 | Ossian Lin" />
+  <meta name="twitter:description" content="UX 產品設計的運作秘辛 - 以 IoT 產品為例，設計流程大揭秘聽講心得" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*_QeXOzCozLIqzzuBy0V3Kg.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">UX Research</span>
+      </div>
+
+      <h1 class="article-main-title">
+        產品設計於 IoT 開發的大小事
+      </h1>
+
+      <p class="article-main-subtitle">
+        UX 產品設計的運作秘辛 - 以 IoT 產品為例，設計流程大揭秘聽講心得
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Apr 2021
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*_QeXOzCozLIqzzuBy0V3Kg.png"
+          data-width="1921" data-height="1080" data-is-featured="true"
+          src="https://cdn-images-1.medium.com/max/800/1*_QeXOzCozLIqzzuBy0V3Kg.png"></figure>
+      <h2>前言</h2>
+      <p>本次活動是由設計圈知名社群 UXTW 拓展出來，目標以南部設計師、PM 等職位為主的 UX MEGA，於 2021 年 4 月 23 日(五)與 IxDA Taiwan 所辦的講座。場地依然是選在位於駁二倉庫內的
+        M.ZONE。</p>
+      <p>講座題目為《UX產品設計的運作秘辛 - 以 IoT 產品為例，設計流程大揭秘》，由 IxDA Taiwan 的大家長 - 紅豆擔任本次講師，來講解他過去所參與的 IoT 產品經驗，以及 IoT
+        產品與設計師們彼此之間的關係。(？)</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*FeZruInEYa4xfIjjawEUdw.jpeg"
+          data-width="4032" data-height="2228"
+          src="https://cdn-images-1.medium.com/max/800/1*FeZruInEYa4xfIjjawEUdw.jpeg">
+        <figcaption class="imageCaption">本次講座內容及講師。</figcaption>
+      </figure>
+      <hr class="solid">
+      <h2>關於 IoT 產品的導論</h2>
+      <p>IoT (Internet of Things)，相信多數人已經對這名詞不陌生了，早幾年前大概剛起步正夯時雖然常聽到，但也只是朦朧懂。隨著市場的發展，台灣也非常多 IoT 的產品於市面上販售，甚至越來越多人可以自己玩起
+        IoT。</p>
+      <p>但 IoT 對於設計師來說應該要如何設計？如何對產品設計互動？通常大家對 IoT 的認識都是 Smart home 這類產品，因此在正式進入話題前，講師先詢問聽講者對於 IoT 的理解，並解釋個人對 IoT 的見解。
+      </p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*571oaCf9__0j3EJdK53PTQ.png"
+          data-width="4032" data-height="2489"
+          src="https://cdn-images-1.medium.com/max/800/1*571oaCf9__0j3EJdK53PTQ.png">
+        <figcaption class="imageCaption">講師解釋對 IoT 的定義。</figcaption>
+      </figure>
+      <p>講師分享到在做 Smart home 這類 IoT 產品早期會遇到的第一個問題就在於：通常使用者都會想說<strong
+          class="markup--strong markup--p-strong">買個最好的、耐用久的</strong>，而導致家電等產品一買就是幾十年都有可能，因此如何做 Smart home
+        就會是個首衝問題，這也是為什麼多數 IoT 都會用一個整合功能的裝置來開發。在瞭解完這些概念之後，講師便開始了今天的主軸。</p>
+      <hr class="solid">
+      <h2>IoT 產品與設計師的關係</h2>
+      <p>如同其他產品/服務一樣，初次接觸不熟悉的領域多少都會感到陌生，一開始講師跟團隊一樣對於 IoT 一定是非常陌生，但又因商業目標等因素，而促使設計師去構想情境；隨著 UX
+        的導入，便能慢慢架構出實際使用情境、確立使用者，同時在與商業目標與科技相互連結。</p>
+      <p>有了實際使用情境與使用者後，接著就會對情境有更進一步的脈絡，越詳細、越細緻，這樣才能有更明確的需求，同時也是讓組織間溝通資訊能有著一致性。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*y9GITa8MPNYlkvmyj5U1LQ.jpeg"
+          data-width="4032" data-height="2535"
+          src="https://cdn-images-1.medium.com/max/800/1*y9GITa8MPNYlkvmyj5U1LQ.jpeg">
+        <figcaption class="imageCaption">從不明確的構想情境，逐步走向實際應用情境與使用者。</figcaption>
+      </figure>
+      <p>
+        情境脈絡這段講師用了一個挺有趣的方式來跟大家互動，藉由幾個關鍵字讓大家去串成一個故事，最後再來解釋如果情境脈絡不詳盡，就會造成每個人對於產品的想法有落差；有了上述的情境脈絡後，設計師們也可以延伸至不同環境場域中，藉由兩者間去洞察找出產生互補、連續的使用情境及體驗。
+      </p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*9OzVIK5y1cH1e7ZEw4t6oQ.jpeg"
+          data-width="4031" data-height="2461"
+          src="https://cdn-images-1.medium.com/max/800/1*9OzVIK5y1cH1e7ZEw4t6oQ.jpeg">
+        <figcaption class="imageCaption">從主要場域延伸擴大，並在兩者間找出交集、洞察共通處。</figcaption>
+      </figure>
+      <hr class="solid">
+      <p>接著講師帶大家來瞭解設計師的關注點有三項，分別是：瞭解產品是對 Business 還是 Customer 這類問題的<strong
+          class="markup--strong markup--p-strong">商業目標</strong>、<strong
+          class="markup--strong markup--p-strong">科技</strong>是要瞭解目前預計要使用及可使用於產品開發上的技術，例如講師提到目前 IoT
+        常見的連線技術有紅外線、WiFi，但前者只能單向溝通，自然就要留意使用者是否能意識到已完成動作；以及針對使用者的動機、場域應用情境等的<strong
+          class="markup--strong markup--p-strong">使用者需求</strong>。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*-d6-vYu1agQnPgJPIZa7Xw.jpeg"
+          data-width="4032" data-height="2843"
+          src="https://cdn-images-1.medium.com/max/800/1*-d6-vYu1agQnPgJPIZa7Xw.jpeg">
+        <figcaption class="imageCaption">根據三個不同面向，設計師需要關注著重的內容也就不同。</figcaption>
+      </figure>
+      <p>另外，講師也分享到自己在做功能的互動設計時會盡量做的詳盡，例如手機開機這個動作流程，包含按下按鈕、多久時間，會有甚麼回饋給使用者(e.g. 視覺、聽覺)等，都是講師在設計時會特別寫詳盡的部分。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*tWbRllvzgTZWzXk2TGXKCw.jpeg"
+          data-width="4032" data-height="1835"
+          src="https://cdn-images-1.medium.com/max/800/1*tWbRllvzgTZWzXk2TGXKCw.jpeg">
+        <figcaption class="imageCaption">講師以手機開機的互動設計為範例。</figcaption>
+      </figure>
+      <hr class="solid">
+      <h2>慢(但全面性的)中帶快(能減少虛耗)的合作模式</h2>
+      <p>講師在這 part
+        分享了當時產品的開發流程、合作模式。在前期階段所做的產品定位、功能定義，到情境梳理完整理的資料，在這時候需要同時發給各式小組；講師解釋到這是為了讓所有參與成員都能同步對產品有一致的認知，來減少不同小組等待派工的狀況。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*gFEeHRoFOPlETvV6TyZeBA.jpeg"
+          data-width="4032" data-height="2527"
+          src="https://cdn-images-1.medium.com/max/800/1*gFEeHRoFOPlETvV6TyZeBA.jpeg">
+        <figcaption class="imageCaption">同步並行對於開發團隊能減少不必要的消耗(e.g. 時間)。</figcaption>
+      </figure>
+      <p>
+        到了發想原型開始的階段後，就是回到前一段談到的內容。後面有提到關於「決策」這件事情的運作，講師分享到主要可以著重在幾個重點上，例如價值與成本的大小、營運價值，以及投入成本等，綜合這些考量可以再用一份決策評估表來做整理，最後給出定論。
+      </p>
+      <p>在第一版(即產品剛開始到正式上架)開發上，講師歸納成「帶著直覺、全面性收集」的方向進行，也就是常提到的一句產品題目需求、痛點等待入情境設計；從第二版後則會著重強化產品居多，這時候也會傾向預測市場發展狀況(e.g.
+        生態圈廣度、趨勢簡報等)，來調整產品進行改善。</p>
+      <hr class="solid">
+      <p>本次演講中講師有提到游擊式的用戶研究，最主要是對該領域不熟悉時，利用鄰近的使用者(e.g.
+        有使用類似產品經驗的隔壁阿伯)或是快速進入場域等方式進行，來快速做研究找方向。有了以上開頭就可以建立暫時性的人物誌，接著就可以和團隊共同假想顧客。暫時性的人物誌用意，跟一般在做人物誌差異不大，所有資料都要在假想顧客的情境發生、和主張價值有相關。
+      </p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*nMBcEQo5O-IkPRfKcvX0sg.jpeg"
+          data-width="4032" data-height="3024"
+          src="https://cdn-images-1.medium.com/max/800/1*nMBcEQo5O-IkPRfKcvX0sg.jpeg">
+        <figcaption class="imageCaption">暫時性人物誌與遊擊式用戶研究。</figcaption>
+      </figure>
+      <hr class="solid">
+      <p>最後在尾聲的部分，講師也幫大家做了簡單的複習。就當時講師在做 IoT 產品的設計挑戰上，首先要勇於<strong
+          class="markup--strong markup--p-strong">擁抱限制及不確定性</strong>，接受動態的心境，來<strong
+          class="markup--strong markup--p-strong">建立新的思考框架</strong>；不斷<strong
+          class="markup--strong markup--p-strong">保持好奇、模擬想像</strong>，藉著越加詳細的情境脈絡，延伸至互補及連續的適切情境；<strong
+          class="markup--strong markup--p-strong">簡單→複雜→簡約</strong>，這段過程是與一連串複雜性奮戰所得到的結果。</p>
+      <p>我相信不單是以講師在做 IoT 的經驗做為參考，每個人在開始一項新產品應該也都會些許遵循到類似的感覺。畢竟經手設計每個產品都不一定是與前者有關聯，即便是同類型的產品(e.g.
+        智慧手機)，都會遇到需要作出差異處。那麼，這時候我們就可以參考依循前人的經驗來做開端。</p>
+      <hr class="solid">
+      <h2>後記</h2>
+      <p>去年十月多也是在高雄聽了 IxDA Taiwan 所舉辦的講座，而這次也很高興能再次在高雄聽到這麼好的講座，期待 UX MEGA 能帶動南部的 UI/UX 風氣，讓南部不會只有少數設計師且零散分佈。</p>
+      <p>本次演講內容非常紮實，不但分析了設計師對於 IoT
+        產品如何著手，講者也分享在產品開發上的各種心路歷程。個人這次最喜歡情境脈絡分享那段，不但用了很有趣的例子來讓聽者有互動、思考外，也淺顯易懂的讓人瞭解情境脈絡到底是什麼樣子。</p>
+      <figure class="article-figure"><img class="graf-image" data-image-id="1*SZSbaGolFdqDa5seGerSUg.jpeg"
+          data-width="4032" data-height="2400"
+          src="https://cdn-images-1.medium.com/max/800/1*SZSbaGolFdqDa5seGerSUg.jpeg">
+        <figcaption class="imageCaption">講師分享在做情境脈絡時的詳細程度。</figcaption>
+      </figure>
+      <p>公司小組內也是有在搞 IoT 這部分，然而已進行了一段時間外，我也沒有完全有參與，自然不好說什麼；藉由這次活動之後，除了瞭解設計師對於 IoT 產品這塊的設計該如何下手外，也更能回推產品的過去規劃、未來可能發展狀況。
+      </p>
+      <p>以上，我們下次見，啾～</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

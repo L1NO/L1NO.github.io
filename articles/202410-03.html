@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>掌握商業與設計道德的平衡 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="《The Dark Pattern 暗黑模式｜欺騙使用者心理與行為的設計》讀後心得" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202410-03.html" />
+  <meta property="og:title" content="掌握商業與設計道德的平衡 | Ossian Lin" />
+  <meta property="og:description" content="《The Dark Pattern 暗黑模式｜欺騙使用者心理與行為的設計》讀後心得" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*xtEKGRyapsRjPSAhvbkjPg.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202410-03.html" />
+  <meta name="twitter:title" content="掌握商業與設計道德的平衡 | Ossian Lin" />
+  <meta name="twitter:description" content="《The Dark Pattern 暗黑模式｜欺騙使用者心理與行為的設計》讀後心得" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*xtEKGRyapsRjPSAhvbkjPg.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">Reading</span>
+      </div>
+
+      <h1 class="article-main-title">
+        掌握商業與設計道德的平衡
+      </h1>
+
+      <p class="article-main-subtitle">
+        《The Dark Pattern 暗黑模式｜欺騙使用者心理與行為的設計》讀後心得
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Oct 2024
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*xtEKGRyapsRjPSAhvbkjPg.png" data-width="1440" data-height="804" src="https://cdn-images-1.medium.com/max/800/1*xtEKGRyapsRjPSAhvbkjPg.png"></figure><h2>前言</h2><p>在初學 UX 設計時，我們總是著重於以使用者為中心，創造出直覺且愉悅的互動體驗。然而，當設計師們掌握了操弄使用者行為的能力後，一個道德困境便隨之而來：我們是否應該為了達到商業目的，而設計出誘導使用者做出特定行為的介面？<strong class="markup--strong markup--p-strong">暗黑模式(Dark Patterns)</strong>的出現，正是這個問題的最佳例證。這些看似無害的設計手法，其實模糊了使用者自主選擇的界線。</p><p>「暗黑模式」一詞最初由 UX 設計師 Harry Brignull 於 2010 年提出，用來形容那些刻意設計、旨在誘導使用者做出非預期行為的介面。丟去 Google 通常會找到另一種結果為常見的<strong class="markup--strong markup--p-strong">深色模式(Dark mode)</strong>。深色模式主要以視覺舒適度為考量，透過降低螢幕亮度來減少眼睛疲勞，而暗黑模式則更具欺騙性，利用心理學原理和介面設計技巧，巧妙地操弄使用者使其做出不符合自身利益的決定。為了方便本文的討論我將繼續使用暗黑模式一詞，但個人建議在實際應用中，可以採用更精確的<strong class="markup--strong markup--p-strong">欺騙模式(Deceptive Patterns)</strong>來稱呼，以便與深色模式做出區分。</p><p>本書<a href="https://www.books.com.tw/products/0011002192?sloc=main" data-href="https://www.books.com.tw/products/0011002192?sloc=main" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">《The Dark Pattern 暗黑模式｜欺騙使用者心理與行為的設計》</a>是由<a href="https://x.com/nakanoyuki_tw" data-href="https://x.com/nakanoyuki_tw" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">仲野佑希</a>所撰寫關於暗黑模式的完全攻略，內容從最基本的介紹到各種類型常見操作手法都有詳盡介紹，不論是初學者或已有多年工作經驗者都能從書中挖掘到令人滿意的知識。本文將深入探討暗黑模式的運作原理，並從商業與設計道德的角度，反思如何在這條界線之間尋求平衡。</p><hr class="solid"><h2>有心之過與無心之過</h2><p>前言中提到關於暗黑模式是一種透過強制、操控或欺騙等方式，巧妙地影響使用者決策，讓他們做出非自願性行為的設計手法。這種手法在現代數位產品中無處不在，特別是在使用者介面這個系統與使用者之間的「接點」，暗黑模式的應用更是層出不窮。作者依據根源追溯至三個主要領域，並在各行各業中廣泛應用。</p><p>首先是讀者們最熟悉的零售業。為了刺激消費，零售業者早已將各種行銷手法運用得爐火純青。除了常見的限時折扣、數量有限等促銷手段外，更細微的設計也藏著玄機。例如商店內播放的背景音樂、商品陳列的方式、甚至是店員的推銷話術都是經過精心設計，以潛移默化地影響消費者的購買決策。這些手法不僅營造出緊迫感，增加衝動購買的可能性，更利用心理學原理，誘導消費者將購物視為一種愉悅的體驗。這些行銷策略的本質，與暗黑模式的「誘導」和「操控」有著異曲同工之妙，只是在道德層面上存在著不同的爭議。</p><p>第二種是公共政策領域中的<strong class="markup--strong markup--p-strong">推力(Nudge)</strong>概念，透過巧妙設計選擇環境，引導民眾做出更理性的選擇，而非改變經濟誘因，例如在電梯內貼上鼓勵運動的海報、入職時自動提撥少量薪水儲蓄作為退休年金等。推力與暗黑模式之間的界線並非絕對分明，兩者雖然都在影響人們的行為、也利用心理學的原理，但關鍵的差別在於意圖：推力的目的是為了促進社會福祉，而暗黑模式則是以獲取私利為目的。</p><p>最後來談科技圈常聽到的<strong class="markup--strong markup--p-strong">成長駭客(Growth Hacking)</strong>，指的是一種以數據驅動、實驗為基礎的行銷策略。這與一般行銷最大差異在於產品本身包含擴大服務的機制，成長駭客們善於運用各種創新手法，例如常見的 A/B 測試，來提升產品的曝光率和使用者參與度，同時在投下大量資源之前可以確立突破現狀的關鍵點。作者提到成長駭客本身並不會助長暗黑模式發展，但遇到像是商業目的干涉，業績銷售額增長超過向使用者提供的價值時，則可能導致原本成長駭客的本質走調。</p><hr class="solid"><p>可能會有讀者好奇：暗黑模式與那些設計不良的使用者介面，例如不小心清空表單的設計有何區別？事實上，兩者雖然都可能導致使用者做出非預期的行為，但背後的動機卻大相逕庭。作者對於使用者體驗設計不良稱之為「反面模式」，多半歸咎於設計師技術不成熟或對使用者瞭解不深，而意外產生的設計缺陷，雖然會帶來負面的使用者體驗，但其初衷並非刻意要欺騙或操縱使用者。</p><p>然而暗黑模式通常是有規劃、意圖下所做出的設計，刻意利用人類心理上的弱點，引導使用者做出對自己不利的決定。簡單來說兩者差異關鍵在於在於「獲益者是誰」，設計不良的介面往往會給使用者帶來困擾，甚至造成損失，設計師本身也可能因此受到批評；而暗黑設計則是以犧牲使用者利益為代價，為特定群體帶來利益。</p><p>看到這邊可能會認為都是設計師的問題，實際上多數時候設計師也是被矇在鼓裡、毫無多慮的將決策者需求完整呈現出來，直到發布後才從其他反映得知。暗黑模式雖能為企業帶來利益，但也伴隨著許多如客服資源增加、商業名譽及信任度等風險，當然這些風險並不一定重擊企業，甚至帶來增長，對此消費者自身的敏感度提升反而才是比較實際的應對方式。</p><hr class="solid"><h2>解析影響使用者決策背後的運作模式</h2><p>我們每天都在做無數的決定，從最簡單的選擇到最複雜的判斷。這些決定看似源自個人的意願，但實際上我們的選擇往往受到周遭環境、社會規範、以及他人意見的潛移默化。這些外在因素就像無形的手，在不知不覺中塑造著我們現實生活與網路世界的各種決策。</p><p>前面提及公共政策的推力理論，是透過巧妙且不須禁止對方下做出特定選擇的設計。像是男廁小便斗上的蒼蠅圖案，就是一個經典的例子。然而，當這種「推力」不符合使用者利益，反而阻礙了使用者做出自主選擇，甚至引導使用者做出對自己不利的決定時，這種稱之為「淤泥效應」。例如許多網站或 APP 在註冊時，會預設勾選各種同意聲明或訂閱服務，這就屬於「淤泥效應」。雖然預設勾選可以提高效率，但卻侵犯了使用者的選擇權。當使用者感到被強迫或欺騙時，就會產生負面情緒。這種「淤泥效應」不僅會影響使用者體驗，也會降低對品牌的信任度。因此在應用推力理論時，我們必須秉持著尊重使用者、不侵犯使用者權益的原則。</p><hr class="solid"><p>生活中不論是實體還是數位產品，操作介面上的文字都是與使用者溝通的橋樑。近年來設計師們開始格外重視<strong class="markup--strong markup--p-strong">小提醒(Microcopy)</strong>這類看似簡單卻暗藏玄機的文字提示。這些小提醒，像是電商網站上的「商品已加入購物車，繼續選購或前往結帳」，或是社交媒體上的「您已成功追蹤該帳號」等，能有效引導使用者操作，提供即時回饋、提升使用體驗，甚至能塑造產品獨特的品牌形象。一個設計精良的使用者介面，不僅注重視覺美感，更要注重文字的運用，尤其是這些細微卻關鍵的小提醒。透過精心設計的文字，我們能讓產品更易於使用，更受使用者歡迎。</p><p>然而，當介面上的語言設計不當時，就可能釀成如 2018 年夏威夷誤發飛彈警報事件般的嚴重後果。原本僅是一場演習，卻因看似簡單的小提醒文字設計疏忽，誤發成正式警報而引發全島恐慌。雖然事件歸因於人為疏失，但根本原因在於操作介面上的文字設計不夠直觀、易懂，導致操作人員產生誤解。因此我們不應將這種錯誤單純歸咎於使用者，而應在設計介面上的小提醒時更加用心，以避免此類事件再次發生。</p><hr class="solid"><p>認識了外在推力以及文字上的影響後，我們將目光轉向內心，探討人類決策背後的機制。《快思慢想(Thinking, Fast and Slow)》一書中將人類的思考模式分為「快速思考」和「緩慢思考」兩種。前者快速、直覺，讓我們能迅速做出判斷；後者則較慢、理性，需要深入思考。我們每個人心中都建構了一套心智模型用來理解世界，當我們面對熟悉的事物時，心智模型會自動運作，讓我們快速做出判斷。暗黑模式正是利用了我們對於「快速思考」的過度依賴進行攻擊。</p><p>暗黑模式就像是一個精心佈置的迷宮，利用我們的思考模式弱點，讓我們在不知不覺中做出非理性的決策。Daniel Kahneman 就提到的「<strong class="markup--strong markup--p-strong">WYSIATI 偏差</strong>」即「我們認為所有看到的，就是全貌(What You See Is All There Is)」，讓我們只看到表面的資訊，而忽略了隱藏的陷阱。因此當我們面對精心設計的暗黑模式時，很容易被直覺所誤導，做出非理性的決策。例如看到「限時優惠」等字樣而下訂單，卻忽略產品的實際品質；又或是當我們填寫線上表格時遇到一些複雜的選項或條款，我們可能會草率地勾選而未仔細閱讀。這些都是暗黑模式在現實生活中的常見應用，若我們能意識到暗黑模式的存在並培養批判性思考，就能更有效地抵禦這些手法的誘惑。</p><p>我們為了幫助使用者帶來更便捷的體驗而深入理解使用者，這是身為 UX 設計師熟悉的概念，但使用者多數時候其實並不知道自己的需求時，我們則會從洞察結果來引導使用者跟隨我們的設計操作。這聽起來一切都很合乎常理，然而在使用者達成商業目標過程的「微轉換」時欺騙、有意操作等影響使用者決策時，就違背了原本的意義。「說服」本應是雙方進行對話，若不考慮對方意願下強制要求這明顯就不是「說服」，但要劃分「哪裡開始是暗黑模式」的界線時，就需要依賴傾聽使用者及各方領域專家意見謹慎討論。</p><blockquote>The line between Light and Dark is so very thin. — The Drifter</blockquote><hr class="solid"><h2>掌握暗黑模式的各種樣貌</h2><p>第三章節中作者詳細解析了各種暗黑模式的運作機制，這些手法以熟悉的各種操作介面、提醒文字，以及行銷手法出現在我們生活中，通過學習這些知識，我們可以更敏銳地察覺到並避免被誤導。像是電商網站常用的<strong class="markup--strong markup--p-strong">急迫性(Urgency)</strong>手法，看似即將結束的倒數計時器實際上永遠不會截止，就像掛著清倉大拍賣的商店三年後仍在清倉般。利用這種方式雖然仍可以欺騙到一些消費者立即下單，時間久了就會被認為是「放羊的孩子」而對公司品牌造成損譽的情況。</p><p>這章節除了解析各種手法是如何運作外，其實也是讓身為設計、行銷等身分的讀者能夠掌握如何加入操作。如同前面提到我們是在跟使用者進行對話，以「說服」的方式讓使用者願意接受我們的設計，而不是一昧的強迫對方聽從。學會這些暗黑模式並拿捏好心中的量尺，讓我們在設計過程中更具洞察力。然而道德倫理的底線是不容跨越的，我們應將這些知識用於善意，以設計出真正能幫助使用者、提升使用者體驗的產品。</p><hr class="solid"><h2>從機制著手學習防備暗黑模式</h2><p>不論是設計師還是行銷人員，每個人都希望自己的作品能為使用者帶來價值。然而，為什麼暗黑模式在市場上屢見不鮮呢？作者認為，這與企業內部的績效導向文化密切相關。為了追求短期利益，許多企業會過度強調數據，將<strong class="markup--strong markup--p-strong">關鍵績效指標(Key Performance Indicators，KPI)</strong>視為唯一的衡量標準。這種「數據至上」的思維，往往會導致員工為了達到目標而採用一些欺騙性的設計手法而犧牲使用者體驗。</p><p>然而，數據並不能完全反映使用者的真實感受。當企業過度依賴數據，而忽略了使用者體驗時，暗黑模式就有了可乘之機。為了避免這種情況，作者提倡以<strong class="markup--strong markup--p-strong">北極星指標(North Star Metric，NSM)</strong>作為企業發展的導向。 北極星指標更注重於衡量企業為使用者創造的價值，而非僅僅關注銷售額或用戶數。它能幫助企業聚焦於長期目標，並確保產品或服務始終以使用者為中心。 當企業將北極星指標轉化為具體的 KPI 時，可以從廣度、深度、頻率、效率四個方面來衡量，以更全面地了解用戶的需求。通過採用北極星指標，企業不僅能提升產品的品質，還能激發員工的創造力，並建立更健康、更可持續的發展模式。</p><p>除了企業要改變績效指標的機制外，身為執行者的設計師、行銷業務等第一線人員更應主動出擊。我們應以建立使用者信任為核心，設計出透明、可靠的產品。雖然簡化流程、提升便利性是必要的，但我們不能以犧牲資訊的透明度為代價。當使用者對產品或服務的運作方式、隱私政策等資訊一清二楚時，他們才會感到安心，並願意長期信賴我們的品牌。此外，簡潔明瞭的小提醒文字設計，能有效降低使用者認知負荷。這也是近年來<strong class="markup--strong markup--p-strong"> UX 寫作(UX Writing)</strong>備受關注的原因之一，它能幫助使用者更輕鬆地完成操作。透過這些方式我們可以有效地提升使用者體驗，並建立長期穩定的用戶關係。</p><hr class="solid"><h2>後記</h2><p>暗黑模式在商業策略中扮演著複雜的角色，它能吸引使用者目光、增加點擊率等為企業帶來效益。然而過度強調視覺效果、忽略資訊透明度，甚至隱藏不利資訊的暗黑模式，往往會損害使用者信任，長期來看對企業品牌形象造成負面影響。</p><p>雖說暗黑模式這種策略多數對於使用者而言是一種負面行為，但個人認為實際上這是一種使用者對於自身的素質培養。在資訊爆炸的時代，使用者需要具備更強的資訊辨識能力，以區分資訊真偽，避免被誤導。暗黑模式在無形中成為了一種訓練，促使使用者培養批判性思考，並對資訊保持懷疑的態度。</p><p>然而，將使用者素質培養的責任完全推給使用者是不合理的。 企業應該承擔起社會責任，提供透明、誠信的服務。暗黑模式的泛濫，反映了當今商業環境中存在的一些問題，例如過度追求短期利益、忽視使用者體驗等。</p><p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

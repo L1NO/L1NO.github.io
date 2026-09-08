@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO & Social Sharing Meta Tags -->
+  <title>當設計師遇見 AI：不寫程式也能「從零開始」的協作新思維 | Ossian Lin - Product Designer</title>
+  <meta name="description" content="Vibe Coding 新手村報到！Figma Make 三部曲活動總整理及心得" />
+  <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ossianlin.com/articles/202510.html" />
+  <meta property="og:title" content="當設計師遇見 AI：不寫程式也能「從零開始」的協作新思維 | Ossian Lin" />
+  <meta property="og:description" content="Vibe Coding 新手村報到！Figma Make 三部曲活動總整理及心得" />
+  <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*n6BEybkkMG9DTiuJIqgYNw.png" />
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="ossianlin.com" />
+  <meta property="twitter:url" content="https://ossianlin.com/articles/202510.html" />
+  <meta name="twitter:title" content="當設計師遇見 AI：不寫程式也能「從零開始」的協作新思維 | Ossian Lin" />
+  <meta name="twitter:description" content="Vibe Coding 新手村報到！Figma Make 三部曲活動總整理及心得" />
+  <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*n6BEybkkMG9DTiuJIqgYNw.png" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../articles-data.js" defer></script>
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Reading Progress Indicator -->
+  <div class="reading-progress-bar"></div>
+
+  <main>
+    <!-- Article Header & Meta -->
+    <header class="article-page-header">
+      <a href="../articles.html" class="back-link">
+        <span>←</span>
+        <span>Back to Articles</span>
+      </a>
+
+      <div>
+        <span class="article-tag">Design Systems</span>
+      </div>
+
+      <h1 class="article-main-title">
+        當設計師遇見 AI：不寫程式也能「從零開始」的協作新思維
+      </h1>
+
+      <p class="article-main-subtitle">
+        Vibe Coding 新手村報到！Figma Make 三部曲活動總整理及心得
+      </p>
+
+      <div class="author-meta-bar">
+        <div class="author-info">
+          <img src="../img/Lino.png" alt="Ossian Lin" class="author-avatar" />
+          <div class="author-text">
+            <span class="author-name">Ossian Lin</span>
+            <span class="article-publish-details">
+              Published on Oct 2025
+            </span>
+          </div>
+        </div>
+        <div class="article-actions">
+          <button class="share-btn-pill" onclick="copyArticleLink()" title="Copy Article Link">
+            <span>🔗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="article-body">
+<figure class="article-figure"><img class="graf-image" data-image-id="1*n6BEybkkMG9DTiuJIqgYNw.png" data-width="1440" data-height="804" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*n6BEybkkMG9DTiuJIqgYNw.png"></figure><h2>前言</h2><p>Vibe coding 可說是 <strong class="markup--strong markup--p-strong">2025 </strong>年相當熱門的話題，使用者藉由 AI 輔助程式碼撰寫，不僅大幅降低了寫程式的門檻，更幫助原型設計 (Prototyping) 達成更快速、擬真的成效。然而，多數人可能會因為「Coding」一詞，而誤以為這僅與工程師及程式碼有關。事實上，隨著 AI 工具的廣泛應用，設計師們在產品設計過程中過往需要耗時的工作內容，也有許多工具能讓設計師實現「Vibe Coding」的效益與創造力。</p><p>Friends of Figma Taiwan (FoF Taiwan) 是台灣在地的 Figma 社群組織，致力於推動設計交流與知識分享。他們會不定期地舉辦講座、實作工作坊等活動，讓設計師與工程師能夠交流新工具與工作方法。值得一提的是，這些活動常獲得 Figma 官方的支持與免費試用產品的機會，因此參與組織活動可說是非常划算。</p><p>這次的 「Vibe Coding 新手村」 活動共分為三場：從最基礎的 Vibe coding 介紹、Figma Make 的應用，到最後一場自由發揮的小競賽。由於個人第三場的行程撞期，原本打算只參加半場，但後來決定將名額讓給更有興趣的朋友，因此本文不會包含第三場的心得。在本篇文章中，我將整理參與前兩場活動的學習收穫，並分享個人對「AI × 設計」這波趨勢的觀察與想法。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*DpMGsrLB1w9CFBLvAXqGOw.jpeg" data-width="4032" data-height="2268" src="https://cdn-images-1.medium.com/max/800/1*DpMGsrLB1w9CFBLvAXqGOw.jpeg"></figure><hr class="solid"><h2>一部曲：從基礎認識開始</h2><p>第一場活動在 9 月多舉辦，雖然從活動簡介中就能推測這場主要聚焦在「Vibe Coding」和「Figma Make」的概念介紹，但我仍有帶上筆電確保當日臨時需要。畢竟這類活動常有臨時實作或互動環節，不想錯過任何可以親自操作體驗的機會。這場講座邀請了兩位在工作中實際運用 Vibe Coding 的設計師分享他們的經驗與觀察，分別是來自 iCHEF 的 Product Design Lead — Peter，以及 Vibe 的 Motion Designer — Amelia。兩人從不同專業角度出發，帶來了實務面與創意面的觀點，讓整場活動兼具深度與啟發性。</p><p>第一位講者 Peter，將焦點放在 Vibe Coding 和 Figma Make 的基本概念建構。他現場也以簡潔的文字指令(prompt)示範如何在 Figma Make 自動生成互動介面，在整個分享中，Peter 特別強調了撰寫優質提示詞的重要性。他分享觀察到的現象：多數人第一次使用 AI 指令時，平均只輸入約 9 個描述，但若能將細節提升至 21 個以上，AI 的理解能力與輸出品質會有顯著差異，由此可知 prompt 的品質決定成果的精準度。此外，他也分享在撰寫的格式上可以選用 Markdown 格式撰寫提示詞，可以讓 AI 在結構理解上達到最佳效果。上述這些重點，都非常清晰地為與會者們奠定了高效使用 Vibe Coding 的基礎。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*B8Ps8R02cLld7-II1iQ-JQ.jpeg" data-width="4032" data-height="2268" src="https://cdn-images-1.medium.com/max/800/1*B8Ps8R02cLld7-II1iQ-JQ.jpeg"><figcaption class="imageCaption">當我們給予數量更多，使用優質且明確的 prompt，能讓 AI 在產生結果上帶來不錯的效果。</figcaption></figure><p>第二位講者 Amelia 的職稱算是少接觸，畢竟 motion design 這類型的工作在台灣不太普及，那麼她又是如何導入 Figma Make 幫助她完成工作，就成了這場令人期待的地方。Amelia 以自身接觸到的專案為例，提到身為 Motion Designer，最常遇到的挑戰是「如何讓工程師理解設計師腦中的動態構想」。雖然她深知直接編程是解決溝通問題的最佳途徑，但這對設計師而言學習曲線過於陡峭。因此開始探索如何藉助 AI 來生成程式碼，希望讓溝通更具體也更有效率。</p><p>Amelia 分享了一個她親自製作的語音辨識動畫案例：她從一開始模糊的 prompt 輸入，逐步示範如何透過 prompt 描述動畫節奏、形狀變化與顏色漸層，最終再利用 AI 修訂出一個能貼近設計稿效果的程式碼原型，方便與產品開發的同仁進行溝通。在這個專案中 Amelia 發現 AI 工具確實能加快製作速度，但設計師仍需了解基礎技術與開發限制。若生成結果超出工程團隊可支援的範圍，反而會增加溝通成本。這些 AI 工具最適合被視為一個「協作橋樑」，讓設計與程式之間有更順暢的對話。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*gYHepbL0SW89d62jd7nVIg.jpeg" data-width="4032" data-height="2268" src="https://cdn-images-1.medium.com/max/800/1*gYHepbL0SW89d62jd7nVIg.jpeg"></figure><p>儘管兩位講者的案例都令人振奮，但兩人的分享在結尾都提出了一個共同且關鍵的警示：工具再好，專業知識與協作原則始終不可取代。兩人在 Vibe Coding 過程中並不是學會寫程式，而是學會如何「與 AI 對話」。Peter 讓我們看到結構化思維與 prompt 工程的重要性，Amelia 從自身經驗強調無論 AI 工具多麼強大，與開發團隊的合作仍應以程式碼為主要的溝通基礎，因為程式碼是唯一能被機器直接執行的共同語言。</p><p>由於目前 AI 工具生成的結果多半仍屬於概念性的「玩票性質」或快速原型，因此將 AI 導入工作流程不一定能保證流程的全面加速。他們一致認為，最理想的做法，仍然是回歸並深化學習原本的專業技術與知識。AI 只是提高效率的放大器，而非取代專業的替代品。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*Dqak_KZLwzPNTLEYl8UxBw.jpeg" data-width="3024" data-height="1701" src="https://cdn-images-1.medium.com/max/800/1*Dqak_KZLwzPNTLEYl8UxBw.jpeg"></figure><hr class="solid"><h2>二部曲：Figma Make 的實際應用</h2><p>第二場實作工作坊於十月舉行，這次的內容比起第一場明顯更「實戰導向」。報名頁面上事先就提醒所有參與者需攜帶筆電，並標註將有三個實作練習，可說是一場期待值極高的活動。本次活動的價值不僅在於內容本身，更在於主辦方提供的獨家福利。由於 Figma Make 對非訂閱用戶設有生成數量限制，活動主辦方特別向 Figma 官方申請了 5 日免費體驗序號。這 5 天的無限使用機會，讓所有參與者得以在無後顧之憂的情況下深入探索工具潛力。免費參與活動，還能獲得免費體驗序號，怎麼想都是一筆划算的投資，而在活動後序號結束前我也順利地完成了幾份 Side Project 的設計原型，讓這場工作坊的價值直接翻倍。</p><p>第一個實作項目相對基礎，目標是讓大家熟悉如何透過文字 prompt 與 Figma Make 溝通。講師請大家輸入一段個人簡介或想呈現的風格描述，然後讓 AI 自動生成一張數位名片，各位僅需向 Figma Make 輸入文字，即可產出個人數位名片。想當然的，這項簡單的任務卻成了創意大爆發的舞台。除了基本聯繫資訊外，設計師們充分發揮天馬行空的想像力，產出令人驚豔的成果：有人生成塔羅牌風格的名片，也有人乾脆讓名片變成一個能遊玩的「貪吃蛇」遊戲。</p><p>最有趣的是，不論風格再天馬行空，Figma Make 幾乎都能生成出接近預期的結果。這個過程讓人直觀地感受到 AI 的靈活度：只要指令夠明確，設計思路就能被即時轉譯成視覺成果。</p><figure class="article-figure"><img class="graf-image" data-image-id="1*wK9jXxUDXv6EQ78DQVCUpw.jpeg" data-width="5126" data-height="2883" src="https://cdn-images-1.medium.com/max/800/1*wK9jXxUDXv6EQ78DQVCUpw.jpeg"><figcaption class="imageCaption">每位設計師都發揮各種創意進行設計。</figcaption></figure><hr class="solid"><p>第二個實作則進入了高擬真原型的核心應用，大家被要求將靜態設計稿轉換為可互動的網頁原型，其中最大的亮點是資料庫的串接。這次實作的素材使用了來自 Design is a Party 的 Elizabeth Lin 與 Friends of Figma NYC 合作舉辦的 Figma Make Workshop with Elizabeth Lin，並搭配 Superbase 的資料庫功能，讓 Figma Make 將設計稿與真實數據流連接，形成一個高度逼真、數據驅動的互動式網頁。</p><p>雖然我曾在 IxDA Taiwan 的工作坊中初步體驗過 Superbase，但本次活動則更聚焦於如何建立結構化的資料表並將其導入 Figma Make，讓 AI 在生成最終原型時，能同步附帶動態資料。這項技能極大程度地提升了設計原型的說服力與測試價值。</p><hr class="solid"><p>第三個實作項目瞄準了擁有完整設計系統 (Design System)的公司團隊，演示如何在開拓新功能或服務設計時，快速產出設計稿，同時確保新作與既有設計系統保持高度一致性。這對追求品牌統一性的企業來說，是 Figma Make 最具價值的應用之一，同時維持整體視覺體驗一致性。</p><p>比較可惜的是，由於前兩項實作花費了較多時間，加上匯入現有的 Design System 本身就需要一定的操作時間，導致第三項實作的實際操作較少。不過在講師實際演示過程中，至少我們完整理解了可以藉由 Figma Make 的 AI 能力，將設計系統的規範內化，快速生成符合企業風格的新設計稿，大幅縮短設計與開發之間的銜接時間。</p><hr class="solid"><h2>AI 導入產品設計經驗談</h2><p>藉由這兩場 Vibe Coding 活動帶來的最大啟發，是促使我將過往零散的 AI 使用經驗，與設計界當前的前沿趨勢進行對話與整合。在接觸 Figma Make 之前，我其實早已在工作中嘗試使用各類 AI 工具。最早的應用場景並不是設計，而是更貼近日常行政與文書處理。舉例來說，當我需要撰寫正式的公文往返、或回覆客戶意見時，若沒有可套用的範本，AI 就成了我最可靠的助理。透過 AI 輔助能幫助我解析複雜的語義，並快速產出結構清晰的初稿，並讓我再依據實際情境做微調。這不僅節省了時間、文字表達更精準，更是提升我的行政作業效率。</p><p>另一個我常使用 AI 的情境則是撰寫簡易程式或自動化工具，藉由 AI 快速建立一個功能性的腳本成品或主要架構方向，這讓我得以省去從零開始的建構過程。這些程式並非什麼大型產品，而是針對日常需求的小工具。例如，我寫過一支腳本專門整理系統告警郵件，把一大串難以閱讀的資訊自動分類、清理、轉成可複製的摘要。相較於直接要求 AI 輸出整理後的資料，我更傾向於透過 AI 輔助撰寫一支穩定的處理工具，最後生成易於理解和複製的資料格式。對我來說，這樣的應用正體現了「AI 協作」的精神，並證實是更穩定且能確實達到整理資料目的的有效策略。</p><p>雖然 Figma Make 早已登場一段時間，且市面上不乏設計類的 AI 競品，但我一直抱持著觀望態度，遲遲未正式使用。然而，在本次工作坊深度體驗到 Figma Make 的高擬真原型和資料庫串接魔力後，我認為它確實是一款值得肯定的工具。儘管 Figma Make 不一定是市面上眾多競品中的「最佳」選擇，但對於長期使用 Figma 生態系統的團隊而言，無疑是一個極具吸引力的工具。Figma Make 將設計、原型、AI 生成無縫整合於同一平臺，極大降低了學習與協作成本。透過這次一連串工作坊體驗，我也開始整理各種 AI 工具，試著導入在接案工作上，讓我能夠實現一人公司的作業流程。</p><hr class="solid"><h2>後記</h2><p>本次連續參與 Friends of Figma Taiwan 舉辦的兩場活動，對我來說可是一次難得的知識長跑。有別於多數一次性講座，短時間吸收概念、聽完就結束，即使這系列活動的各場次可以獨立參與，但錯過了原本計畫中的完整體驗，總給人一種未能盡興的感覺。這兩場活動所帶來的收穫依然遠超預期。透過這兩場活動，不僅有機會免費且深度地體驗了 Figma Make 的強大功能，更藉由實戰練習，對 Vibe Coding 和 AI 輔助設計的實際應用有了全面的認識。</p><p>活動中，Peter 與 Amelia 兩位講者的觀點尤其讓我印象深刻。前者提醒我們，AI 是協助設計師更快、更準地實現理想結果的夥伴；後者則點出，再好的工具也無法替你決定設計邏輯。兩位的分享彷彿為整個系列活動畫下了註腳，強調 AI 不會取代人類，而是放大我們的思考與創造力。</p><p>第二場活動的三個實作練習，更是這次體驗的精華所在。雖然 Figma Make 登場已有一段時間，但透過實際操作，讓人更清楚認識它在 Figma 生態系 中的核心價值。參與者不僅能親手體驗並獲得免費試用機會，也在實戰中理解 Figma Make 的能力邊界。這些練習涵蓋從概念發想到資料串接、再到設計系統維護的多個層面，對日常工作都有實質助益，讓設計過程更高效，也更具前瞻性。</p><p>回顧整個「Vibe Coding 新手村」系列活動，這不僅是學習一套工具的操作過程，更是一場讓設計師重新思考如何與 AI 協作的啟發。Figma Make 的導入能讓設計從單純的視覺創作，進化為結合資料、互動與邏輯的多維思考過程。面對 AI 協作時代的浪潮，設計師的職能正在重新定義。持續學習如何與 AI 有效協作，精進我們決定「設計邏輯」和「創意方向」的核心能力，才是我們在未來設計浪潮中保持競爭力的關鍵所在。</p><p>以上，我們下次見，啾~</p>
+    </article>
+
+    <!-- Author Bio Card -->
+    <section class="article-author-card">
+      <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+      <div class="article-author-bio">
+        <h3>Written by Ossian Lin</h3>
+        <p>
+          Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive
+          development, and clean digital experiences.
+        </p>
+        <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+          <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+            <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+          </a>
+          <a href="mailto:ossianlin@gmail.com">
+            <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Navigation (Previous / Next) -->
+    <nav class="article-nav-container">
+      <a href="../articles.html" class="article-nav-btn">
+        <span>←</span>
+        <span>All Articles</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

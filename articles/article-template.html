@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Template Title & Meta -->
+    <title>Article Title | Ossian Lin - Product Designer</title>
+    <meta
+      name="description"
+      content="A reader-friendly article exploring product design, UX research methods, and digital experience strategy."
+    />
+    <!-- Open Graph Meta Tags (LinkedIn, Threads, Facebook, LINE) -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ossianlin.com/articles/article-template.html" />
+    <meta property="og:title" content="Article Title | Ossian Lin - Product Designer" />
+    <meta property="og:description" content="A reader-friendly article exploring product design, UX research methods, and digital experience strategy." />
+    <meta property="og:image" content="https://ossianlin.com/img/Portrait.png" />
+    <!-- Twitter / X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="ossianlin.com" />
+    <meta property="twitter:url" content="https://ossianlin.com/articles/article-template.html" />
+    <meta name="twitter:title" content="Article Title | Ossian Lin - Product Designer" />
+    <meta name="twitter:description" content="A reader-friendly article exploring product design, UX research methods, and digital experience strategy." />
+    <meta name="twitter:image" content="https://ossianlin.com/img/Portrait.png" />
+
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../articles-data.js" defer></script>
+    <script src="../script.js" defer></script>
+  </head>
+  <body>
+    <!-- Top Reading Progress Indicator -->
+    <div class="reading-progress-bar"></div>
+
+    <main>
+      <!-- Article Header & Meta -->
+      <header class="article-page-header">
+        <a href="../articles.html" class="back-link">
+          <span>←</span>
+          <span>Back to Articles</span>
+        </a>
+
+        <div>
+          <span class="article-tag"></span>
+        </div>
+
+        <h1 class="article-main-title"></h1>
+
+        <p class="article-main-subtitle"></p>
+
+        <div class="author-meta-bar">
+          <div class="author-info">
+            <img
+              src="../img/Lino.png"
+              alt="Ossian Lin"
+              class="author-avatar"
+            />
+            <div class="author-text">
+              <span class="author-name">Ossian Lin</span>
+              <span class="article-publish-details"></span>
+            </div>
+          </div>
+          <div class="article-actions">
+            <button
+              class="share-btn-pill"
+              onclick="copyArticleLink()"
+              title="Copy Article Link"
+            >
+              <span>🔗</span>
+              <span>Share</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Article Body (Reader-Friendly Prose) -->
+      <article class="article-body">
+        <p class="lead-paragraph">
+          The lead paragraph sets the tone for your entire piece. It introduces the main question, tension, or premise in a clear and compelling way that invites readers into the deep dive.
+        </p>
+
+        <h2>1. The Core Problem</h2>
+        <p>
+          Body text should be easy on the eyes with generous line height and high contrast. When discussing user experience, break down complex concepts into digestible narratives.
+        </p>
+
+        <!-- Callout Box -->
+        <div class="callout-box">
+          <div class="callout-title">
+            <span>💡</span>
+            <span>Key Takeaway</span>
+          </div>
+          <p class="callout-content">
+            A design system is not just a UI kit; it is an organizational communication protocol between design and engineering.
+          </p>
+        </div>
+
+        <p>
+          Explain the rationale behind your observations. You can incorporate bullet lists to make complex lists scannable and structured:
+        </p>
+
+        <ul>
+          <li><strong>Alignment:</strong> Ensure all cross-functional partners understand the shared taxonomy.</li>
+          <li><strong>Governance:</strong> Establish a transparent review cycle for new design tokens and patterns.</li>
+          <li><strong>Adoption:</strong> Measure success by how effortlessly engineers can consume components without custom overrides.</li>
+        </ul>
+
+        <h2>2. Deep Dive & Frameworks</h2>
+        <p>
+          Use subheadings to guide readers through different phases of your thought process or case analysis.
+        </p>
+
+        <!-- Blockquote Example -->
+        <blockquote>
+          "Simplicity is not the lack of clutter, that's a consequence of simplicity. Simplicity somehow essentially describes the purpose and place of an object and product."
+        </blockquote>
+
+        <p>
+          Summarize with actionable principles that readers can apply directly to their own product teams or research workflows.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+          Wrap up your article with a memorable summary and next steps or an open invitation for feedback.
+        </p>
+      </article>
+
+      <!-- Author Bio Card -->
+      <section class="article-author-card">
+        <img src="../img/Lino.png" alt="Ossian Lin" class="author-bio-avatar" />
+        <div class="article-author-bio">
+          <h3>Written by Ossian Lin</h3>
+          <p>
+            Product Designer & UX Researcher based in Taiwan. Passionate about human-centered systems, cognitive development, and clean digital experiences.
+          </p>
+          <div class="logo-container" style="justify-content: flex-start; margin-top: 0.5rem;">
+            <a href="https://www.linkedin.com/in/ossianlin19739513/" target="_blank" rel="noopener noreferrer">
+              <img src="../img/Linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;" />
+            </a>
+            <a href="https://github.com/L1NO" target="_blank" rel="noopener noreferrer">
+              <img src="../img/Github.png" alt="GitHub" style="width: 24px; height: 24px;" />
+            </a>
+            <a href="mailto:ossianlin@gmail.com">
+              <img src="../img/email.png" alt="Email" style="width: 24px; height: 24px;" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Article Navigation (Previous / Next) -->
+      <nav class="article-nav-container">
+        <a href="../articles.html" class="article-nav-btn">
+          <span>←</span>
+          <span>All Articles</span>
+        </a>
+        <a href="../projects/project-childmind.html" class="article-nav-btn">
+          <span>Next Article</span>
+          <span>→</span>
+        </a>
+      </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+  </body>
+</html>
